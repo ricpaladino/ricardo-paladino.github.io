@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi Sono - Dr. Ricardo Paladino</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi sono – Dr. Ricardo Paladino Marques de Paula</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER / MENU -->
-  <header>
-    <h1>Chi Sono</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">Chi sono</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contatti</a>
-    </nav>
-      <!-- Language switch -->
-    <div class="lang-switch">
-        <a href="/index.html"><img src="/images/italy-flag.png" alt="Italiano" width="30"></a>
-        <a href="/en/index.html"><img src="/images/usa-flag.png" alt="English" width="30"></a>
-        <a href="/pt/index.html"><img src="/images/bra-flag.png" alt="Português" width="30"></a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="chi-sono.html" class="active">Chi sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
   </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section class="about-me">
-            <h1>Dr. Ricardo Paladino Marques de Paula</h1>
-            <h2>Medico in formazione specialistica in Ortopedia e Traumatologia</h2>
+  <!-- Sezione principale -->
+  <main>
+    <section class="about-me">
+      <h1>Dr. Ricardo Paladino Marques de Paula</h1>
+      <h2>Medico in formazione specialistica in Ortopedia e Traumatologia</h2>
 
-            <p>Sono un medico con doppia laurea in Medicina, conseguita in Brasile (UFSC) e in Italia (UNIPV) con il massimo dei voti. Attualmente sono specializzando in Ortopedia all’Università di Milano e lavoro regolarmente in strutture italiane.</p>
+      <p>
+        Sono un medico con doppia laurea in Medicina, conseguita in Brasile (UFSC) e in Italia (UNIPV) con il massimo dei voti. 
+        Attualmente sono specializzando in Ortopedia all’Università di Milano e lavoro regolarmente in strutture italiane.
+      </p>
 
-            <p>Ho arricchito la mia esperienza con <strong>fellowship internazionali e nazionali</strong>, lavorando presso ospedali di riferimento in Italia, tra cui il Policlinico Gemelli di Roma, il Policlinico San Matteo di Pavia, l’Ospedale Gaetano Pini e l’Ospedale Galeazzi Sant’Ambrogio a Milano.</p>
+      <p>
+        Ho arricchito la mia esperienza con <strong>fellowship internazionali e nazionali</strong>, lavorando presso ospedali di riferimento in Italia, 
+        tra cui il Policlinico Gemelli di Roma, il Policlinico San Matteo di Pavia, l’Ospedale Gaetano Pini e l’Ospedale Galeazzi Sant’Ambrogio a Milano.
+      </p>
 
-            <p>Partecipo costantemente a congressi e corsi di aggiornamento, sia in Italia sia all’estero, per rimanere sempre aggiornato sulle novità scientifiche e sulle tecniche più innovative in ortopedia.</p>
+      <p>
+        Partecipo costantemente a congressi e corsi di aggiornamento, sia in Italia sia all’estero, per rimanere sempre aggiornato sulle novità scientifiche 
+        e sulle tecniche più innovative in ortopedia.
+      </p>
 
-            <p>Mi dedico anche all’integrazione della <strong>Intelligenza Artificiale in Ortopedia</strong>, all’approfondimento delle <strong>tecniche di imaging avanzato</strong> per personalizzare la terapia e alla <strong>medicina ortopedica rigenerativa</strong>.</p>
+      <p>
+        Mi dedico anche all’integrazione della <strong>Intelligenza Artificiale in Ortopedia</strong>, all’approfondimento delle 
+        <strong>tecniche di imaging avanzato</strong> per personalizzare la terapia e alla <strong>medicina ortopedica rigenerativa</strong>.
+      </p>
 
-            <p>Attualmente mi concentro soprattutto sulla patologia e chirurgia del <strong>piede e della caviglia</strong>, del <strong>ginocchio</strong> e in ambito <strong>traumatologico</strong>, con l’obiettivo di offrire ai pazienti un approccio moderno, sicuro e personalizzato.</p>
+      <p>
+        Attualmente mi concentro soprattutto sulla patologia e chirurgia del <strong>piede e della caviglia</strong>, del <strong>ginocchio</strong> e in ambito 
+        <strong>traumatologico</strong>, con l’obiettivo di offrire ai pazienti un approccio moderno, sicuro e personalizzato.
+      </p>
 
-            <p>Se vuoi, puoi scaricare il mio CV cliccando qui: 
-       <a href="CV_paladino_2025.pdf" download>Scarica il mio CV</a>
-            </p>
-        </section>
-    </main>
+      <p class="cv-link">
+        Se vuoi, puoi scaricare il mio CV cliccando qui: 
+        <a href="CV_paladino_2025.pdf" download>Scarica il mio CV</a>
+      </p>
+    </section>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Dr. Ricardo Paladino. Tutti i diritti riservati.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <div class="socials">
+      <a href="#">Facebook</a> • 
+      <a href="#">LinkedIn</a> • 
+      <a href="#">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
