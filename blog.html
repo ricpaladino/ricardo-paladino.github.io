@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Dr. Ricardo Paladino</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – Dr. Ricardo Paladino Marques de Paula</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER / MENU -->
-  <header>
-    <h1>Blog</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">Chi sono</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contatti</a>
-    </nav>
-      <!-- Language switch -->
-    <div class="lang-switch">
-        <a href="/index.html"><img src="/images/italy-flag.png" alt="Italiano" width="30"></a>
-        <a href="/en/index.html"><img src="/images/usa-flag.png" alt="English" width="30"></a>
-        <a href="/pt/index.html"><img src="/images/bra-flag.png" alt="Português" width="30"></a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="chi-sono.html">Chi sono</a>
+      <a href="blog.html">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
   </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section class="blog-intro">
-            <h1>Il mio Blog</h1>
-            <p>Benvenuto nel mio spazio dove condivido articoli su ortopedia, innovazioni mediche e aggiornamenti professionali.</p>
-        </section>
+  <!-- Sezione Blog -->
+  <section class="blog-section">
+    <h2>Articoli e approfondimenti</h2>
+    <p class="subtitle">Aggiornamenti, riflessioni e novità dal mondo dell’Ortopedia e della Traumatologia.</p>
 
-        <section class="blog-posts">
-            <article>
-                <h2>Titolo Articolo 1</h2>
-                <p>Breve introduzione al contenuto dell'articolo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leggi di più →</a>
-            </article>
+    <div class="blog-grid">
+      <!-- Articolo 1 -->
+      <article class="blog-card">
+        <img src="https://via.placeholder.com/600x350" alt="Copertina articolo 1">
+        <div class="blog-content">
+          <h3>Le nuove frontiere della chirurgia ortopedica</h3>
+          <p class="date">Pubblicato il 12 ottobre 2025</p>
+          <p>Un’analisi sulle più recenti innovazioni in ambito ortopedico, dall’intelligenza artificiale alla chirurgia robotica.</p>
+          <a href="#" class="read-more">Leggi di più →</a>
+        </div>
+      </article>
 
-            <article>
-                <h2>Titolo Articolo 2</h2>
-                <p>Breve introduzione al contenuto dell'articolo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leggi di più →</a>
-            </article>
+      <!-- Articolo 2 -->
+      <article class="blog-card">
+        <img src="https://via.placeholder.com/600x350" alt="Copertina articolo 2">
+        <div class="blog-content">
+          <h3>Recupero funzionale dopo intervento alla caviglia</h3>
+          <p class="date">Pubblicato il 5 settembre 2025</p>
+          <p>Linee guida e consigli pratici per gestire la riabilitazione post-operatoria e ottimizzare il ritorno alla vita quotidiana.</p>
+          <a href="#" class="read-more">Leggi di più →</a>
+        </div>
+      </article>
 
-            <article>
-                <h2>Titolo Articolo 3</h2>
-                <p>Breve introduzione al contenuto dell'articolo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#">Leggi di più →</a>
-            </article>
-        </section>
-    </main>
+      <!-- Articolo 3 -->
+      <article class="blog-card">
+        <img src="https://via.placeholder.com/600x350" alt="Copertina articolo 3">
+        <div class="blog-content">
+          <h3>Prevenire il dolore articolare: piccoli gesti quotidiani</h3>
+          <p class="date">Pubblicato il 20 agosto 2025</p>
+          <p>Postura, movimento e alimentazione: tre pilastri fondamentali per mantenere sane le articolazioni.</p>
+          <a href="#" class="read-more">Leggi di più →</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Dr. Ricardo Paladino. Tutti i diritti riservati.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <div class="socials">
+      <a href="#">Facebook</a> • 
+      <a href="#">LinkedIn</a> • 
+      <a href="#">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
