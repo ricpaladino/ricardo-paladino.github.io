@@ -139,14 +139,17 @@ body {
   line-height: 1.6;
 }
 
+/* Skills Section – Aree di competenza */
 .skills-section {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95); /* bianco semitrasparente */
   backdrop-filter: blur(10px);
   padding: 3rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   margin-bottom: 3rem;
   animation: fadeInUp 0.8s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .skills-grid {
@@ -156,7 +159,7 @@ body {
 }
 
 .skill-card {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: rgba(245, 247, 250, 0.95); /* leggero gradiente chiaro */
   padding: 1.5rem;
   border-radius: 15px;
   transition: all 0.3s ease;
@@ -184,6 +187,7 @@ body {
 .skill-card p {
   color: #666;
   font-size: 0.95rem;
+  line-height: 1.6;
 }
 /* Header */
 .header {
