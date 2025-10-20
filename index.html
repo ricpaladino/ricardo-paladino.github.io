@@ -4,20 +4,378 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Ricardo Paladino Marques de Paula</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1.2rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 0.5s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .logo h1 {
+      font-size: 1.4rem;
+      color: #667eea;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .logo p {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 300;
+    }
+
+    .nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #667eea;
+      transition: width 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #667eea;
+    }
+
+    .nav a:hover::after {
+      width: 100%;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #667eea;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 6rem 5% 5rem;
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-text h2 {
+      font-size: 3.5rem;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.95);
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: white;
+      color: #667eea;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      background: #667eea;
+      color: white;
+    }
+
+    .btn span {
+      font-size: 1.2rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: -2rem auto 3rem;
+      padding: 0 5%;
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+      animation: fadeInUp 0.6s ease;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h3 {
+      font-size: 1.8rem;
+      color: #667eea;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    /* Services Section */
+    .services {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .services h3 {
+      font-size: 2rem;
+      color: #667eea;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      min-width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .service-text {
+      flex: 1;
+    }
+
+    .service-text h4 {
+      color: #333;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    .service-text p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 2.5rem 5%;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .footer p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .socials {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      opacity: 0.9;
+    }
+
+    .socials a:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+      text-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        display: none;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav.open {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .hero-text h2 {
+        font-size: 2.5rem;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <h1>Dr. Ricardo Paladino Marques de Paula</h1>
       <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
-    <div class="menu-icon" id="menuToggle">
-      ☰
-    </div>
-   <nav class="nav" id="navMenu">
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="blog.html">Blog</a>
@@ -28,7 +386,8 @@
   <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Dr. Ricardo Paladino<br>Marques de Paula</h2>
+      <h2>Il tuo specialista<br>a Milano</h2>
+      <p>Cure professionali direttamente a casa tua</p>
       <div class="buttons">
         <a href="#" class="btn"><span>📞</span> Contatti rapidi</a>
         <a href="#" class="btn"><span>✉️</span> Scrivimi</a>
@@ -36,45 +395,79 @@
     </div>
   </section>
 
-  <!-- Dove visito -->
-  <section class="info-box">
-    <h3>Dove visito</h3>
-    <p>Visito i pazienti in ambito domiciliare in tutta Milano.</p>
-  </section>
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Info Cards -->
+    <div class="cards-grid">
+      <div class="card">
+        <h3>📍 Dove visito</h3>
+        <p>Visito i pazienti in ambito domiciliare in tutta Milano, garantendo comfort e professionalità direttamente a casa tua.</p>
+      </div>
+      <div class="card">
+        <h3>📅 Prenota una visita</h3>
+        <p>Risolvi il tuo problema medico generale prenotando una visita. Flessibilità oraria e disponibilità anche nei weekend.</p>
+      </div>
+    </div>
 
-  <!-- Prenota una visita -->
-  <section class="info-box">
-    <h3>Prenota una visita</h3>
-    <p>Risolvi il tuo problema medico generale prenotando una visita medica.</p>
-  </section>
-
-  <!-- In cosa posso aiutarti -->
-  <section class="help-section">
-    <h3>In cosa posso aiutarti</h3>
-    <ul>
-      <li>✅ Visita medica generale</li>
-      <li>✅ Telemedicina</li>
-      <li>✅ Prescrizione ricette</li>
-      <li>✅ Medicazioni a domicilio</li>
-    </ul>
-  </section>
+    <!-- Services -->
+    <div class="services">
+      <h3>In cosa posso aiutarti</h3>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon">🏥</div>
+          <div class="service-text">
+            <h4>Visita medica generale</h4>
+            <p>Consulti completi e approfonditi</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">💻</div>
+          <div class="service-text">
+            <h4>Telemedicina</h4>
+            <p>Consulenze online ovunque tu sia</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📋</div>
+          <div class="service-text">
+            <h4>Prescrizione ricette</h4>
+            <p>Ricette mediche rapide e sicure</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🩹</div>
+          <div class="service-text">
+            <h4>Medicazioni a domicilio</h4>
+            <p>Cure e medicazioni professionali</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula - Specializzando in Ortopedia e Traumatologia</p>
     <div class="socials">
-      <a href="#">Facebook</a> • 
-      <a href="#">LinkedIn</a> • 
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
       <a href="#">Email</a>
     </div>
   </footer>
 
   <script>
-    // Toggle menu mobile
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
+    
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('open');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('open');
+      }
     });
   </script>
 </body>
