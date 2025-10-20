@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Ricardo Paladino Marques de Paula</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Dr. Ricardo Paladino Marques de Paula</h1>
-    <p>Medico in formazione specialistica in Ortopedia e Traumatologia – Università di Milano</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">Chi sono</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contatti</a>
-    </nav>
-     <!-- Language switch -->
-    <div class="lang-switch">
-        <a href="/index.html"><img src="/images/italy-flag.png" alt="Italiano" width="30"></a>
-        <a href="/en/index.html"><img src="/images/usa-flag.png" alt="English" width="30"></a>
-        <a href="/pt/index.html"><img src="/images/bra-flag.png" alt="Português" width="30"></a>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
+    <div class="menu-icon" id="menuToggle">
+      ☰
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Chi sono</a>
+      <a href="#">Blog</a>
+      <a href="#">Contatti</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Benvenuto</h2>
-      <p>Questo è il sito professionale del Dr. Ricardo Paladino Marques de Paula, medico in formazione specialistica in Ortopedia e Traumatologia presso l’Università di Milano.</p> 
-      <p>Lavoro regolarmente in Italia e offro visite domiciliari per ricette, medicazioni e terapie ortopediche, organizzate su appuntamento. </p>
-      <p>Qui è possibile trovare informazioni sulla mia formazione, i miei ambiti di interesse clinico e i contatti professionali..</p>
-    </section>
-  </main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Dr. Ricardo Paladino<br>Marques de Paula</h2>
+      <div class="buttons">
+        <a href="#" class="btn"><span>📞</span> Contatti rapidi</a>
+        <a href="#" class="btn"><span>✉️</span> Scrivimi</a>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Dr. Ricardo Paladino Marques de Paula</p>
+  <!-- Dove visito -->
+  <section class="info-box">
+    <h3>Dove visito</h3>
+    <p>Visito i pazienti in ambito domiciliare in tutta Milano.</p>
+  </section>
+
+  <!-- Prenota una visita -->
+  <section class="info-box">
+    <h3>Prenota una visita</h3>
+    <p>Risolvi il tuo problema medico generale prenotando una visita medica.</p>
+  </section>
+
+  <!-- In cosa posso aiutarti -->
+  <section class="help-section">
+    <h3>In cosa posso aiutarti</h3>
+    <ul>
+      <li>✅ Visita medica generale</li>
+      <li>✅ Telemedicina</li>
+      <li>✅ Prescrizione ricette</li>
+      <li>✅ Medicazioni a domicilio</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <div class="socials">
+      <a href="#">Facebook</a> • 
+      <a href="#">LinkedIn</a> • 
+      <a href="#">Email</a>
+    </div>
   </footer>
+
+  <script>
+    // Toggle menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
