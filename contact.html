@@ -1,41 +1,80 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contatti - Dr. Ricardo Paladino Marques de Paula</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti – Dr. Ricardo Paladino Marques de Paula</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Contatti</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">Chi sono</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contatti</a>
-    </nav>
-      <!-- Language switch -->
-    <div class="lang-switch">
-        <a href="/index.html"><img src="/images/italy-flag.png" alt="Italiano" width="30"></a>
-        <a href="/en/index.html"><img src="/images/usa-flag.png" alt="English" width="30"></a>
-        <a href="/pt/index.html"><img src="/images/bra-flag.png" alt="Português" width="30"></a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
+    <div class="menu-icon" id="menuToggle">☰</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="chi-sono.html">Chi sono</a>
+      <a href="#">Blog</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <p>Puoi contattarmi tramite</p>
-      <p>il mio profilo LinkedIn:</p>
-      <p><a href="https://www.linkedin.com/in/ricardo-paladino-mp" target="_blank">linkedin.com/in/ricardo-paladino-mp</a></p>
-      <p>via email:</p>
-      <p>paladinoricardo@outlook.com</p>
-    </section>
-  </main>
+  <!-- Sezione Contatti -->
+  <section class="contact-section">
+    <h2>Contatti</h2>
+    <p>Per qualsiasi informazione o per prenotare una visita, puoi contattarmi direttamente compilando il modulo qui sotto.</p>
 
-  <footer>
-    <p>&copy; 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <form class="contact-form">
+      <label for="name">Nome e Cognome</label>
+      <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+      <label for="message">Messaggio</label>
+      <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+
+      <button type="submit" class="btn-submit">Invia messaggio</button>
+    </form>
+
+    <div class="quick-contacts">
+      <h3>Contatti rapidi</h3>
+      <a href="https://wa.me/391234567890" class="contact-btn">💬 WhatsApp</a>
+      <a href="mailto:ricardo.marques@example.com" class="contact-btn">✉️ Email diretta</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <div class="socials">
+      <a href="#">Facebook</a> • 
+      <a href="#">LinkedIn</a> • 
+      <a href="#">Email</a>
+    </div>
   </footer>
+
+  <script>
+    // Toggle menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+
+    // Messaggio di invio fittizio
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      alert("Messaggio inviato con successo! Ti ricontatterò al più presto.");
+      form.reset();
+    });
+  </script>
+
 </body>
 </html>
