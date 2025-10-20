@@ -6,6 +6,7 @@ Questo è un sito statico professionale sviluppato per la pubblicazione gratuita
 - `index.html` → Homepage
 - `about.html` → Pagina "Chi sono"
 - `contact.html` → Pagina "Contatti"
+- `blog.html` → Pagina "Blog"
 - `style.css` → Foglio di stile
 - `README.txt` → Istruzioni
 
