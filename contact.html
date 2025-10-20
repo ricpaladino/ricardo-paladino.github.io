@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contatti – Dr. Ricardo Paladino Marques de Paula</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
     <div class="logo">
-      <h1>Dr. Ricardo Paladino<br>Marques de Paula</h1>
+      <h1>Dr. Ricardo Paladino Marques de Paula</h1>
       <p>Specializzando in Ortopedia e Traumatologia</p>
     </div>
     <div class="menu-icon" id="menuToggle">☰</div>
-   <nav class="nav" id="navMenu">
+    <nav class="nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="chi-sono.html">Chi sono</a>
       <a href="blog.html">Blog</a>
@@ -24,57 +23,122 @@
     </nav>
   </header>
 
-  <!-- Sezione Contatti -->
-  <section class="contact-section">
-    <h2>Contatti</h2>
-    <p>Per qualsiasi informazione o per prenotare una visita, puoi contattarmi direttamente compilando il modulo qui sotto.</p>
-
-    <form class="contact-form">
-      <label for="name">Nome e Cognome</label>
-      <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
-
-      <label for="message">Messaggio</label>
-      <textarea id="message" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
-
-      <button type="submit" class="btn-submit">Invia messaggio</button>
-    </form>
-
-    <div class="quick-contacts">
-      <h3>Contatti rapidi</h3>
-      <a href="https://wa.me/391234567890" class="contact-btn">💬 WhatsApp</a>
-      <a href="mailto:ricardo.marques@example.com" class="contact-btn">✉️ Email diretta</a>
+  <!-- Hero Contatti -->
+  <section class="hero hero-small">
+    <div class="hero-text">
+      <h2>Contattami</h2>
+      <p>Sono qui per rispondere alle tue domande</p>
     </div>
   </section>
 
+  <!-- Sezione Contatti -->
+  <div class="container">
+    <div class="contact-wrapper">
+      <!-- Form di contatto -->
+      <div class="contact-form-card">
+        <h3>Invia un messaggio</h3>
+        <p class="form-intro">Compila il modulo e ti risponderò il prima possibile</p>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" id="name" name="name" placeholder="Mario Rossi" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="mario.rossi@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="6" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>✉️</span> Invia messaggio
+          </button>
+        </form>
+      </div>
+
+      <!-- Contatti rapidi -->
+      <div class="quick-contacts-card">
+        <h3>Contatti rapidi</h3>
+        <p class="contacts-intro">Preferisci contattarmi direttamente?</p>
+        
+        <div class="contact-methods">
+          <a href="https://wa.me/391234567890" class="contact-method">
+            <div class="contact-icon whatsapp">💬</div>
+            <div class="contact-info">
+              <h4>WhatsApp</h4>
+              <p>Rispondi immediata</p>
+            </div>
+          </a>
+
+          <a href="mailto:ricardo.marques@example.com" class="contact-method">
+            <div class="contact-icon email">✉️</div>
+            <div class="contact-info">
+              <h4>Email</h4>
+              <p>ricardo.marques@example.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+391234567890" class="contact-method">
+            <div class="contact-icon phone">📞</div>
+            <div class="contact-info">
+              <h4>Telefono</h4>
+              <p>+39 123 456 7890</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="availability-info">
+          <h4>Disponibilità</h4>
+          <p>📅 Lun - Ven: 9:00 - 19:00</p>
+          <p>📅 Sabato: 9:00 - 13:00</p>
+          <p>📅 Domenica: Su appuntamento</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+    <p>© 2025 Dr. Ricardo Paladino Marques de Paula - Specializzando in Ortopedia e Traumatologia</p>
     <div class="socials">
-      <a href="#">Facebook</a> • 
-      <a href="#">LinkedIn</a> • 
+      <a href="#">Facebook</a>
+      <a href="#">LinkedIn</a>
       <a href="#">Email</a>
     </div>
   </footer>
 
   <script>
-    // Toggle menu mobile
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
+    
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('open');
     });
 
-    // Messaggio di invio fittizio
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('open');
+      }
+    });
+
+    // Form submission
     const form = document.querySelector('.contact-form');
-    form.addEventListener('submit', e => {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
-      alert("Messaggio inviato con successo! Ti ricontatterò al più presto.");
-      form.reset();
+      const button = form.querySelector('.btn-submit');
+      const originalText = button.innerHTML;
+      
+      button.innerHTML = '<span>✓</span> Messaggio inviato!';
+      button.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
+      
+      setTimeout(() => {
+        form.reset();
+        button.innerHTML = originalText;
+        button.style.background = '';
+      }, 3000);
     });
   </script>
-
 </body>
 </html>
