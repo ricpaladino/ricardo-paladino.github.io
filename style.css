@@ -125,10 +125,10 @@
 }
 
 .timeline-date {
-  color: #* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 body {
