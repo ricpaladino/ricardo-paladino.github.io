@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dr. Ricardo Paladino Marques de Paula</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* BASE */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1588776814546-ec7e5f7b6c8f');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 55px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* BUTTON */
+.btn {
+  border: 1px solid #ecd19a;
+  padding: 12px 28px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1b3c37;
+}
+
+/* SECTION */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+/* CHI SONO */
+.about {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* FORMAZIONE */
+.education {
+  background: white;
+}
+
+.education p {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+/* CTA */
+.cta {
+  background: #1b3c37;
+  color: white;
+}
+
+.cta a {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #121212;
+  color: white;
+}
+
+footer a {
+  color: #ecd19a;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#chi">Chi sono</a>
+  <a href="#formazione">Formazione</a>
+  <a href="#contatti">Contatti</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Dr. Ricardo Paladino Marques de Paula</h1>
+    <p>Ortopedia e Traumatologia · Piede e Caviglia</p>
+    <a href="#contatti" class="btn">Contattami</a>
+  </div>
+</section>
+
+<!-- CHI SONO -->
+<section id="chi">
+  <h2>Chi sono</h2>
+  <div class="about">
+    <p>Sono specializzando in Ortopedia e Traumatologia, con particolare interesse per il piede e la caviglia.</p>
+
+    <p>Ho conseguito una doppia laurea in Medicina in Brasile e in Italia, e ho maturato esperienze in contesti clinici nazionali e internazionali.</p>
+
+    <p>Mi occupo di ortopedia generale utilizzando tecniche moderne e personalizzate, inclusa la medicina rigenerativa.</p>
+
+    <p>Credo in un approccio attento e su misura: ogni paziente viene ascoltato e seguito con cura.</p>
+  </div>
+</section>
+
+<!-- FORMAZIONE -->
+<section id="formazione" class="education">
+  <h2>Formazione</h2>
+
+  <p><strong>Specializzazione in Ortopedia e Traumatologia</strong><br>2022 – in corso · Università di Milano</p>
+
+  <p><strong>Seconda Laurea in Medicina e Chirurgia</strong><br>Università di Pavia · massimo dei voti</p>
+
+  <p><strong>Esperienze internazionali</strong><br>Italia, Europa e America Latina</p>
+
+  <p><strong>Prima Laurea in Medicina</strong><br>Università Federale di Santa Catarina (Brasile)</p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Hai bisogno di una consulenza?</h2>
+  <p>Contattami per prenotare una visita o ricevere informazioni</p>
+  <a href="mailto:paladinoricardo@outlook.com" class="btn">Scrivimi</a>
+</section>
+
+<!-- FOOTER -->
+<footer id="contatti">
+  <p>© 2025 Dr. Ricardo Paladino Marques de Paula</p>
+  <a href="#">LinkedIn</a>
+  <a href="mailto:paladinoricardo@outlook.com">Email</a>
+</footer>
+
+</body>
+</html>
