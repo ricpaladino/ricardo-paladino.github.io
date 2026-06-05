@@ -1,1 +1,592 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fascite Plantare — Dr. Ricardo Paladino</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ── BASE ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f2f2f2;
+  color: #4a4a4a;
+  line-height: 1.75;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 1000;
+  background: linear-gradient(rgba(0,0,0,0.45), transparent);
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+/* ── HERO ARTICOLO ── */
+.hero-article {
+  height: 62vh;
+  min-height: 400px;
+  background: linear-gradient(rgba(0,0,0,0.52), rgba(27,60,55,0.72)),
+              url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80');
+  background-size: cover;
+  background-position: center 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 8vw 60px;
+  color: white;
+}
+
+.hero-article-inner {
+  max-width: 760px;
+}
+
+.article-tag {
+  display: inline-block;
+  border: 1px solid #ecd19a;
+  color: #ecd19a;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  margin-bottom: 22px;
+  font-weight: 600;
+}
+
+.hero-article h1 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: clamp(32px, 5vw, 54px);
+  font-weight: 500;
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+
+.hero-article .subtitle {
+  font-size: 17px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.82);
+  margin: 0;
+}
+
+/* ── ARTICLE LAYOUT ── */
+.article-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 70px 24px 40px;
+}
+
+/* ── INTRO STRIP ── */
+.meta-strip {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 22px 28px;
+  background: white;
+  border-left: 4px solid #1b3c37;
+  margin-bottom: 54px;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: 0.3px;
+}
+
+.meta-strip span strong {
+  color: #1b3c37;
+  font-weight: 600;
+}
+
+/* ── TYPOGRAPHY ── */
+.article-wrap h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #1b3c37;
+  margin: 56px 0 18px;
+  text-align: left;
+}
+
+.article-wrap h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e5c56;
+  margin: 36px 0 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.article-wrap p {
+  font-size: 17px;
+  margin: 0 0 22px;
+  color: #4a4a4a;
+}
+
+/* ── HIGHLIGHT BOX ── */
+.highlight-box {
+  background: #1b3c37;
+  color: white;
+  padding: 28px 32px;
+  margin: 42px 0;
+  border-radius: 2px;
+}
+
+.highlight-box p {
+  color: rgba(255,255,255,0.9);
+  font-size: 16.5px;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── CALLOUT ── */
+.callout {
+  background: #fffdf5;
+  border: 1px solid #ecd19a;
+  padding: 24px 28px;
+  margin: 38px 0;
+}
+
+.callout-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a8843c;
+  margin-bottom: 10px;
+}
+
+.callout p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* ── TWO-COL COMPARISON ── */
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin: 42px 0;
+}
+
+.comparison-col {
+  padding: 30px 28px;
+}
+
+.comparison-col.sport {
+  background: #1b3c37;
+  color: white;
+}
+
+.comparison-col.sedentary {
+  background: #2e5c56;
+  color: white;
+}
+
+.comparison-col h3 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ecd19a;
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0 0 16px;
+}
+
+.comparison-col p {
+  font-size: 15.5px;
+  color: rgba(255,255,255,0.88);
+  margin: 0 0 12px;
+}
+
+.comparison-col p:last-child { margin: 0; }
+
+/* ── THERAPY GRID ── */
+.therapy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 34px 0;
+}
+
+.therapy-card {
+  background: white;
+  padding: 26px 24px;
+  border-top: 3px solid #1b3c37;
+}
+
+.therapy-card h4 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: #1b3c37;
+  margin: 0 0 10px;
+}
+
+.therapy-card p {
+  font-size: 15px;
+  margin: 0;
+  color: #5a5a5a;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 60px;
+  height: 2px;
+  background: #ecd19a;
+  margin: 50px 0 0;
+}
+
+/* ── REFERENCES ── */
+.references {
+  background: white;
+  padding: 44px 40px;
+  margin-top: 70px;
+  border-top: 2px solid #f2f2f2;
+}
+
+.references h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 22px;
+  color: #1b3c37;
+  margin: 0 0 28px;
+  text-align: left;
+}
+
+.references ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.references li {
+  font-size: 13.5px;
+  color: #6a6a6a;
+  margin-bottom: 12px;
+  line-height: 1.65;
+}
+
+.ref-tag {
+  font-style: italic;
+}
+
+/* ── CTA ── */
+.cta-section {
+  background: #1b3c37;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.cta-section h2 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin: 0 0 16px;
+  color: white;
+}
+
+.cta-section p {
+  font-size: 17px;
+  color: rgba(255,255,255,0.8);
+  margin: 0 0 30px;
+}
+
+.btn {
+  border: 1px solid #ecd19a;
+  padding: 12px 28px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.btn:hover { background: rgba(236,209,154,0.15); }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #121212;
+  color: white;
+  font-size: 13px;
+}
+
+footer a {
+  color: #ecd19a;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* ── BACK LINK ── */
+.back-link {
+  display: inline-block;
+  margin-bottom: 38px;
+  font-size: 13px;
+  color: #1b3c37;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.back-link::before {
+  content: '← ';
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .comparison { grid-template-columns: 1fr; }
+  .therapy-grid { grid-template-columns: 1fr; }
+  .hero-article { padding: 0 6vw 48px; }
+  .references { padding: 36px 24px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html#chi">Chi sono</a>
+  <a href="index.html#formazione">Formazione</a>
+  <a href="index.html#contatti">Contatti</a>
+  <a href="blog.html">Blog</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero-article">
+  <div class="hero-article-inner">
+    <div class="article-tag">Piede e Caviglia · Patologie</div>
+    <h1>Fascite Plantare</h1>
+    <p class="subtitle">Dalla diagnosi alla terapia: un approccio personalizzato per il paziente sportivo e sedentario</p>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<div class="article-wrap">
+
+  <a href="blog.html" class="back-link">Torna al Blog</a>
+
+  <div class="meta-strip">
+    <span><strong>Autore</strong> — Dr. Ricardo Paladino, MD</span>
+    <span><strong>Specializzazione</strong> — Ortopedia e Traumatologia, Piede e Caviglia</span>
+    <span><strong>Aggiornato</strong> — 2026</span>
+  </div>
+
+  <!-- INTRO -->
+  <p>
+    La fascite plantare è la causa più frequente di dolore al tallone nell'adulto. Si stima che interessi fino all'11% della popolazione nel corso della vita, con un picco di incidenza tra i 40 e i 60 anni nei soggetti sedentari e tra i 20 e i 40 anni negli sportivi. Nonostante la sua diffusione, la patologia viene spesso sottovalutata nei primi stadi, con il rischio di cronicizzazione e compromissione significativa della qualità di vita.
+  </p>
+
+  <p>
+    La fascia plantare è una struttura fibroaponeurotica che origina dal tubercolo mediale del calcagno e si estende distalmente verso le dita del piede. Ha un ruolo biomeccanico essenziale: stabilizza l'arco longitudinale del piede durante il carico e partecipa al meccanismo di propulsione nella fase di spinta del passo. Quando le forze di trazione ripetute superano la capacità di adattamento tissutale, si innesca un processo degenerativo — non strettamente infiammatorio come a lungo si è creduto — che prende il nome di fasciopatia o fascite plantare.
+  </p>
+
+  <div class="highlight-box">
+    <p>
+      Il termine "fascite" suggerisce un processo infiammatorio acuto, ma le evidenze istologiche degli ultimi vent'anni indicano che la lesione è in realtà una tendinopatia degenerativa da sovraccarico: fibre collagene disorganizzate, neovascolarizzazione e necrosi cellulare, senza un infiltrato infiammatorio rilevante nei casi cronici.
+    </p>
+  </div>
+
+  <!-- SINTOMI -->
+  <h2>Presentazione Clinica e Sintomi</h2>
+
+  <p>
+    Il dolore plantare si localizza tipicamente alla tuberosità mediale del calcagno o lungo il decorso prossimale della fascia. La caratteristica clinica più riconoscibile è il cosiddetto <strong>dolore di avvio</strong>: il paziente riferisce una fitta acuta ai primi passi del mattino o dopo un periodo prolungato di riposo, che tende ad attenuarsi dopo qualche minuto di deambulazione. Paradossalmente, in molti casi il dolore si riacutizza verso la fine della giornata, quando la struttura è affaticata dal carico accumulato.
+  </p>
+
+  <p>
+    La palpazione diretta della tuberosità mediale del calcagno evoca dolore nel 70–80% dei pazienti, e questa semplice manovra diagnostica mantiene un'elevata sensibilità clinica. L'estensione passiva delle dita del piede — che tende la fascia per via del meccanismo del verricello (windlass mechanism) — può accentuare il dolore e viene utilizzata come test di conferma durante la visita.
+  </p>
+
+  <div class="callout">
+    <div class="callout-label">Segnali di allarme</div>
+    <p>Un dolore diffuso, bilaterale, associato a rigidità mattutina sistemica o a sintomi articolari multipli deve far sospettare una patologia reumatologica sottostante (spondilite anchilosante, artrite psoriasica, sindrome di Reiter) e richiede una valutazione specialistica mirata prima di iniziare qualsiasi trattamento locale.</p>
+  </div>
+
+  <!-- DIAGNOSI -->
+  <h2>Diagnosi</h2>
+
+  <p>
+    La diagnosi è prevalentemente clinica. Tuttavia, il ricorso a strumenti di imaging consente di confermare il sospetto, escludere diagnosi differenziali e valutare l'entità del danno strutturale, informazione fondamentale per orientare la scelta terapeutica.
+  </p>
+
+  <h3>Radiografia del piede</h3>
+  <p>
+    Rappresenta il primo livello di imaging. Permette di rilevare la presenza di uno sperone calcaneare, che si riscontra nel 50% circa dei pazienti con fascite plantare ma è presente anche nel 20% della popolazione asintomatica. Lo sperone, pertanto, non è la causa del dolore ma un marcatore di sovraccarico cronico della fascia. La radiografia esclude anche fratture da stress del calcagno, importante diagnosi differenziale nello sportivo.
+  </p>
+
+  <h3>Ecografia muscolo-scheletrica</h3>
+  <p>
+    È l'esame di scelta nella pratica clinica quotidiana. Consente di misurare lo spessore della fascia plantare prossimale (valori superiori a 4 mm sono considerati patologici), evidenziare alterazioni ecostrutturali (ipoecogenicità, perdita dell'architettura fascicolare), e identificare in tempo reale aree di neovascolarizzazione al color Doppler. L'ecografia guida inoltre le procedure interventistiche come le infiltrazioni ecoguidate. Un ulteriore vantaggio è la possibilità di confrontare il lato sintomatico con quello controlaterale nella stessa seduta.
+  </p>
+
+  <h3>Risonanza Magnetica (RM)</h3>
+  <p>
+    Riservata ai casi di dubbio diagnostico, mancata risposta al trattamento conservativo prolungato, o sospetto di patologia ossea concomitante. La RM mostra con elevata sensibilità edema perilesionale, parziali o complete rotture della fascia, e alterazioni del midollo osseo calcaneare. È l'esame di riferimento per la valutazione pre-chirurgica.
+  </p>
+
+  <!-- PAZIENTE SPORTIVO VS SEDENTARIO -->
+  <h2>Un Approccio Diverso per ogni Paziente</h2>
+
+  <p>
+    Il profilo del paziente è determinante nella pianificazione terapeutica. Il soggetto sportivo e quello sedentario condividono la patologia ma presentano biomeccaniche, richieste funzionali e obiettivi di trattamento profondamente diversi. Trattarli con lo stesso protocollo significa spesso trattarli male.
+  </p>
+
+  <div class="comparison">
+    <div class="comparison-col sport">
+      <h3>Il Paziente Sportivo</h3>
+      <p>La fascite plantare nello sportivo riconosce come causa principale il sovraccarico funzionale: incremento rapido del volume o dell'intensità di allenamento, variazione del fondo o delle calzature, o recupero da un infortunio precedente che ha alterato il pattern di carico.</p>
+      <p>Corridori, calciatori, tennisti e danzatori sono tra le categorie più colpite. In questi pazienti, la restrizione totale dell'attività è controproducente: l'obiettivo è mantenere il carico entro la soglia di tolleranza tissutale, modulando l'allenamento piuttosto che sospendendolo del tutto.</p>
+      <p>La scelta del protocollo riabilitativo deve tenere conto dello sport praticato: un corridore di fondo ha esigenze diverse da un pallavolista. La biomeccanica del gesto atletico specifica — analisi del passo, del salto, della ricezione — è parte integrante della valutazione.</p>
+    </div>
+    <div class="comparison-col sedentary">
+      <h3>Il Paziente Sedentario</h3>
+      <p>Nel paziente con bassa o nulla attività fisica, la fascite plantare è spesso associata a sovrappeso, postura in piedi prolungata per ragioni lavorative, calzature non idonee, o a un piede con deformità strutturale non compensata (piede piatto, piede cavo).</p>
+      <p>In questo profilo, la richiesta funzionale è più modesta ma non meno reale: l'obiettivo è il recupero della deambulazione quotidiana senza dolore. Il trattamento deve essere sostenibile sul lungo periodo, con strategie che si integrino nello stile di vita del paziente e non lo richiedano di adottare routine atletiche irrealistiche.</p>
+      <p>Il controllo del peso, la scelta delle calzature e l'ergonomia lavorativa diventano parte del piano terapeutico tanto quanto gli esercizi specifici.</p>
+    </div>
+  </div>
+
+  <!-- TERAPIE -->
+  <h2>Terapia: dal Conservativo al Chirurgico</h2>
+
+  <p>
+    Circa il 90% dei pazienti risponde favorevolmente al trattamento conservativo condotto con metodica e costanza. Il trattamento è tuttavia un processo graduale: i tempi di guarigione si misurano in mesi, non in settimane, e la comunicazione realistica di questa tempistica al paziente è parte integrante della gestione clinica.
+  </p>
+
+  <h3>Primo Livello</h3>
+
+  <div class="therapy-grid">
+    <div class="therapy-card">
+      <h4>Stretching e Fisioterapia</h4>
+      <p>Gli esercizi di stretching della fascia plantare e del tendine di Achille rappresentano il cardine del trattamento conservativo. Il protocollo di Digiovanni — stretching specifico della fascia plantare eseguito prima di alzarsi dal letto — ha dimostrato risultati superiori rispetto allo stretching del tendine d'Achille da solo. L'inserimento di un programma di rinforzo eccentrico del tricipite surale completa il trattamento riabilitativo di base.</p>
+    </div>
+    <div class="therapy-card">
+      <h4>Ortesi Plantari e Calzature</h4>
+      <p>Le ortesi plantari personalizzate o semipersonalizzate riducono il picco di tensione sulla fascia attraverso il supporto dell'arco mediale e il cuscinetto calcaneare. Le evidenze supportano l'utilizzo combinato di ortesi e stretching rispetto all'uno o all'altro in isolamento. Il tutore notturno (night splint), che mantiene la caviglia in dorsiflessione durante il sonno, riduce la retrazione del complesso gastrocnemio-soleo e attenua il dolore da avvio mattutino.</p>
+    </div>
+    <div class="therapy-card">
+      <h4>Farmacoterapia Topica e FANS</h4>
+      <p>L'utilizzo di FANS orali è indicato nelle fasi acute per il controllo del dolore, ma non modifica la storia naturale della malattia e non dovrebbe essere prolungato oltre le 2–3 settimane. La terapia topica con diclofenac gel rappresenta un'alternativa con profilo di sicurezza sistemica superiore. I corticosteroidi per via orale sono sconsigliati nella gestione routinaria per il rischio di effetti collaterali sistemici.</p>
+    </div>
+    <div class="therapy-card">
+      <h4>Onde d'Urto Extracorporee (ESWT)</h4>
+      <p>La terapia con onde d'urto extracorporee è oggi considerata il trattamento di seconda linea di riferimento nei casi refrattari al trattamento conservativo standard per almeno 3–6 mesi. Il meccanismo d'azione comprende la stimolazione della neovascolarizzazione, l'iperstimolazione dei nocicettori con modulazione del dolore, e la promozione della rigenerazione tissutale. I risultati a lungo termine mostrano tassi di successo intorno al 70–80% nei casi cronici. È disponibile in forma focale (più precisa, utilizzata a livello specialistico) o radiale (più diffusa).</p>
+    </div>
+  </div>
+
+  <h3>Terapie Infiltrative</h3>
+
+  <p>
+    Le infiltrazioni di corticosteroidi ecoguidate offrono un sollievo rapido dal dolore nel breve termine, ma le evidenze a lungo termine sono meno convincenti. Un rischio non trascurabile è la rottura parziale o completa della fascia plantare, stimata intorno al 2–4% dopo infiltrazioni ripetute. Per questo motivo, si raccomanda di limitarsi a un massimo di 2–3 infiltrazioni per trattamento, con una valutazione critica del rapporto rischio-beneficio dopo ogni ciclo.
+  </p>
+
+  <p>
+    Le <strong>infiltrazioni di PRP (Plasma Ricco di Piastrine)</strong> rappresentano una delle opzioni terapeutiche più studiate negli ultimi anni. Il PRP contiene fattori di crescita che stimolano la rigenerazione del tessuto connettivo degenerato. Le meta-analisi più recenti mostrano risultati comparabili o superiori al cortisone nel medio-lungo termine (6–12 mesi), con un profilo di sicurezza nettamente migliore e assenza del rischio di rottura fasciale. L'iniezione ecoguidata garantisce la precisione della deposizione del prodotto nel sito di massima lesione.
+  </p>
+
+  <div class="callout">
+    <div class="callout-label">PRP nel paziente sportivo</div>
+    <p>Nello sportivo agonistico, l'infiltrazione di PRP è particolarmente indicata per il minor impatto sui tempi di recupero atletico rispetto ai corticosteroidi, che possono mascherare il dolore senza trattare la lesione sottostante e aumentare il rischio di rottura in caso di ripresa precoce dell'attività.</p>
+  </div>
+
+  <h3>Trattamento Chirurgico</h3>
+
+  <p>
+    La chirurgia è riservata al 5–10% dei pazienti che non rispondono a un trattamento conservativo ben condotto per almeno 6–12 mesi. Le opzioni includono il release parziale della fascia plantare, per via aperta o endoscopica, e la decompressione del nervo di Baxter (ramo del nervo plantare laterale che può essere intrappolato nei casi di fascite cronica).
+  </p>
+
+  <p>
+    L'approccio endoscopico — fasciotomia plantare endoscopica (EPF) — ha guadagnato ampio consenso negli ultimi anni per la minore invasività, il recupero più rapido e la ridotta morbilità rispetto alla tecnica a cielo aperto. I risultati a lungo termine mostrano tassi di soddisfazione superiori all'85% nei pazienti correttamente selezionati.
+  </p>
+
+  <p>
+    È fondamentale che la chirurgia non venga intrapresa prima di un adeguato percorso conservativo documentato: la fasciotomia parziale, se eseguita con indicazione impropria, può alterare la biomeccanica del piede in modo non prevedibile, con il rischio di sviluppare una deformità secondaria o un dolore persistente di diversa natura.
+  </p>
+
+  <div class="highlight-box">
+    <p>
+      L'obiettivo finale del trattamento non è la scomparsa dell'alterazione ecografica — che può persistere anche dopo la remissione clinica completa — ma il recupero funzionale pieno e duraturo. Il paziente va accompagnato in un percorso di gestione attiva della propria patologia, non semplicemente trattato in modo puntuale.
+    </p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- REFERENCES -->
+  <div class="references">
+    <h2>Riferimenti Bibliografici</h2>
+    <ol>
+      <li>
+        Plantar fasciitis. <span class="ref-tag">DiGiovanni BF, Nawoczenski DA, Lintal ME, et al. Tissue-specific plantar fascia-stretching exercise enhances outcomes in patients with chronic heel pain: a prospective, randomized study. <em>J Bone Joint Surg Am.</em> 2003;85(7):1270–1277.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Goff JD, Crawford R. Diagnosis and treatment of plantar fasciitis. <em>Am Fam Physician.</em> 2011;84(6):676–682.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Lemont H, Ammirati KM, Usen N. Plantar fasciitis: a degenerative process (fasciosis) without inflammation. <em>J Am Podiatr Med Assoc.</em> 2003;93(3):234–237.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Rompe JD, Cacchio A, Weil L Jr, et al. Plantar fascia-specific stretching versus radial shock-wave therapy as initial treatment of plantar fasciopathy. <em>J Bone Joint Surg Am.</em> 2010;92(15):2514–2522.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Monto RR. Platelet rich plasma efficacy versus corticosteroid injection treatment for chronic severe plantar fasciitis. <em>Foot Ankle Int.</em> 2014;35(4):313–318.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Acevedo JI, Beskin JL. Complications of plantar fascia rupture associated with corticosteroid injection. <em>Foot Ankle Int.</em> 1998;19(2):91–97.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Shetty VD, Dhillon M, Hegde C, et al. A study to compare the efficacy of corticosteroid therapy with platelet-rich plasma therapy in recalcitrant plantar fasciitis: a preliminary report. <em>Foot Ankle Surg.</em> 2014;20(1):10–13.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Barrett SL, Day SV. Endoscopic plantar fasciotomy for chronic plantar fasciitis/heel spur syndrome: surgical technique — early clinical results. <em>J Foot Surg.</em> 1991;30(6):568–570.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Thomas JL, Christensen JC, Kravitz SR, et al. The diagnosis and treatment of heel pain: a clinical practice guideline. <em>J Foot Ankle Surg.</em> 2010;49(3 Suppl):S1–S19.</span>
+      </li>
+      <li>
+        <span class="ref-tag">Trojian T, Tucker AK. Plantar fasciitis. <em>Am Fam Physician.</em> 2019;99(12):744–750.</span>
+      </li>
+    </ol>
+  </div>
+
+</div><!-- end article-wrap -->
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Hai un dolore al tallone che non passa?</h2>
+  <p>Una valutazione clinica precoce fa la differenza tra una risoluzione rapida e una cronicizzazione.</p>
+  <a href="mailto:paladinoricardo@outlook.com" class="btn">Prenota una consulenza</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 — Dr. Ricardo Paladino · Specializzando Ortopedia e Traumatologia · Università degli Studi di Milano</p>
+  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">LinkedIn</a>
+  <a href="mailto:paladinoricardo@outlook.com">Email</a>
+</footer>
+
+</body>
+</html>
 
