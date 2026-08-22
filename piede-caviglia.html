@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-46VKZLK2V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-46VKZLK2V8');
+  </script>
+
+  <!-- Base -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Ortopedia Piede e Caviglia Milano | Dr. Ricardo Paladino</title>
+
+  <meta
+    name="description"
+    content="Informazioni sulle principali patologie del piede e della caviglia: alluce valgo, instabilità di caviglia, tendine d'Achille, fascite plantare, artrosi e traumatologia."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://drpaladino.com/piede-caviglia.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ortopedia del Piede e della Caviglia | Dr. Ricardo Paladino">
+  <meta
+    property="og:description"
+    content="Informazioni sulle principali patologie del piede e della caviglia, dalla traumatologia alle patologie degenerative e sportive."
+  >
+  <meta property="og:url" content="https://drpaladino.com/piede-caviglia.html">
+  <meta property="og:site_name" content="Dr. Ricardo Paladino">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Twitter / social -->
+  <meta name="twitter:card" content="summary">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://drpaladino.com/#person",
+    "name": "Ricardo Paladino Marques de Paula",
+    "honorificPrefix": "Dr.",
+    "url": "https://drpaladino.com/",
+    "jobTitle": "Medico specializzando in Ortopedia e Traumatologia",
+    "medicalSpecialty": {
+      "@type": "MedicalSpecialty",
+      "name": "Orthopedic"
+    },
+    "description": "Medico specializzando in Ortopedia e Traumatologia presso l'Università degli Studi di Milano, con particolare interesse nelle patologie del piede e della caviglia.",
+    "knowsAbout": [
+      "Ortopedia e Traumatologia",
+      "Ortopedia del piede e della caviglia",
+      "Alluce valgo",
+      "Alluce rigido",
+      "Instabilità di caviglia",
+      "Artrosi di caviglia",
+      "Tendinopatia achillea",
+      "Fascite plantare",
+      "Traumatologia del piede e della caviglia"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Università degli Studi di Pavia"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidade Federal de Santa Catarina"
+      }
+    ],
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Università degli Studi di Milano"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ricardo-paladino-mp"
+    ]
+  }
+  </script>
+
+  <style>
+
+    /* BASE */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #f2f2f2;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      text-align: center;
+      padding: 20px 10px;
+      z-index: 1000;
+      background: rgba(18, 18, 18, 0.88);
+      backdrop-filter: blur(6px);
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ecd19a;
+    }
+
+    nav a.active {
+      color: #ecd19a;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 75vh;
+      padding: 130px 20px 80px;
+      background:
+        linear-gradient(rgba(0,0,0,0.58), rgba(0,0,0,0.58)),
+        url('https://images.unsplash.com/photo-1588776814546-ec7e5f7b6c8f');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 780px;
+      margin: 0 auto 30px;
+    }
+
+    /* BUTTON */
+    .btn {
+      border: 1px solid #ecd19a;
+      padding: 12px 28px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #1b3c37;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 38px;
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .intro p {
+      font-size: 19px;
+      margin-bottom: 20px;
+    }
+
+    /* AREAS */
+    .areas {
+      background: white;
+    }
+
+    .areas-intro {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      font-size: 18px;
+    }
+
+    .cards {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: left;
+    }
+
+    .card {
+      background: #f7f7f7;
+      padding: 35px;
+      border-top: 3px solid #ecd19a;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 27px;
+      color: #1b3c37;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card li {
+      padding: 10px 0;
+      border-bottom: 1px solid #dedede;
+    }
+
+    .card li:last-child {
+      border-bottom: none;
+    }
+
+    .card a {
+      color: #4a4a4a;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .card a:hover {
+      color: #1b3c37;
+    }
+
+    /* APPROCCIO */
+    .approach {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .approach p {
+      font-size: 18px;
+    }
+
+    /* BLOG SECTION */
+    .blog-section {
+      background: #e7ebe9;
+    }
+
+    .blog-section p {
+      max-width: 760px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    .blog-link {
+      color: #1b3c37;
+      border: 1px solid #1b3c37;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .blog-link:hover {
+      background: #1b3c37;
+      color: white;
+    }
+
+    /* CTA */
+    .cta {
+      background: #1b3c37;
+      color: white;
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #121212;
+      color: white;
+    }
+
+    footer p {
+      margin-top: 0;
+    }
+
+    footer a {
+      color: #ecd19a;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+
+      nav {
+        padding: 15px 5px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 19px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      nav a {
+        display: inline-block;
+        margin: 4px 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 80vh;
+        padding-top: 160px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 31px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="index.html#chi">Chi sono</a>
+  <a href="piede-caviglia.html" class="active">Piede e Caviglia</a>
+  <a href="index.html#formazione">Formazione</a>
+  <a href="blog.html">Blog</a>
+  <a href="#contatti">Contatti</a>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+
+    <h1>Ortopedia del Piede e della Caviglia</h1>
+
+    <p>
+      Informazioni sulle principali patologie del piede e della caviglia,
+      dalla traumatologia alle condizioni degenerative, sportive e biomeccaniche.
+    </p>
+
+    <a href="#patologie" class="btn">Scopri le patologie</a>
+
+  </div>
+</section>
+
+
+<!-- INTRODUZIONE -->
+<section>
+  <div class="intro">
+
+    <h2>Piede e caviglia</h2>
+
+    <p>
+      Il piede e la caviglia costituiscono un sistema complesso di ossa,
+      articolazioni, tendini e legamenti che permette di sostenere il peso corporeo,
+      camminare, correre e adattarsi alle diverse superfici.
+    </p>
+
+    <p>
+      Dolore, instabilità o limitazione del movimento possono derivare da traumi,
+      alterazioni biomeccaniche, attività sportiva, patologie degenerative
+      o sovraccarico funzionale.
+    </p>
+
+    <p>
+      La valutazione ortopedica permette di individuare la causa dei sintomi
+      e impostare un percorso diagnostico e terapeutico personalizzato,
+      che può comprendere trattamenti conservativi o, quando indicato,
+      soluzioni chirurgiche.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- PATOLOGIE -->
+<section id="patologie" class="areas">
+
+  <h2>Principali patologie</h2>
+
+  <p class="areas-intro">
+    Consulta le principali condizioni che possono interessare il piede,
+    la caviglia e le strutture tendinee.
+  </p>
+
+  <div class="cards">
+
+    <!-- PIEDE -->
+    <div class="card">
+
+      <h3>Patologie del piede</h3>
+
+      <ul>
+        <li>
+          <a href="blog.html">Alluce valgo</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Alluce rigido</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Fascite plantare</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Metatarsalgia</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Neuroma di Morton</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Piede piatto dell'adulto</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- CAVIGLIA -->
+    <div class="card">
+
+      <h3>Patologie della caviglia</h3>
+
+      <ul>
+        <li>
+          <a href="blog.html">Distorsione di caviglia</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Instabilità cronica di caviglia</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Artrosi di caviglia</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Lesioni osteocondrali dell'astragalo</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Impingement della caviglia</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Fratture della caviglia</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!-- TENDINI -->
+    <div class="card">
+
+      <h3>Tendini e sport</h3>
+
+      <ul>
+        <li>
+          <a href="blog.html">Tendinopatia achillea</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Rottura del tendine d'Achille</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Tendini peronieri</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Tendine tibiale posteriore</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Traumi sportivi del piede</a>
+        </li>
+
+        <li>
+          <a href="blog.html">Traumi sportivi della caviglia</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- APPROCCIO -->
+<section>
+
+  <div class="approach">
+
+    <h2>Valutazione e trattamento</h2>
+
+    <p>
+      Il trattamento delle patologie del piede e della caviglia dipende dalla
+      diagnosi, dalla gravità dei sintomi, dalle caratteristiche anatomiche
+      e dalle esigenze funzionali della persona.
+    </p>
+
+    <p>
+      Quando possibile, il percorso terapeutico può comprendere modifiche
+      dell'attività, fisioterapia, esercizio terapeutico, ortesi,
+      terapia farmacologica o trattamenti infiltrativi.
+    </p>
+
+    <p>
+      Nei casi in cui il trattamento conservativo non sia sufficiente,
+      può essere presa in considerazione una soluzione chirurgica,
+      valutando indicazioni, benefici attesi e possibili alternative.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- BLOG -->
+<section class="blog-section">
+
+  <h2>Approfondimenti</h2>
+
+  <p>
+    Nel blog trovi articoli dedicati alle principali patologie del piede
+    e della caviglia, con approfondimenti su sintomi, diagnosi,
+    trattamenti e recupero funzionale.
+  </p>
+
+  <a href="blog.html" class="blog-link">
+    Vai al blog
+  </a>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+  <h2>Hai bisogno di una consulenza?</h2>
+
+  <p>
+    Contattami per prenotare una visita o ricevere informazioni.
+  </p>
+
+  <a href="mailto:paladinoricardo@outlook.com" class="btn">
+    Scrivimi
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contatti">
+
+  <p>
+    © 2026 — Dr. Ricardo Paladino Marques de Paula ·
+    Specializzando Ortopedia e Traumatologia ·
+    Università degli Studi di Milano
+  </p>
+
+  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">
+    LinkedIn
+  </a>
+
+  <a href="mailto:paladinoricardo@outlook.com">
+    Email
+  </a>
+
+</footer>
+
+</body>
+</html>
