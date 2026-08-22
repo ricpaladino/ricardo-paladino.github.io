@@ -1,166 +1,411 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-46VKZLK2V8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-46VKZLK2V8');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-46VKZLK2V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-46VKZLK2V8');
+  </script>
 
-<title>Blog | Dr. Ricardo Paladino</title>
-<link rel="icon" type="image/png" href="../favicon.png">
+  <!-- Base -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <title>Blog Ortopedia Piede e Caviglia | Dr. Ricardo Paladino</title>
 
-<style>
+  <meta
+    name="description"
+    content="Approfondimenti su ortopedia del piede e della caviglia: alluce valgo, instabilità di caviglia, fascite plantare, dolore al tallone e altre patologie."
+  >
 
-body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f2f2f2;
-  color: #4a4a4a;
-}
+  <meta name="robots" content="index, follow">
 
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  text-align: center;
-  padding: 20px 0;
-  background: #1b3c37;
-  z-index: 1000;
-}
+  <link rel="canonical" href="https://drpaladino.com/blog.html">
 
-nav a {
-  margin: 0 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog Ortopedia Piede e Caviglia | Dr. Ricardo Paladino">
+  <meta
+    property="og:description"
+    content="Articoli e approfondimenti sulle principali patologie del piede e della caviglia."
+  >
+  <meta property="og:url" content="https://drpaladino.com/blog.html">
+  <meta property="og:site_name" content="Dr. Ricardo Paladino">
+  <meta property="og:locale" content="it_IT">
 
-header {
-  height: 50vh;
-  background: #1b3c37;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  <!-- Social -->
+  <meta name="twitter:card" content="summary">
 
-header h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 48px;
-}
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
 
-section {
-  padding: 80px 20px;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.blog-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
-}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
 
-.blog-card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
+  <style>
 
-.blog-card h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 24px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.blog-card p {
-  font-size: 15px;
-  margin: 15px 0;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.blog-card a {
-  text-decoration: none;
-  color: #1b3c37;
-  font-weight: 600;
-}
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #f2f2f2;
+      color: #4a4a4a;
+      line-height: 1.6;
+    }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #121212;
-  color: white;
-}
+    /* NAV */
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      text-align: center;
+      padding: 20px 10px;
+      background: rgba(27, 60, 55, 0.96);
+      z-index: 1000;
+    }
 
-footer a {
-  color: #ecd19a;
-  margin: 0 10px;
-  text-decoration: none;
-}
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
 
-</style>
+    nav a:hover {
+      color: #ecd19a;
+    }
+
+    nav a.active {
+      color: #ecd19a;
+    }
+
+    /* HEADER */
+    header {
+      min-height: 55vh;
+      padding: 120px 20px 70px;
+      background: #1b3c37;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* INTRO */
+    .intro {
+      max-width: 850px;
+      margin: auto;
+      padding: 70px 20px 20px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 36px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .intro p {
+      font-size: 18px;
+    }
+
+    /* BLOG */
+    section {
+      padding: 50px 20px 90px;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .blog-card {
+      background: white;
+      padding: 30px;
+      border-top: 3px solid #ecd19a;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .blog-card h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 26px;
+      color: #1b3c37;
+      margin-top: 0;
+      font-weight: 500;
+    }
+
+    .blog-card p {
+      font-size: 16px;
+      margin: 15px 0 20px;
+    }
+
+    .blog-card a {
+      text-decoration: none;
+      color: #1b3c37;
+      font-weight: 600;
+    }
+
+    .blog-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* HUB LINK */
+    .hub {
+      background: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hub h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 34px;
+      color: #333;
+      font-weight: 500;
+      margin-top: 0;
+    }
+
+    .hub p {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #1b3c37;
+      color: #1b3c37;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1b3c37;
+      color: white;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      background: #121212;
+      color: white;
+    }
+
+    footer a {
+      color: #ecd19a;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+
+      nav a {
+        display: inline-block;
+        margin: 4px 7px;
+        font-size: 13px;
+      }
+
+      header {
+        padding-top: 150px;
+      }
+
+      header h1 {
+        font-size: 38px;
+      }
+
+      .intro h2 {
+        font-size: 31px;
+      }
+    }
+
+  </style>
+
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
-  <a href="../index.html#chi">Chi sono</a>
-  <a href="../index.html#formazione">Formazione</a>
-  <a href="/blog.html">Blog</a>
-  <a href="../index.html#contatti">Contatti</a>
+  <a href="index.html">Home</a>
+  <a href="index.html#chi">Chi sono</a>
+  <a href="piede-caviglia.html">Piede e Caviglia</a>
+  <a href="index.html#formazione">Formazione</a>
+  <a href="blog.html" class="active">Blog</a>
+  <a href="index.html#contatti">Contatti</a>
 </nav>
 
+
+<!-- HEADER -->
 <header>
   <div>
-    <h1>Blog</h1>
-    <p>Approfondimenti su ortopedia, piede e caviglia</p>
+    <h1>Blog di Ortopedia</h1>
+    <p>
+      Approfondimenti sulle principali patologie del piede e della caviglia,
+      dalla diagnosi alle possibilità di trattamento.
+    </p>
   </div>
 </header>
 
+
+<!-- INTRO -->
+<div class="intro">
+
+  <h2>Piede e caviglia: informazioni per i pazienti</h2>
+
+  <p>
+    In questa sezione trovi articoli dedicati alle condizioni più comuni
+    del piede e della caviglia, con informazioni su sintomi, diagnosi,
+    trattamento conservativo e indicazioni chirurgiche.
+  </p>
+
+</div>
+
+
+<!-- ARTICOLI -->
 <section>
+
   <div class="blog-container">
 
-    <div class="blog-card">
-      <h2>Alluce valgo: quando si opera e quando no"</h2>
-      <p>Indicazioni chirurgiche, sintomi e alternative terapeutiche.</p>
-      <a href="blog/alluce-valgo.html">Leggi articolo →</a>
-    </div>
+    <article class="blog-card">
+      <h2>Alluce valgo: quando si opera e quando no</h2>
 
-    <div class="blog-card">
+      <p>
+        Indicazioni chirurgiche, sintomi e principali alternative terapeutiche
+        per il trattamento dell'alluce valgo.
+      </p>
+
+      <a href="blog/alluce-valgo.html">
+        Leggi articolo →
+      </a>
+    </article>
+
+
+    <article class="blog-card">
       <h2>Instabilità di caviglia</h2>
-      <p>Dolore alla caviglia dopo un trauma distorsivo: cosa può essere e come si tratta</p>
-      <a href="blog/instabilita-caviglia.html">Leggi articolo →</a>
-    </div>
 
-    <div class="blog-card">
-      <h2>Fascite Plantare</h2>
-      <p>Dolore al tallone al mattino: cos'è la fascite plantare e come si tratta</p>
-      <a href="blog/fascite-plantare.html">Leggi articolo →</a>
-    </div>
+      <p>
+        Cosa significa quando la caviglia continua a cedere dopo una distorsione
+        e quali sono le possibilità di trattamento.
+      </p>
 
-    <div class="blog-card">
-      <h2>Dolore al tallone</h2>
-      <p>Le 7 cause più comuni e come diagnosticarle</p>
-      <a href="blog/dolore-tallone.html">Leggi articolo →</a>
-    </div>
+      <a href="blog/instabilita-caviglia.html">
+        Leggi articolo →
+      </a>
+    </article>
+
+
+    <article class="blog-card">
+      <h2>Fascite plantare</h2>
+
+      <p>
+        Dolore al tallone soprattutto al mattino: cos'è la fascite plantare,
+        perché compare e come viene trattata.
+      </p>
+
+      <a href="blog/fascite-plantare.html">
+        Leggi articolo →
+      </a>
+    </article>
+
+
+    <article class="blog-card">
+      <h2>Dolore al tallone: le cause più comuni</h2>
+
+      <p>
+        Non tutto il dolore al tallone è fascite plantare:
+        scopri alcune delle principali possibili cause e come distinguerle.
+      </p>
+
+      <a href="blog/dolore-tallone.html">
+        Leggi articolo →
+      </a>
+    </article>
 
   </div>
+
 </section>
 
+
+<!-- LINK PAGINA PILASTRO -->
+<section class="hub">
+
+  <h2>Patologie del piede e della caviglia</h2>
+
+  <p>
+    Consulta la sezione dedicata alle principali patologie del piede,
+    della caviglia e delle strutture tendinee.
+  </p>
+
+  <a href="piede-caviglia.html" class="btn">
+    Vai a Piede e Caviglia
+  </a>
+
+</section>
+
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 — Dr. Ricardo Paladino · Specializzando Ortopedia e Traumatologia · Università degli Studi di Milano</p>
-  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">LinkedIn</a>
-  <a href="mailto:paladinoricardo@outlook.com">Email</a>
+
+  <p>
+    © 2026 — Dr. Ricardo Paladino Marques de Paula ·
+    Specializzando Ortopedia e Traumatologia ·
+    Università degli Studi di Milano
+  </p>
+
+  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">
+    LinkedIn
+  </a>
+
+  <a href="mailto:paladinoricardo@outlook.com">
+    Email
+  </a>
+
 </footer>
 
 </body>
