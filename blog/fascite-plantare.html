@@ -1,1103 +1,1362 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-46VKZLK2V8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-46VKZLK2V8');
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fascite Plantare: Sintomi, Cause e Trattamento | Dr. Ricardo Paladino</title>
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-46VKZLK2V8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-46VKZLK2V8');
+  </script>
 
-<meta
-  name="description"
-  content="Fascite plantare: perché fa male il tallone, sintomi tipici, diagnosi, esercizi, plantari, onde d'urto, infiltrazioni e quando valutare la chirurgia."
->
+  <title>Fascite Plantare: Sintomi, Cause e Trattamento | Dr. Ricardo Paladino</title>
 
-<meta name="robots" content="index, follow">
+  <meta
+    name="description"
+    content="Fascite plantare: sintomi, diagnosi, esercizi, plantari, onde d'urto e infiltrazioni. Quando considerare l'intervento e quali sono i possibili rischi."
+  >
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-<link rel="canonical" href="https://drpaladino.com/blog/fascite-plantare.html">
+  <link rel="canonical" href="https://drpaladino.com/blog/fascite-plantare.html">
 
-<meta property="og:type" content="article">
-<meta property="og:title" content="Fascite Plantare: Sintomi, Cause e Trattamento">
-<meta property="og:description" content="Come riconoscere e trattare la fascite plantare: sintomi, diagnosi, fisioterapia, onde d'urto e altre opzioni terapeutiche.">
-<meta property="og:url" content="https://drpaladino.com/blog/fascite-plantare.html">
-<meta property="og:site_name" content="Dr. Ricardo Paladino">
-<meta property="og:locale" content="it_IT">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Fascite Plantare: Sintomi, Cause e Trattamento">
+  <meta
+    property="og:description"
+    content="Come riconoscere e trattare la fascite plantare: fisioterapia, onde d'urto, infiltrazioni e quando valutare la chirurgia."
+  >
+  <meta property="og:url" content="https://drpaladino.com/blog/fascite-plantare.html">
+  <meta property="og:site_name" content="Dr. Ricardo Paladino">
+  <meta property="og:locale" content="it_IT">
+  <meta property="article:author" content="Dr. Ricardo Paladino">
+  <meta property="article:published_time" content="2026-06-01">
+  <meta property="article:modified_time" content="2026-09-07">
+  <meta name="twitter:card" content="summary">
 
-<meta property="article:author" content="Dr. Ricardo Paladino">
-<meta property="article:published_time" content="2026-06-01">
-<meta property="article:modified_time" content="2026-08-24">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&amp;family=Source+Sans+Pro:wght@300;400;600&amp;display=swap"
+    rel="stylesheet"
+  >
 
-<meta name="twitter:card" content="summary">
+  <style>
+    /* BASE */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
 
-<link rel="icon" type="image/png" href="/favicon.png">
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background: #f2f2f2;
+      color: #4a4a4a;
+      line-height: 1.75;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #a8843c;
+      outline-offset: 4px;
+    }
 
-/* ── BASE ── */
-*, *::before, *::after { box-sizing: border-box; }
+    [id] {
+      scroll-margin-top: 110px;
+    }
 
-body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f2f2f2;
-  color: #4a4a4a;
-  line-height: 1.75;
-}
+    /* NAV */
+    #main-nav {
+      position: fixed;
+      inset: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 32px;
+      padding: 20px 24px;
+      z-index: 1000;
+      background: linear-gradient(rgba(0,0,0,0.65), transparent);
+      transition: background 0.2s;
+    }
 
-/* ── NAV ── */
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  text-align: center;
-  padding: 20px 0;
-  z-index: 1000;
-  background: linear-gradient(rgba(0,0,0,0.45), transparent);
-}
+    #main-nav.scrolled {
+      background: #1b3c37;
+    }
 
-nav a {
-  margin: 0 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 14px;
-}
+    #main-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
 
-/* ── HERO ARTICOLO ── */
-.hero-article {
-  height: 62vh;
-  min-height: 400px;
-  background: linear-gradient(rgba(0,0,0,0.52), rgba(27,60,55,0.72)),
-              url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80');
-  background-size: cover;
-  background-position: center 30%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 0 8vw 60px;
-  color: white;
-}
+    #main-nav a:hover {
+      color: #ecd19a;
+    }
 
-.hero-article-inner {
-  max-width: 760px;
-}
+    /* HERO */
+    .hero-article {
+      min-height: 400px;
+      height: 62vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.52), rgba(27,60,55,0.72)),
+        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 120px 8vw 60px;
+      color: white;
+    }
 
-.article-tag {
-  display: inline-block;
-  border: 1px solid #ecd19a;
-  color: #ecd19a;
-  font-size: 11px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  margin-bottom: 22px;
-  font-weight: 600;
-}
+    .hero-article-inner {
+      max-width: 760px;
+    }
 
-.hero-article h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: clamp(32px, 5vw, 54px);
-  font-weight: 500;
-  margin: 0 0 18px;
-  line-height: 1.2;
-}
+    .article-tag {
+      display: inline-block;
+      border: 1px solid #ecd19a;
+      color: #ecd19a;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      margin-bottom: 22px;
+      font-weight: 600;
+    }
 
-.hero-article .subtitle {
-  font-size: 17px;
-  font-weight: 300;
-  color: rgba(255,255,255,0.82);
-  margin: 0;
-}
+    .hero-article h1 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: clamp(32px, 5vw, 54px);
+      font-weight: 500;
+      margin: 0 0 18px;
+      line-height: 1.2;
+    }
 
-/* ── ARTICLE LAYOUT ── */
-.article-wrap {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 70px 24px 40px;
-}
+    .hero-article .subtitle {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.9);
+      margin: 0;
+    }
 
-/* ── INTRO STRIP ── */
-.meta-strip {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 22px 28px;
-  background: white;
-  border-left: 4px solid #1b3c37;
-  margin-bottom: 54px;
-  font-size: 14px;
-  color: #777;
-  letter-spacing: 0.3px;
-}
+    /* ARTICLE */
+    .article-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 70px 24px 40px;
+    }
 
-.meta-strip span strong {
-  color: #1b3c37;
-  font-weight: 600;
-}
+    .meta-strip {
+      display: flex;
+      gap: 12px 32px;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 22px 28px;
+      background: white;
+      border-left: 4px solid #1b3c37;
+      margin-bottom: 54px;
+      font-size: 14px;
+      color: #666;
+      letter-spacing: 0.3px;
+    }
 
-/* ── TYPOGRAPHY ── */
-.article-wrap h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 30px;
-  font-weight: 500;
-  color: #1b3c37;
-  margin: 56px 0 18px;
-  text-align: left;
-}
+    .meta-strip strong {
+      color: #1b3c37;
+      font-weight: 600;
+    }
 
-.article-wrap h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #2e5c56;
-  margin: 36px 0 12px;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  font-size: 13px;
-}
+    .article-wrap h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 30px;
+      font-weight: 500;
+      color: #1b3c37;
+      margin: 56px 0 18px;
+      text-align: left;
+      line-height: 1.3;
+    }
 
-.article-wrap p {
-  font-size: 17px;
-  margin: 0 0 22px;
-  color: #4a4a4a;
-}
+    .article-wrap h3 {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #2e5c56;
+      margin: 36px 0 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
 
-/* ── HIGHLIGHT BOX ── */
-.highlight-box {
-  background: #1b3c37;
-  color: white;
-  padding: 28px 32px;
-  margin: 42px 0;
-  border-radius: 2px;
-}
+    .article-wrap p {
+      font-size: 17px;
+      margin: 0 0 22px;
+      color: #4a4a4a;
+    }
 
-.highlight-box p {
-  color: rgba(255,255,255,0.9);
-  font-size: 16.5px;
-  margin: 0;
-  font-style: italic;
-}
+    .article-wrap a {
+      color: #1b3c37;
+      text-underline-offset: 3px;
+    }
 
-/* ── CALLOUT ── */
-.callout {
-  background: #fffdf5;
-  border: 1px solid #ecd19a;
-  padding: 24px 28px;
-  margin: 38px 0;
-}
+    .article-wrap a:hover {
+      color: #765b28;
+    }
 
-.callout-label {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #a8843c;
-  margin-bottom: 10px;
-}
+    .article-wrap ul {
+      margin: 0 0 24px;
+      padding-left: 23px;
+      font-size: 17px;
+    }
 
-.callout p {
-  margin: 0;
-  font-size: 16px;
-}
+    .article-wrap li {
+      margin-bottom: 9px;
+    }
 
-/* ── TWO-COL COMPARISON ── */
-.comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  margin: 42px 0;
-}
+    /* HIGHLIGHT */
+    .highlight-box {
+      background: #1b3c37;
+      color: white;
+      padding: 28px 32px;
+      margin: 42px 0;
+      border-radius: 2px;
+    }
 
-.comparison-col {
-  padding: 30px 28px;
-}
+    .highlight-box p {
+      color: rgba(255,255,255,0.95);
+      font-size: 16.5px;
+      margin: 0;
+      font-style: italic;
+    }
 
-.comparison-col.sport {
-  background: #1b3c37;
-  color: white;
-}
+    /* CALLOUT */
+    .callout {
+      background: #fffdf5;
+      border: 1px solid #ecd19a;
+      padding: 24px 28px;
+      margin: 38px 0;
+    }
 
-.comparison-col.sedentary {
-  background: #2e5c56;
-  color: white;
-}
+    .callout-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #765b28;
+      margin-bottom: 10px;
+    }
 
-.comparison-col h3 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #ecd19a;
-  text-transform: none;
-  letter-spacing: 0;
-  margin: 0 0 16px;
-}
+    .callout p {
+      margin: 0;
+      font-size: 16px;
+    }
 
-.comparison-col p {
-  font-size: 15.5px;
-  color: rgba(255,255,255,0.88);
-  margin: 0 0 12px;
-}
+    /* SPORT / SEDENTARY */
+    .comparison {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 2px;
+      margin: 42px 0;
+    }
 
-.comparison-col p:last-child { margin: 0; }
+    .comparison-col {
+      padding: 30px 28px;
+    }
 
-/* ── THERAPY GRID ── */
-.therapy-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin: 34px 0;
-}
+    .comparison-col.sport {
+      background: #1b3c37;
+    }
 
-.therapy-card {
-  background: white;
-  padding: 26px 24px;
-  border-top: 3px solid #1b3c37;
-}
+    .comparison-col.sedentary {
+      background: #2e5c56;
+    }
 
-.therapy-card h4 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 19px;
-  font-weight: 500;
-  color: #1b3c37;
-  margin: 0 0 10px;
-}
+    .comparison-col h3 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 20px;
+      font-weight: 500;
+      color: #ecd19a;
+      text-transform: none;
+      letter-spacing: 0;
+      margin: 0 0 16px;
+    }
 
-.therapy-card p {
-  font-size: 15px;
-  margin: 0;
-  color: #5a5a5a;
-}
+    .comparison-col p {
+      font-size: 15.5px;
+      color: rgba(255,255,255,0.95);
+      margin: 0 0 12px;
+    }
 
-/* ── DIVIDER ── */
-.divider {
-  width: 60px;
-  height: 2px;
-  background: #ecd19a;
-  margin: 50px 0 0;
-}
+    .comparison-col p:last-child {
+      margin: 0;
+    }
 
-/* ── REFERENCES ── */
-.references {
-  background: white;
-  padding: 44px 40px;
-  margin-top: 70px;
-  border-top: 2px solid #f2f2f2;
-}
+    /* THERAPY / FAQ CARDS */
+    .therapy-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+      margin: 34px 0;
+    }
 
-.references h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 22px;
-  color: #1b3c37;
-  margin: 0 0 28px;
-  text-align: left;
-}
+    .therapy-card {
+      background: white;
+      padding: 26px 24px;
+      border-top: 3px solid #1b3c37;
+    }
 
-.references ol {
-  padding-left: 20px;
-  margin: 0;
-}
+    .therapy-card h3,
+    .therapy-card h4 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 19px;
+      font-weight: 500;
+      color: #1b3c37;
+      margin: 0 0 10px;
+      text-transform: none;
+      letter-spacing: 0;
+      line-height: 1.4;
+    }
 
-.references li {
-  font-size: 13.5px;
-  color: #6a6a6a;
-  margin-bottom: 12px;
-  line-height: 1.65;
-}
+    .therapy-card p {
+      font-size: 15px;
+      margin: 0;
+      color: #5a5a5a;
+    }
 
-.ref-tag {
-  font-style: italic;
-}
+    /* SURGERY: CONTINUOUS TEXT, NO NARROW CARDS */
+    .surgery-section {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 2px solid #ecd19a;
+    }
 
-/* ── CTA ── */
-.cta-section {
-  background: #1b3c37;
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-  margin-top: 70px;
-}
+    .surgery-section > h2:first-child {
+      margin-top: 0;
+    }
 
-.cta-section h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 34px;
-  font-weight: 500;
-  margin: 0 0 16px;
-  color: white;
-}
+    .surgery-section h3 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 23px;
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #1b3c37;
+      margin: 34px 0 14px;
+      line-height: 1.35;
+    }
 
-.cta-section p {
-  font-size: 17px;
-  color: rgba(255,255,255,0.8);
-  margin: 0 0 30px;
-}
+    .surgery-section .callout {
+      margin: 28px 0;
+    }
 
-.btn {
-  border: 1px solid #ecd19a;
-  padding: 12px 28px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
+    .citation {
+      font-size: 0.8em;
+      white-space: nowrap;
+    }
 
-.btn:hover { background: rgba(236,209,154,0.15); }
+    /* DIVIDER / REFERENCES */
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #ecd19a;
+      margin: 50px 0 0;
+    }
 
-/* ── FOOTER ── */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #121212;
-  color: white;
-  font-size: 13px;
-}
+    .references {
+      background: white;
+      padding: 44px 40px;
+      margin-top: 70px;
+      border-top: 2px solid #f2f2f2;
+    }
 
-footer a {
-  color: #ecd19a;
-  margin: 0 10px;
-  text-decoration: none;
-}
+    .references h2 {
+      font-size: 22px;
+      margin: 0 0 28px;
+    }
 
-/* ── BACK LINK ── */
-.back-link {
-  display: inline-block;
-  margin-bottom: 38px;
-  font-size: 13px;
-  color: #1b3c37;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+    .references ol {
+      padding-left: 20px;
+      margin: 0;
+    }
 
-.back-link::before {
-  content: '← ';
-}
+    .references li {
+      font-size: 13.5px;
+      color: #6a6a6a;
+      margin-bottom: 14px;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 640px) {
-  .comparison { grid-template-columns: 1fr; }
-  .therapy-grid { grid-template-columns: 1fr; }
-  .hero-article { padding: 0 6vw 48px; }
-  .references { padding: 36px 24px; }
-}
+    /* CTA */
+    .cta-section {
+      background: #1b3c37;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      margin-top: 70px;
+    }
 
-</style>
+    .cta-section h2 {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 34px;
+      font-weight: 500;
+      margin: 0 0 16px;
+      color: white;
+      line-height: 1.3;
+    }
+
+    .cta-section p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      font-size: 17px;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .btn {
+      display: inline-block;
+      border: 1px solid #ecd19a;
+      padding: 12px 28px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .btn:hover {
+      background: rgba(236,209,154,0.15);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #121212;
+      color: white;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #ecd19a;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 12px;
+    }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-block;
+      margin-bottom: 38px;
+      font-size: 13px;
+      color: #1b3c37;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* MOBILE */
+    @media (max-width: 640px) {
+      #main-nav {
+        padding: 12px 14px;
+        gap: 8px 16px;
+        background: #1b3c37;
+      }
+
+      #main-nav a {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+      }
+
+      .comparison,
+      .therapy-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-article {
+        height: auto;
+        min-height: 440px;
+        padding: 130px 6vw 48px;
+      }
+
+      .article-wrap {
+        padding: 42px 20px 30px;
+      }
+
+      .article-wrap h2 {
+        font-size: 27px;
+      }
+
+      .surgery-section h3 {
+        font-size: 22px;
+      }
+
+      .meta-strip {
+        padding: 20px;
+        gap: 10px;
+        margin-bottom: 36px;
+      }
+
+      .highlight-box,
+      .callout {
+        padding: 24px 20px;
+      }
+
+      .references {
+        padding: 30px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #main-nav,
+      .btn {
+        transition: none;
+      }
+    }
+  </style>
 
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://drpaladino.com/#person",
-      "name": "Dr. Ricardo Paladino Marques de Paula",
-      "url": "https://drpaladino.com/",
-      "jobTitle": "Medico specializzando in Ortopedia e Traumatologia"
-    },
-    {
-      "@type": "BlogPosting",
-      "@id": "https://drpaladino.com/blog/fascite-plantare.html#article",
-      "url": "https://drpaladino.com/blog/fascite-plantare.html",
-      "headline": "Fascite Plantare: Sintomi, Diagnosi e Trattamento",
-      "description": "Fascite plantare: sintomi, diagnosi, esercizi, plantari, onde d'urto, infiltrazioni e quando valutare la chirurgia.",
-      "inLanguage": "it-IT",
-      "datePublished": "2026-06-01",
-      "dateModified": "2026-08-24",
-      "author": {
-        "@id": "https://drpaladino.com/#person"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://drpaladino.com/#person",
+        "name": "Ricardo Paladino Marques de Paula",
+        "honorificPrefix": "Dr.",
+        "url": "https://drpaladino.com/",
+        "jobTitle": "Medico specializzando in Ortopedia e Traumatologia",
+        "sameAs": [
+          "https://www.linkedin.com/in/ricardo-paladino-mp"
+        ]
       },
-      "publisher": {
-        "@id": "https://drpaladino.com/#person"
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Fascite plantare",
-        "alternateName": "Fasciopatia plantare"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://drpaladino.com/blog/fascite-plantare.html#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://drpaladino.com/"
+      {
+        "@type": "BlogPosting",
+        "@id": "https://drpaladino.com/blog/fascite-plantare.html#article",
+        "url": "https://drpaladino.com/blog/fascite-plantare.html",
+        "headline": "Fascite Plantare: Sintomi, Diagnosi e Trattamento",
+        "description": "Fascite plantare: sintomi, diagnosi, esercizi, plantari, onde d'urto, infiltrazioni e quando valutare la chirurgia.",
+        "inLanguage": "it-IT",
+        "datePublished": "2026-06-01",
+        "dateModified": "2026-09-07",
+        "author": {
+          "@id": "https://drpaladino.com/#person"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Piede e Caviglia",
-          "item": "https://drpaladino.com/piede-caviglia.html"
+        "publisher": {
+          "@id": "https://drpaladino.com/#person"
         },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Blog",
-          "item": "https://drpaladino.com/blog.html"
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://drpaladino.com/blog/fascite-plantare.html"
         },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Fascite Plantare",
-          "item": "https://drpaladino.com/blog/fascite-plantare.html"
+        "about": {
+          "@type": "MedicalCondition",
+          "name": "Fascite plantare",
+          "alternateName": "Fasciopatia plantare"
         }
-      ]
-    }
-  ]
-}
-</script>
-  
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://drpaladino.com/blog/fascite-plantare.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://drpaladino.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Piede e Caviglia",
+            "item": "https://drpaladino.com/piede-caviglia.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Blog",
+            "item": "https://drpaladino.com/blog.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Fascite Plantare",
+            "item": "https://drpaladino.com/blog/fascite-plantare.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav id="main-nav">
-  <a href="../">Home</a>
-  <a href="../#chi">Chi sono</a>
-  <a href="../piede-caviglia.html">Piede e Caviglia</a>
-  <a href="../#formazione">Formazione</a>
-  <a href="../blog.html">Blog</a>
-  <a href="../#contatti">Contatti</a>
-</nav>
+  <!-- NAV -->
+  <nav id="main-nav" aria-label="Navigazione principale">
+    <a href="../">Home</a>
+    <a href="../#chi">Chi sono</a>
+    <a href="../piede-caviglia.html">Piede e Caviglia</a>
+    <a href="../#formazione">Formazione</a>
+    <a href="../blog.html">Blog</a>
+    <a href="../#contatti">Contatti</a>
+  </nav>
 
-<!-- HERO -->
-<div class="hero-article">
-  <div class="hero-article-inner">
-    <div class="article-tag">Piede e Caviglia · Patologie</div>
-<h1>Fascite Plantare: Sintomi, Diagnosi e Trattamento</h1>
-<p class="subtitle">
-  Perché fa male il tallone, come riconoscere la fascite plantare e quali trattamenti sono realmente supportati dalle evidenze
-</p>
-  </div>
-</div>
+  <!-- HERO -->
+  <header class="hero-article">
+    <div class="hero-article-inner">
+      <div class="article-tag">Piede e Caviglia · Patologie</div>
+      <h1>Fascite Plantare: Sintomi, Diagnosi e Trattamento</h1>
+      <p class="subtitle">
+        Perché fa male il tallone, come riconoscere la fascite plantare
+        e quali trattamenti sono supportati dalle evidenze
+      </p>
+    </div>
+  </header>
 
-<!-- ARTICLE -->
-<div class="article-wrap">
+  <main>
+    <article class="article-wrap">
 
-  <a href="../blog.html" class="back-link">Torna al Blog</a>
+      <a href="../blog.html" class="back-link">← Torna al Blog</a>
 
-  <div class="meta-strip">
-    <span><strong>Autore</strong> — Dr. Ricardo Paladino, MD</span>
-    <span><strong>Area</strong> — Ortopedia e Traumatologia · Piede e Caviglia</span>
-    <span><strong>Aggiornato</strong> — Agosto 2026</span>
-  </div>
+      <div class="meta-strip">
+        <span><strong>Autore</strong> — Dr. Ricardo Paladino, MD</span>
+        <span><strong>Area</strong> — Ortopedia e Traumatologia · Piede e Caviglia</span>
+        <span>
+          <strong>Aggiornato</strong> —
+          <time datetime="2026-09-07">7 settembre 2026</time>
+        </span>
+      </div>
 
+      <!-- INTRO -->
+      <p>
+        La fascite plantare è una delle cause più comuni di dolore nella parte
+        inferiore del tallone. Il dolore interessa generalmente l'origine della
+        fascia plantare sul calcagno e compare soprattutto durante i primi passi
+        del mattino o dopo un periodo di riposo.
+      </p>
 
-  <!-- INTRO -->
-  <p>
-    La fascite plantare è una delle cause più comuni di dolore nella parte inferiore del tallone.
-    Il dolore interessa generalmente l'origine della fascia plantare sul calcagno e compare
-    soprattutto durante i primi passi del mattino o dopo un periodo di riposo.
-  </p>
+      <p>
+        La fascia plantare è una robusta struttura fibroaponeurotica che origina
+        dal calcagno e si estende verso l'avampiede. Contribuisce al sostegno
+        dell'arco longitudinale e al cosiddetto <strong>meccanismo del verricello</strong>,
+        o <em>windlass mechanism</em>, attraverso il quale il piede diventa
+        progressivamente più rigido durante la fase di propulsione del passo.
+      </p>
 
-  <p>
-    La fascia plantare è una robusta struttura fibroaponeurotica che origina dal calcagno
-    e si estende verso l'avampiede. Contribuisce al sostegno dell'arco longitudinale
-    e al cosiddetto <strong>meccanismo del verricello</strong> o <em>windlass mechanism</em>,
-    attraverso il quale il piede diventa progressivamente più rigido durante la fase
-    di propulsione del passo.
-  </p>
+      <p>
+        Il termine “fascite” è ormai entrato nell'uso comune, ma nelle forme croniche
+        le alterazioni della fascia non sono riconducibili esclusivamente a un
+        processo infiammatorio. Per questo nella letteratura scientifica viene
+        utilizzato anche il termine <strong>fasciopatia plantare</strong>.
+      </p>
 
-  <p>
-    Il termine "fascite" è ormai entrato nell'uso comune, ma nelle forme croniche
-    le alterazioni della fascia non sono riconducibili esclusivamente a un processo
-    infiammatorio. Per questo nella letteratura scientifica viene utilizzato anche
-    il termine <strong>fasciopatia plantare</strong>.
-  </p>
+      <div class="highlight-box">
+        <p>
+          Il dolore al tallone non significa automaticamente fascite plantare.
+          Fratture da stress del calcagno, tendinopatia dell'Achille, compressioni
+          nervose e alcune patologie infiammatorie possono provocare sintomi simili.
+          La localizzazione precisa del dolore e l'esame clinico sono quindi fondamentali.
+        </p>
+      </div>
 
-  <div class="highlight-box">
+      <!-- SINTOMI -->
+      <h2>Fascite plantare: quali sono i sintomi?</h2>
+
+      <p>
+        Il dolore è generalmente localizzato nella regione plantare-mediale del
+        calcagno, vicino all'origine della fascia plantare. Il sintomo più
+        caratteristico è il cosiddetto <strong>dolore del primo passo</strong>:
+        una fitta più intensa quando ci si alza dal letto al mattino o si riprende
+        a camminare dopo essere rimasti seduti a lungo.
+      </p>
+
+      <p>
+        Dopo alcuni minuti di movimento il dolore può diminuire, ma può ricomparire
+        con la stazione eretta prolungata, una lunga camminata, la corsa o altre
+        attività che aumentano il carico sul piede.
+      </p>
+
+      <p>
+        Durante la visita, la pressione sulla tuberosità mediale del calcagno
+        può riprodurre il dolore. Anche la dorsiflessione delle dita, in particolare
+        dell'alluce, tende la fascia plantare attraverso il meccanismo del windlass
+        e può provocare i sintomi abituali del paziente.
+      </p>
+
+      <div class="callout">
+        <div class="callout-label">Quando il dolore merita particolare attenzione</div>
+        <p>
+          Dolore notturno persistente, febbre, importanti alterazioni della
+          sensibilità, impossibilità al carico, dolore dopo un trauma o sintomi
+          bilaterali associati a rigidità e altre manifestazioni articolari
+          richiedono una valutazione clinica per escludere diagnosi alternative.
+        </p>
+      </div>
+
+      <!-- CAUSE -->
+      <h2>Perché viene la fascite plantare?</h2>
+
+      <p>
+        Non esiste generalmente una causa unica. La fascite plantare è una
+        condizione multifattoriale nella quale il carico applicato alla fascia
+        supera temporaneamente la capacità del tessuto di adattarsi e recuperare.
+      </p>
+
+      <p>
+        Tra i fattori frequentemente associati si possono trovare una ridotta
+        dorsiflessione della caviglia, l'aumento del peso corporeo, attività
+        lavorative svolte a lungo in piedi e aumenti improvvisi del volume
+        di attività fisica.
+      </p>
+
+      <p>
+        Nel paziente sportivo è particolarmente importante ricostruire eventuali
+        cambiamenti recenti dell'allenamento: aumento dei chilometri, maggiore
+        intensità, variazione delle superfici, ritorno allo sport dopo un periodo
+        di inattività o modifiche improvvise delle calzature.
+      </p>
+
+      <!-- DIAGNOSI -->
+      <h2>Come si diagnostica la fascite plantare?</h2>
+
+      <p>
+        Nella maggior parte dei casi la diagnosi è <strong>clinica</strong>.
+        L'anamnesi e l'esame obiettivo sono spesso sufficienti quando la
+        localizzazione e il comportamento del dolore sono tipici.
+      </p>
+
+      <h3>Visita clinica</h3>
+
+      <p>
+        La valutazione comprende la localizzazione del punto di massima
+        dolorabilità, la mobilità della caviglia, la tensione del complesso
+        gastrocnemio-soleo, l'allineamento del piede e l'eventuale presenza
+        di sintomi neurologici.
+      </p>
+
+      <p>
+        È inoltre importante distinguere la fascite plantare da altre cause
+        di talalgia, come frattura da stress del calcagno, sindrome del tunnel
+        tarsale, neuropatia del nervo calcaneare o del primo ramo del nervo
+        plantare laterale, tendinopatia inserzionale dell'Achille e patologie
+        infiammatorie.
+      </p>
+
+      <h3>Radiografie</h3>
+
+      <p>
+        Le radiografie non sono necessariamente richieste in una presentazione
+        clinica tipica. Possono essere utili quando il dolore è atipico,
+        persistente, dopo un trauma o quando si sospettano altre condizioni ossee.
+      </p>
+
+      <p>
+        Uno sperone calcaneare può essere visibile alla radiografia, ma la sua
+        presenza non dimostra che sia la causa del dolore: speroni ed entesofiti
+        possono essere presenti anche in persone completamente asintomatiche.
+      </p>
+
+      <h3>Ecografia</h3>
+
+      <p>
+        L'ecografia può documentare ispessimento e alterazioni strutturali della
+        fascia e può essere utile nei casi dubbi o persistenti. Non è tuttavia
+        indispensabile per confermare ogni caso di fascite plantare clinicamente tipica.
+      </p>
+
+      <h3>Risonanza magnetica</h3>
+
+      <p>
+        La risonanza magnetica viene generalmente riservata ai casi nei quali
+        la diagnosi non è chiara, il dolore persiste nonostante il trattamento
+        o esiste il sospetto di patologie alternative come una frattura da stress
+        o una lesione significativa della fascia.
+      </p>
+
+      <!-- SPORTIVO / SEDENTARIO -->
+      <h2>Sportivo e paziente sedentario: lo stesso problema?</h2>
+
+      <p>
+        La diagnosi può essere la stessa, ma i fattori che mantengono i sintomi
+        e gli obiettivi terapeutici possono essere molto differenti.
+        Per questo il programma riabilitativo dovrebbe essere adattato alle
+        caratteristiche del singolo paziente.
+      </p>
+
+      <div class="comparison">
+        <div class="comparison-col sport">
+          <h3>Il paziente sportivo</h3>
+          <p>
+            Nel corridore o nello sportivo la comparsa dei sintomi è frequentemente
+            associata a un aumento recente del carico di allenamento o a un
+            recupero insufficiente tra le sedute.
+          </p>
+          <p>
+            L'obiettivo non è necessariamente interrompere completamente ogni
+            attività, ma individuare un livello di carico tollerabile e aumentarlo
+            progressivamente mentre la capacità della fascia e dell'intero arto
+            inferiore migliora.
+          </p>
+          <p>
+            La valutazione può includere forza del polpaccio, mobilità della
+            caviglia, gestione del carico e caratteristiche specifiche dello sport praticato.
+          </p>
+        </div>
+
+        <div class="comparison-col sedentary">
+          <h3>Il paziente sedentario</h3>
+          <p>
+            Nel paziente meno attivo possono assumere maggiore importanza
+            sovrappeso, lunghi periodi in piedi, ridotta capacità muscolare
+            e improvvisi aumenti dell'attività quotidiana.
+          </p>
+          <p>
+            Anche in questo caso il trattamento dovrebbe essere attivo:
+            esercizio, modifica dei fattori di carico e progressivo recupero
+            della capacità di camminare e svolgere le normali attività senza dolore.
+          </p>
+          <p>
+            Calzature, abitudini lavorative e gestione del peso possono entrare
+            nel programma quando rappresentano fattori rilevanti per il singolo paziente.
+          </p>
+        </div>
+      </div>
+
+      <!-- TERAPIA -->
+      <h2>Come si cura la fascite plantare?</h2>
+
+      <p>
+        Il trattamento iniziale è quasi sempre conservativo. Nella maggior parte
+        dei pazienti il miglioramento avviene progressivamente nel corso del
+        tempo attraverso la combinazione di gestione del carico, esercizio
+        e strategie specifiche per il controllo dei sintomi.
+      </p>
+
+      <p>
+        Non esiste un singolo trattamento efficace per tutti. La strategia
+        migliore è generalmente multimodale e viene modificata in base
+        alla risposta clinica.
+      </p>
+
+      <h3>Trattamento conservativo</h3>
+
+      <div class="therapy-grid">
+        <div class="therapy-card">
+          <h4>Stretching della fascia plantare</h4>
+          <p>
+            Lo stretching specifico della fascia plantare è uno degli interventi
+            maggiormente supportati dalle evidenze. Può essere associato allo
+            stretching del gastrocnemio e del soleo quando è presente una
+            ridotta mobilità della caviglia.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h4>Esercizio e rinforzo</h4>
+          <p>
+            Il programma riabilitativo può comprendere esercizi progressivi
+            di forza per polpaccio, muscoli intrinseci del piede e strutture
+            dell'arto inferiore, adattando il carico alla tolleranza del paziente.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h4>Taping, ortesi e calzature</h4>
+          <p>
+            Taping e ortesi possono contribuire alla riduzione dei sintomi
+            all'interno di un programma terapeutico più ampio. Le ortesi non
+            dovrebbero essere considerate automaticamente il trattamento
+            principale né utilizzate come unica strategia terapeutica.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h4>Tutore notturno</h4>
+          <p>
+            Nei pazienti con dolore particolarmente intenso ai primi passi
+            del mattino, un tutore notturno può essere utilizzato su indicazione
+            clinica per mantenere la fascia e il complesso gastrocnemio-soleo
+            in una posizione di maggiore allungamento durante il sonno.
+          </p>
+        </div>
+      </div>
+
+      <h3>Farmaci antinfiammatori</h3>
+
+      <p>
+        Farmaci analgesici o antinfiammatori possono essere utilizzati in alcuni
+        pazienti per il controllo temporaneo dei sintomi, tenendo conto delle
+        controindicazioni individuali. Non rappresentano tuttavia il trattamento
+        della causa meccanica e non sostituiscono esercizio e gestione del carico.
+      </p>
+
+      <h3>Onde d'urto extracorporee</h3>
+
+      <p>
+        Le onde d'urto extracorporee, o ESWT, rappresentano una delle opzioni
+        maggiormente utilizzate nelle forme persistenti di fascite plantare
+        che non migliorano con il trattamento iniziale.
+      </p>
+
+      <p>
+        Diversi studi randomizzati e revisioni sistematiche hanno mostrato un
+        possibile beneficio sul dolore e sulla funzione. Esistono protocolli
+        focali e radiali e non è possibile definire una percentuale universale
+        di successo valida per tutti i pazienti.
+      </p>
+
+      <h3>Infiltrazioni di corticosteroidi</h3>
+
+      <p>
+        Le infiltrazioni corticosteroidee possono determinare una riduzione
+        del dolore nel breve termine, ma il beneficio tende a essere meno
+        evidente nel medio e lungo periodo.
+      </p>
+
+      <p>
+        Devono inoltre essere utilizzate con cautela perché sono state descritte
+        complicanze quali atrofia del cuscinetto adiposo e rottura della fascia
+        plantare, soprattutto in caso di infiltrazioni ripetute.
+      </p>
+
+      <h3>PRP: è utile nella fascite plantare?</h3>
+
+      <p>
+        Il PRP, o plasma ricco di piastrine, è stato studiato come possibile
+        trattamento delle forme croniche e resistenti alla terapia iniziale.
+      </p>
+
+      <p>
+        Alcune meta-analisi mostrano risultati favorevoli rispetto alle
+        infiltrazioni corticosteroidee in determinati intervalli di follow-up,
+        mentre altri studi evidenziano una notevole eterogeneità tra preparazioni,
+        tecniche di infiltrazione e popolazioni trattate.
+      </p>
+
+      <p>
+        Il PRP non rappresenta quindi una terapia di prima scelta e può essere
+        preso in considerazione soltanto in pazienti selezionati dopo un
+        adeguato percorso conservativo.
+      </p>
+
+      <div class="callout">
+        <div class="callout-label">PRP e sport</div>
+        <p>
+          Anche nello sportivo agonistico il PRP non dovrebbe essere considerato
+          automaticamente superiore alle altre opzioni. L'indicazione deve
+          dipendere dalla durata dei sintomi, dalla risposta alla riabilitazione
+          e dagli obiettivi funzionali individuali.
+        </p>
+      </div>
+
+      <!-- CHIRURGIA -->
+      <section class="surgery-section" aria-labelledby="chirurgia-fascite">
+        <h2 id="chirurgia-fascite">
+          Intervento per la fascite plantare: quando viene considerato?
+        </h2>
+
+        <p>
+          La maggior parte dei pazienti migliora senza intervento. La chirurgia
+          viene riservata a una minoranza di casi nei quali il dolore persiste,
+          limita in modo importante il cammino, il lavoro o lo sport e non
+          risponde a un trattamento conservativo adeguato.
+        </p>
+
+        <p>
+          Si tratta generalmente di sintomi presenti da molti mesi, spesso
+          almeno <strong>6–12 mesi</strong>. Questo intervallo è un orientamento
+          clinico, non una scadenza: il tempo trascorso, da solo, non stabilisce
+          se sia opportuno operare.
+        </p>
+
+        <ul>
+          <li>Il dolore deve limitare significativamente le attività.</li>
+          <li>La diagnosi deve essere confermata dalla valutazione clinica.</li>
+          <li>Il percorso conservativo deve essere stato adeguato e seguito con continuità.</li>
+          <li>Benefici e rischi dell'intervento devono essere discussi individualmente.</li>
+        </ul>
+
+        <div class="callout">
+          <div class="callout-label">Sei mesi di dolore non significano automaticamente chirurgia</div>
+          <p>
+            Conta anche che cosa è stato fatto durante quei mesi e come il piede
+            ha risposto. Un dolore ancora presente ma in progressivo miglioramento
+            ha un significato diverso da un dolore invariato e fortemente limitante.
+          </p>
+        </div>
+
+        <h3>Cosa significa aver provato un trattamento conservativo adeguato?</h3>
+
+        <p>
+          Aver assunto soltanto antinfiammatori non basta per concludere che
+          il trattamento conservativo sia fallito. Il percorso comprende
+          generalmente gestione del carico, stretching della fascia plantare
+          e del polpaccio, esercizio progressivo e valutazione delle calzature.
+          Plantari, taping e onde d'urto possono essere considerati secondo necessità.
+        </p>
+
+        <p>
+          Le infiltrazioni non sono un passaggio obbligatorio prima della
+          chirurgia: l'obiettivo non è provare ogni trattamento disponibile,
+          ma completare un programma appropriato per quel paziente.
+        </p>
+
+        <h3>Prima di operare bisogna rivalutare la diagnosi</h3>
+
+        <p>
+          Un tallone doloroso da un anno non è automaticamente una fascite
+          plantare da operare. Occorre escludere altre possibili cause, come
+          compressioni nervose, fratture da stress del calcagno, problemi del
+          cuscinetto adiposo del tallone o patologie infiammatorie.
+        </p>
+
+        <p>
+          Una particolare attenzione può essere dedicata al nervo di Baxter,
+          un piccolo ramo nervoso del piede la cui compressione può provocare
+          dolore al tallone. Il sospetto richiede una valutazione specifica:
+          non implica automaticamente la necessità di una decompressione chirurgica.
+          <sup class="citation"><a href="#ref-10" aria-label="Riferimento 10">[10]</a></sup>
+        </p>
+
+        <h3>Perché si valuta anche il gastrocnemio?</h3>
+
+        <p>
+          Il gastrocnemio è uno dei muscoli del polpaccio. Quando è retratto
+          può limitare il movimento della caviglia e contribuire ad aumentare
+          la tensione sulla fascia plantare.
+        </p>
+
+        <p>
+          Durante la visita questa condizione può essere valutata confrontando
+          la mobilità della caviglia con il ginocchio esteso e piegato,
+          attraverso il <strong>test di Silfverskiöld</strong>.
+          Il risultato aiuta a orientare la scelta terapeutica, ma non
+          determina da solo quale intervento eseguire.
+        </p>
+
+        <h3>Recessione del gastrocnemio</h3>
+
+        <p>
+          Nei pazienti con retrazione isolata del gastrocnemio e dolore
+          persistente nonostante il trattamento conservativo può essere
+          considerata una <strong>recessione del gastrocnemio</strong>.
+          È una procedura che mira a ridurre la retrazione del polpaccio
+          e la tensione trasmessa al piede, senza sezionare direttamente
+          la fascia plantare.
+        </p>
+
+        <p>
+          Le revisioni disponibili riportano miglioramenti del dolore e della
+          funzione nei pazienti selezionati. Restano però aspetti da chiarire
+          sulla scelta della tecnica e sulle indicazioni: non è un intervento
+          adatto a ogni fascite plantare persistente.
+          <sup class="citation">
+            <a href="#ref-11" aria-label="Riferimento 11">[11]</a>
+            <a href="#ref-12" aria-label="Riferimento 12">[12]</a>
+            <a href="#ref-15" aria-label="Riferimento 15">[15]</a>
+          </sup>
+        </p>
+
+        <h3>Fasciotomia plantare parziale</h3>
+
+        <p>
+          In altri casi selezionati può essere valutata una
+          <strong>fasciotomia plantare parziale</strong>, cioè la liberazione
+          di una porzione della fascia per ridurne la tensione.
+          Può essere eseguita con tecniche aperte o endoscopiche.
+        </p>
+
+        <p>
+          L'assenza di una retrazione del gastrocnemio non rende automaticamente
+          indicata questa procedura. La scelta richiede comunque una diagnosi
+          chiara, una limitazione importante e il fallimento di un adeguato
+          trattamento conservativo.
+        </p>
+
+        <p>
+          La liberazione deve essere limitata: una sezione eccessiva della fascia
+          può alterare il sostegno dell'arco plantare e favorire dolore nella
+          parte laterale del piede.
+        </p>
+
+        <h3>Quali sono i possibili rischi?</h3>
+
+        <p>
+          Il miglioramento non è garantito. Dopo l'intervento il dolore può
+          persistere o ricomparire; possono inoltre verificarsi problemi della
+          ferita, disturbi della sensibilità o alterazioni della funzione,
+          con rischi differenti secondo la procedura.
+        </p>
+
+        <p>
+          Una revisione sulla fasciotomia endoscopica ha riportato complicanze
+          nell'8,9% dei casi analizzati, soprattutto ricomparsa del dolore.
+          È un dato riferito agli studi inclusi, non una previsione del rischio
+          del singolo paziente.
+          <sup class="citation"><a href="#ref-13" aria-label="Riferimento 13">[13]</a></sup>
+        </p>
+
+        <p>
+          Anche la recessione del gastrocnemio presenta possibili complicanze
+          e richiede un confronto sui benefici attesi, sui rischi e sul percorso
+          di recupero.
+          <sup class="citation"><a href="#ref-15" aria-label="Riferimento 15">[15]</a></sup>
+        </p>
+
+        <div class="callout">
+          <div class="callout-label">Una scelta personalizzata</div>
+          <p>
+            Gli studi sulla chirurgia della fascite plantare presentano ancora
+            limiti importanti. Non esiste un intervento dimostrato superiore
+            per tutti: la decisione va costruita sulla diagnosi, sulle
+            caratteristiche del piede e del polpaccio e sulle necessità
+            della persona.
+            <sup class="citation"><a href="#ref-14" aria-label="Riferimento 14">[14]</a></sup>
+          </p>
+        </div>
+      </section>
+
+      <div class="highlight-box">
+        <p>
+          Il successo del trattamento non viene misurato dall'aspetto
+          dell'ecografia, ma dal recupero della funzione: camminare, lavorare
+          o tornare allo sport con sintomi assenti o compatibili con le
+          attività desiderate.
+        </p>
+      </div>
+
+      <!-- INTERNAL LINK -->
+      <h2>Dolore al tallone: non sempre è fascite plantare</h2>
+
+      <p>
+        Se il dolore non presenta le caratteristiche tipiche della fascite
+        plantare è importante considerare altre possibili diagnosi.
+        Puoi approfondirle nell'articolo dedicato alle
+        <a href="dolore-tallone.html">possibili cause del dolore al tallone</a>.
+      </p>
+
+      <!-- FAQ -->
+      <h2>Domande frequenti sulla fascite plantare</h2>
+
+      <div class="therapy-grid">
+        <div class="therapy-card">
+          <h3>Quanto dura la fascite plantare?</h3>
+          <p>
+            I tempi sono molto variabili. Alcuni pazienti migliorano rapidamente,
+            mentre nelle forme croniche possono essere necessari diversi mesi
+            di trattamento progressivo.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h3>Si può camminare con la fascite plantare?</h3>
+          <p>
+            Generalmente sì. È spesso preferibile modulare il carico piuttosto
+            che interrompere completamente ogni attività, evitando però quelle
+            che provocano un netto peggioramento dei sintomi.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h3>Il plantare cura la fascite?</h3>
+          <p>
+            Il plantare può aiutare alcuni pazienti a controllare il dolore,
+            ma non dovrebbe essere considerato una terapia isolata.
+            È più utile all'interno di un programma che comprende esercizio
+            e gestione del carico.
+          </p>
+        </div>
+
+        <div class="therapy-card">
+          <h3>Lo sperone calcaneare causa la fascite plantare?</h3>
+          <p>
+            Non necessariamente. Uno sperone può essere presente anche in
+            persone senza dolore e non deve essere considerato automaticamente
+            la causa dei sintomi.
+          </p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-label">Quando rivolgersi allo specialista</div>
+        <p>
+          Una valutazione è particolarmente utile se il dolore persiste,
+          limita significativamente la camminata o lo sport, compare dopo un
+          trauma, presenta caratteristiche atipiche oppure non migliora
+          nonostante un programma conservativo correttamente impostato.
+        </p>
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <!-- REFERENCES -->
+      <section class="references" aria-labelledby="bibliografia">
+        <h2 id="bibliografia">Riferimenti bibliografici</h2>
+
+        <ol>
+          <li id="ref-1">
+            Koc TA Jr, Bise CG, Neville C, Carreira D, Martin RL, McDonough CM.
+            Heel Pain – Plantar Fasciitis: Revision 2023.
+            <em>J Orthop Sports Phys Ther.</em> 2023;53(12):CPG1–CPG39.
+            <a href="https://doi.org/10.2519/jospt.2023.0303">doi:10.2519/jospt.2023.0303</a>.
+          </li>
+
+          <li id="ref-2">
+            DiGiovanni BF, Nawoczenski DA, Lintal ME, et al.
+            Tissue-specific plantar fascia-stretching exercise enhances outcomes
+            in patients with chronic heel pain: a prospective, randomized study.
+            <em>J Bone Joint Surg Am.</em> 2003;85(7):1270–1277.
+          </li>
+
+          <li id="ref-3">
+            Lemont H, Ammirati KM, Usen N.
+            Plantar fasciitis: a degenerative process (fasciosis) without inflammation.
+            <em>J Am Podiatr Med Assoc.</em> 2003;93(3):234–237.
+          </li>
+
+          <li id="ref-4">
+            Rompe JD, Cacchio A, Weil L Jr, et al.
+            Plantar fascia-specific stretching versus radial shock-wave therapy
+            as initial treatment of plantar fasciopathy.
+            <em>J Bone Joint Surg Am.</em> 2010;92(15):2514–2522.
+          </li>
+
+          <li id="ref-5">
+            Gerdesmeyer L, Frey C, Vester J, et al.
+            Radial extracorporeal shock wave therapy is safe and effective
+            in the treatment of chronic recalcitrant plantar fasciitis:
+            results of a confirmatory randomized placebo-controlled multicenter study.
+            <em>Am J Sports Med.</em> 2008;36(11):2100–2109.
+          </li>
+
+          <li id="ref-6">
+            Acevedo JI, Beskin JL.
+            Complications of plantar fascia rupture associated with corticosteroid injection.
+            <em>Foot Ankle Int.</em> 1998;19(2):91–97.
+          </li>
+
+          <li id="ref-7">
+            Monto RR.
+            Platelet rich plasma efficacy versus corticosteroid injection
+            treatment for chronic severe plantar fasciitis.
+            <em>Foot Ankle Int.</em> 2014;35(4):313–318.
+          </li>
+
+          <li id="ref-8">
+            Goff JD, Crawford R.
+            Diagnosis and treatment of plantar fasciitis.
+            <em>Am Fam Physician.</em> 2011;84(6):676–682.
+          </li>
+
+          <li id="ref-9">
+            Trojian T, Tucker AK.
+            Plantar fasciitis.
+            <em>Am Fam Physician.</em> 2019;99(12):744–750.
+          </li>
+
+          <li id="ref-10">
+            Baxter DE, Pfeffer GB.
+            Treatment of chronic heel pain by surgical release
+            of the first branch of the lateral plantar nerve.
+            <em>Clin Orthop Relat Res.</em> 1992;(279):229–236.
+          </li>
+
+          <li id="ref-11">
+            Gemini G, Mazzotti A, Artioli E, et al.
+            Gastrocnemius Recessions in the Management of Chronic Recalcitrant
+            Plantar Fasciopathy—A Systematic Review.
+            <em>J Funct Morphol Kinesiol.</em> 2026;11(1):122.
+            <a href="https://doi.org/10.3390/jfmk11010122">doi:10.3390/jfmk11010122</a>.
+          </li>
+
+          <li id="ref-12">
+            Pérez González A, Sanz-Perez A, Moroni S, et al.
+            Gastrocnemius Recession in Recalcitrant Plantar Fasciitis:
+            A Systematic Review and Meta-Analysis of Randomized Controlled Trials.
+            <em>J Clin Med.</em> 2026;15(2):616.
+            <a href="https://doi.org/10.3390/jcm15020616">doi:10.3390/jcm15020616</a>.
+          </li>
+
+          <li id="ref-13">
+            Ward L, Mercer NP, Azam MT, et al.
+            Outcomes of Endoscopic Treatment for Plantar Fasciitis:
+            A Systematic Review.
+            <em>Foot Ankle Spec.</em> 2025;18(2):193–201.
+            Pubblicato online nel 2022.
+            <a href="https://doi.org/10.1177/19386400221129167">doi:10.1177/19386400221129167</a>.
+          </li>
+
+          <li id="ref-14">
+            MacRae CS, Roche AJ, Sinnett TJ, O’Connell NE.
+            What is the evidence for efficacy, effectiveness and safety of
+            surgical interventions for plantar fasciopathy? A systematic review.
+            <em>PLoS One.</em> 2022;17(5):e0268512.
+            <a href="https://doi.org/10.1371/journal.pone.0268512">doi:10.1371/journal.pone.0268512</a>.
+          </li>
+
+          <li id="ref-15">
+            Arshad Z, Aslam A, Razzaq MA, Bhatia M.
+            Gastrocnemius Release in the Management of Chronic Plantar
+            Fasciitis: A Systematic Review.
+            <em>Foot Ankle Int.</em> 2022;43(4):568–575.
+            <a href="https://doi.org/10.1177/10711007211052290">doi:10.1177/10711007211052290</a>.
+          </li>
+        </ol>
+      </section>
+
+    </article>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="contatto-tallone">
+      <h2 id="contatto-tallone">Hai dolore al tallone?</h2>
+      <p>
+        Una valutazione clinica permette di distinguere la fascite plantare
+        dalle altre possibili cause di talalgia e impostare il trattamento
+        più appropriato.
+      </p>
+      <a href="mailto:paladinoricardo@outlook.com" class="btn">
+        Prenota una consulenza
+      </a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
     <p>
-      Il dolore al tallone non significa automaticamente fascite plantare.
-      Fratture da stress del calcagno, tendinopatia dell'Achille, compressioni nervose
-      e alcune patologie infiammatorie possono provocare sintomi simili.
-      La localizzazione precisa del dolore e l'esame clinico sono quindi fondamentali.
+      © 2026 — Dr. Ricardo Paladino ·
+      Specializzando Ortopedia e Traumatologia ·
+      Università degli Studi di Milano
     </p>
-  </div>
 
+    <a href="https://www.linkedin.com/in/ricardo-paladino-mp">LinkedIn</a>
+    <a href="mailto:paladinoricardo@outlook.com">Email</a>
 
-  <!-- SINTOMI -->
-  <h2>Fascite plantare: quali sono i sintomi?</h2>
-
-  <p>
-    Il dolore è generalmente localizzato nella regione plantare-mediale del calcagno,
-    vicino all'origine della fascia plantare. Il sintomo più caratteristico è il
-    cosiddetto <strong>dolore del primo passo</strong>: una fitta più intensa quando
-    ci si alza dal letto al mattino o si riprende a camminare dopo essere rimasti
-    seduti a lungo.
-  </p>
-
-  <p>
-    Dopo alcuni minuti di movimento il dolore può diminuire, ma può ricomparire
-    con la stazione eretta prolungata, una lunga camminata, la corsa o altre attività
-    che aumentano il carico sul piede.
-  </p>
-
-  <p>
-    Durante la visita, la pressione sulla tuberosità mediale del calcagno può riprodurre
-    il dolore. Anche la dorsiflessione delle dita, in particolare dell'alluce,
-    tende la fascia plantare attraverso il meccanismo del windlass e può provocare
-    i sintomi abituali del paziente.
-  </p>
-
-  <div class="callout">
-    <div class="callout-label">Quando il dolore merita particolare attenzione</div>
-    <p>
-      Dolore notturno persistente, febbre, importanti alterazioni della sensibilità,
-      impossibilità al carico, dolore dopo un trauma o sintomi bilaterali associati
-      a rigidità e altre manifestazioni articolari richiedono una valutazione clinica
-      per escludere diagnosi alternative.
+    <p class="disclaimer">
+      Questo articolo ha finalità informative e divulgative
+      e non sostituisce una valutazione medica individuale.
     </p>
-  </div>
+  </footer>
 
+  <script>
+    const mainNav = document.getElementById('main-nav');
 
-  <!-- CAUSE -->
-  <h2>Perché viene la fascite plantare?</h2>
+    function updateNavigation() {
+      mainNav.classList.toggle('scrolled', window.scrollY > 60);
+    }
 
-  <p>
-    Non esiste generalmente una causa unica. La fascite plantare è una condizione
-    multifattoriale nella quale il carico applicato alla fascia supera temporaneamente
-    la capacità del tessuto di adattarsi e recuperare.
-  </p>
-
-  <p>
-    Tra i fattori frequentemente associati si possono trovare una ridotta dorsiflessione
-    della caviglia, l'aumento del peso corporeo, attività lavorative svolte a lungo
-    in piedi e aumenti improvvisi del volume di attività fisica.
-  </p>
-
-  <p>
-    Nel paziente sportivo è particolarmente importante ricostruire eventuali cambiamenti
-    recenti dell'allenamento: aumento dei chilometri, maggiore intensità, variazione
-    delle superfici, ritorno allo sport dopo un periodo di inattività o modifiche
-    improvvise delle calzature.
-  </p>
-
-
-  <!-- DIAGNOSI -->
-  <h2>Come si diagnostica la fascite plantare?</h2>
-
-  <p>
-    Nella maggior parte dei casi la diagnosi è <strong>clinica</strong>.
-    L'anamnesi e l'esame obiettivo sono spesso sufficienti quando la localizzazione
-    e il comportamento del dolore sono tipici.
-  </p>
-
-  <h3>Visita clinica</h3>
-
-  <p>
-    La valutazione comprende la localizzazione del punto di massima dolorabilità,
-    la mobilità della caviglia, la tensione del complesso gastrocnemio-soleo,
-    l'allineamento del piede e l'eventuale presenza di sintomi neurologici.
-  </p>
-
-  <p>
-    È inoltre importante distinguere la fascite plantare da altre cause di talalgia,
-    come frattura da stress del calcagno, sindrome del tunnel tarsale,
-    neuropatia del nervo calcaneare o del primo ramo del nervo plantare laterale,
-    tendinopatia inserzionale dell'Achille e patologie infiammatorie.
-  </p>
-
-  <h3>Radiografie</h3>
-
-  <p>
-    Le radiografie non sono necessariamente richieste in una presentazione clinica
-    tipica. Possono essere utili quando il dolore è atipico, persistente,
-    dopo un trauma o quando si sospettano altre condizioni ossee.
-  </p>
-
-  <p>
-    Uno sperone calcaneare può essere visibile alla radiografia, ma la sua presenza
-    non dimostra che sia la causa del dolore: speroni ed entesofiti possono essere
-    presenti anche in persone completamente asintomatiche.
-  </p>
-
-  <h3>Ecografia</h3>
-
-  <p>
-    L'ecografia può documentare ispessimento e alterazioni strutturali della fascia
-    e può essere utile nei casi dubbi o persistenti. Non è tuttavia indispensabile
-    per confermare ogni caso di fascite plantare clinicamente tipica.
-  </p>
-
-  <h3>Risonanza Magnetica</h3>
-
-  <p>
-    La risonanza magnetica viene generalmente riservata ai casi nei quali la diagnosi
-    non è chiara, il dolore persiste nonostante il trattamento o esiste il sospetto
-    di patologie alternative come una frattura da stress o una lesione significativa
-    della fascia.
-  </p>
-
-
-  <!-- SPORTIVO VS SEDENTARIO -->
-  <h2>Sportivo e paziente sedentario: lo stesso problema?</h2>
-
-  <p>
-    La diagnosi può essere la stessa, ma i fattori che mantengono i sintomi
-    e gli obiettivi terapeutici possono essere molto differenti.
-    Per questo il programma riabilitativo dovrebbe essere adattato
-    alle caratteristiche del singolo paziente.
-  </p>
-
-  <div class="comparison">
-
-    <div class="comparison-col sport">
-      <h3>Il Paziente Sportivo</h3>
-
-      <p>
-        Nel corridore o nello sportivo la comparsa dei sintomi è frequentemente
-        associata a un aumento recente del carico di allenamento o a un recupero
-        insufficiente tra le sedute.
-      </p>
-
-      <p>
-        L'obiettivo non è necessariamente interrompere completamente ogni attività,
-        ma individuare un livello di carico tollerabile e aumentarlo progressivamente
-        mentre la capacità della fascia e dell'intero arto inferiore migliora.
-      </p>
-
-      <p>
-        La valutazione può includere forza del polpaccio, mobilità della caviglia,
-        gestione del carico e caratteristiche specifiche dello sport praticato.
-      </p>
-    </div>
-
-    <div class="comparison-col sedentary">
-      <h3>Il Paziente Sedentario</h3>
-
-      <p>
-        Nel paziente meno attivo possono assumere maggiore importanza sovrappeso,
-        lunghi periodi in piedi, ridotta capacità muscolare e improvvisi aumenti
-        dell'attività quotidiana.
-      </p>
-
-      <p>
-        Anche in questo caso il trattamento dovrebbe essere attivo:
-        esercizio, modifica dei fattori di carico e progressivo recupero
-        della capacità di camminare e svolgere le normali attività senza dolore.
-      </p>
-
-      <p>
-        Calzature, abitudini lavorative e gestione del peso possono entrare
-        nel programma quando rappresentano fattori rilevanti per il singolo paziente.
-      </p>
-    </div>
-
-  </div>
-
-
-  <!-- TERAPIA -->
-  <h2>Come si cura la fascite plantare?</h2>
-
-  <p>
-    Il trattamento iniziale è quasi sempre conservativo. Nella maggior parte
-    dei pazienti il miglioramento avviene progressivamente nel corso del tempo
-    attraverso la combinazione di gestione del carico, esercizio e strategie
-    specifiche per il controllo dei sintomi.
-  </p>
-
-  <p>
-    Non esiste un singolo trattamento efficace per tutti. La strategia migliore
-    è generalmente multimodale e viene modificata in base alla risposta clinica.
-  </p>
-
-
-  <h3>Trattamento Conservativo</h3>
-
-  <div class="therapy-grid">
-
-    <div class="therapy-card">
-      <h4>Stretching della fascia plantare</h4>
-      <p>
-        Lo stretching specifico della fascia plantare è uno degli interventi
-        maggiormente supportati dalle evidenze. Può essere associato allo stretching
-        del gastrocnemio e del soleo quando è presente una ridotta mobilità della caviglia.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Esercizio e Rinforzo</h4>
-      <p>
-        Il programma riabilitativo può comprendere esercizi progressivi di forza
-        per polpaccio, muscoli intrinseci del piede e strutture dell'arto inferiore,
-        adattando il carico alla tolleranza del paziente.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Taping, Ortesi e Calzature</h4>
-      <p>
-        Taping e ortesi possono contribuire alla riduzione dei sintomi all'interno
-        di un programma terapeutico più ampio. Le ortesi non dovrebbero essere
-        considerate automaticamente il trattamento principale né utilizzate
-        come unica strategia terapeutica.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Tutore Notturno</h4>
-      <p>
-        Nei pazienti con dolore particolarmente intenso ai primi passi del mattino,
-        un night splint può essere utilizzato per alcune settimane mantenendo
-        la fascia e il complesso gastrocnemio-soleo in una posizione di maggiore
-        allungamento durante il sonno.
-      </p>
-    </div>
-
-  </div>
-
-
-  <h3>Farmaci antinfiammatori</h3>
-
-  <p>
-    Farmaci analgesici o antinfiammatori possono essere utilizzati in alcuni pazienti
-    per il controllo temporaneo dei sintomi, tenendo conto delle controindicazioni
-    individuali. Non rappresentano tuttavia il trattamento della causa meccanica
-    e non sostituiscono esercizio e gestione del carico.
-  </p>
-
-
-  <h3>Onde d'Urto Extracorporee</h3>
-
-  <p>
-    Le onde d'urto extracorporee, o ESWT, rappresentano una delle opzioni
-    maggiormente utilizzate nelle forme persistenti di fascite plantare
-    che non migliorano con il trattamento iniziale.
-  </p>
-
-  <p>
-    Diversi studi randomizzati e revisioni sistematiche hanno mostrato
-    un possibile beneficio sul dolore e sulla funzione. Esistono protocolli
-    focali e radiali e non è possibile definire una percentuale universale
-    di successo valida per tutti i pazienti.
-  </p>
-
-
-  <h3>Infiltrazioni di Corticosteroidi</h3>
-
-  <p>
-    Le infiltrazioni corticosteroidee possono determinare una riduzione del dolore
-    nel breve termine, ma il beneficio tende a essere meno evidente nel medio
-    e lungo periodo.
-  </p>
-
-  <p>
-    Devono inoltre essere utilizzate con cautela perché sono state descritte
-    complicanze quali atrofia del cuscinetto adiposo e rottura della fascia plantare,
-    soprattutto in caso di infiltrazioni ripetute.
-  </p>
-
-
-  <h3>PRP: è utile nella fascite plantare?</h3>
-
-  <p>
-    Il PRP, o plasma ricco di piastrine, è stato studiato come possibile trattamento
-    delle forme croniche e resistenti alla terapia iniziale.
-  </p>
-
-  <p>
-    Alcune meta-analisi mostrano risultati favorevoli rispetto alle infiltrazioni
-    corticosteroidee in determinati intervalli di follow-up, mentre altri studi
-    evidenziano una notevole eterogeneità tra preparazioni, tecniche di infiltrazione
-    e popolazioni trattate.
-  </p>
-
-  <p>
-    Il PRP non rappresenta quindi una terapia di prima scelta e può essere preso
-    in considerazione soltanto in pazienti selezionati dopo un adeguato percorso
-    conservativo.
-  </p>
-
-  <div class="callout">
-    <div class="callout-label">PRP e sport</div>
-    <p>
-      Anche nello sportivo agonistico il PRP non dovrebbe essere considerato
-      automaticamente superiore alle altre opzioni. L'indicazione deve dipendere
-      dalla durata dei sintomi, dalla risposta alla riabilitazione e dagli obiettivi
-      funzionali individuali.
-    </p>
-  </div>
-
-
-  <!-- CHIRURGIA -->
-  <h2>Quando serve l'intervento chirurgico?</h2>
-
-  <p>
-    La chirurgia è necessaria soltanto in una piccola parte dei pazienti.
-    Viene presa in considerazione quando il dolore rimane significativamente
-    limitante nonostante un percorso conservativo prolungato, ben condotto
-    e documentato.
-  </p>
-
-  <p>
-    Prima di proporre un intervento è fondamentale rivalutare la diagnosi
-    ed escludere altre possibili fonti di dolore, comprese neuropatie,
-    fratture da stress, patologie dell'Achille o cause infiammatorie.
-  </p>
-
-  <p>
-    Una delle procedure utilizzate è il <strong>release parziale della fascia plantare</strong>,
-    che può essere eseguito attraverso tecniche open, mini-invasive o endoscopiche.
-    Non esiste tuttavia un approccio universalmente superiore per tutti i pazienti
-    e la scelta dipende dall'indicazione, dall'anatomia e dall'esperienza chirurgica.
-  </p>
-
-  <p>
-    Quando esiste il sospetto di una compressione del primo ramo del nervo plantare
-    laterale, comunemente chiamato nervo di Baxter, può essere necessaria
-    una valutazione specifica e, in pazienti selezionati, una decompressione.
-  </p>
-
-  <p>
-    Una fasciotomia eccessiva può alterare la biomeccanica dell'arco plantare;
-    per questo l'indicazione chirurgica deve essere prudente e il release
-    generalmente limitato alla porzione necessaria.
-  </p>
-
-  <div class="highlight-box">
-    <p>
-      Il successo del trattamento non viene misurato dall'aspetto dell'ecografia,
-      ma dal recupero della funzione: camminare, lavorare o tornare allo sport
-      con sintomi assenti o compatibili con le attività desiderate.
-    </p>
-  </div>
-
-
-  <!-- INTERNAL LINK -->
-  <h2>Dolore al tallone: non sempre è fascite plantare</h2>
-
-  <p>
-    Se il dolore non presenta le caratteristiche tipiche della fascite plantare
-    è importante considerare altre possibili diagnosi. Puoi approfondirle
-    nell'articolo dedicato alle
-    <a href="dolore-tallone.html">7 cause più comuni di dolore al tallone</a>.
-  </p>
-
-
-  <!-- FAQ -->
-  <h2>Domande frequenti sulla fascite plantare</h2>
-
-  <div class="therapy-grid">
-
-    <div class="therapy-card">
-      <h4>Quanto dura la fascite plantare?</h4>
-      <p>
-        I tempi sono molto variabili. Alcuni pazienti migliorano rapidamente,
-        mentre nelle forme croniche possono essere necessari diversi mesi
-        di trattamento progressivo.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Si può camminare con la fascite plantare?</h4>
-      <p>
-        Generalmente sì. È spesso preferibile modulare il carico piuttosto
-        che interrompere completamente ogni attività, evitando però quelle
-        che provocano un netto peggioramento dei sintomi.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Il plantare cura la fascite?</h4>
-      <p>
-        Il plantare può aiutare alcuni pazienti a controllare il dolore,
-        ma non dovrebbe essere considerato una terapia isolata.
-        È più utile all'interno di un programma che comprende esercizio
-        e gestione del carico.
-      </p>
-    </div>
-
-    <div class="therapy-card">
-      <h4>Lo sperone calcaneare causa la fascite plantare?</h4>
-      <p>
-        Non necessariamente. Uno sperone può essere presente anche in persone
-        senza dolore e non deve essere considerato automaticamente la causa
-        dei sintomi.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="callout">
-    <div class="callout-label">Quando rivolgersi allo specialista</div>
-    <p>
-      Una valutazione è particolarmente utile se il dolore persiste,
-      limita significativamente la camminata o lo sport, compare dopo un trauma,
-      presenta caratteristiche atipiche oppure non migliora nonostante
-      un programma conservativo correttamente impostato.
-    </p>
-  </div>
-
-
-  <div class="divider"></div>
-
-
-  <!-- REFERENCES -->
-  <div class="references">
-
-    <h2>Riferimenti Bibliografici</h2>
-
-    <ol>
-
-      <li>
-        <span class="ref-tag">
-          Koc TA Jr, Bise CG, Neville C, Carreira D, Martin RL, McDonough CM.
-          Heel Pain – Plantar Fasciitis: Revision 2023.
-          <em>J Orthop Sports Phys Ther.</em>
-          2023;53(12):CPG1–CPG39.
-          doi:10.2519/jospt.2023.0303.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          DiGiovanni BF, Nawoczenski DA, Lintal ME, et al.
-          Tissue-specific plantar fascia-stretching exercise enhances outcomes
-          in patients with chronic heel pain: a prospective, randomized study.
-          <em>J Bone Joint Surg Am.</em>
-          2003;85(7):1270–1277.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Lemont H, Ammirati KM, Usen N.
-          Plantar fasciitis: a degenerative process (fasciosis) without inflammation.
-          <em>J Am Podiatr Med Assoc.</em>
-          2003;93(3):234–237.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Rompe JD, Cacchio A, Weil L Jr, et al.
-          Plantar fascia-specific stretching versus radial shock-wave therapy
-          as initial treatment of plantar fasciopathy.
-          <em>J Bone Joint Surg Am.</em>
-          2010;92(15):2514–2522.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Gerdesmeyer L, Frey C, Vester J, et al.
-          Radial extracorporeal shock wave therapy is safe and effective
-          in the treatment of chronic recalcitrant plantar fasciitis:
-          results of a confirmatory randomized placebo-controlled multicenter study.
-          <em>Am J Sports Med.</em>
-          2008;36(11):2100–2109.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Acevedo JI, Beskin JL.
-          Complications of plantar fascia rupture associated with corticosteroid injection.
-          <em>Foot Ankle Int.</em>
-          1998;19(2):91–97.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Monto RR.
-          Platelet rich plasma efficacy versus corticosteroid injection treatment
-          for chronic severe plantar fasciitis.
-          <em>Foot Ankle Int.</em>
-          2014;35(4):313–318.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Goff JD, Crawford R.
-          Diagnosis and treatment of plantar fasciitis.
-          <em>Am Fam Physician.</em>
-          2011;84(6):676–682.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Trojian T, Tucker AK.
-          Plantar fasciitis.
-          <em>Am Fam Physician.</em>
-          2019;99(12):744–750.
-        </span>
-      </li>
-
-      <li>
-        <span class="ref-tag">
-          Baxter DE, Pfeffer GB.
-          Treatment of chronic heel pain by surgical release
-          of the first branch of the lateral plantar nerve.
-          <em>Clin Orthop Relat Res.</em>
-          1992;(279):229–236.
-        </span>
-      </li>
-
-    </ol>
-
-  </div>
-
-</div><!-- end article-wrap -->
-
-
-<!-- CTA -->
-<div class="cta-section">
-
-  <h2>Hai dolore al tallone?</h2>
-
-  <p>
-    Una valutazione clinica permette di distinguere la fascite plantare
-    dalle altre possibili cause di talalgia e impostare il trattamento più appropriato.
-  </p>
-
-  <a href="mailto:paladinoricardo@outlook.com" class="btn">
-    Prenota una consulenza
-  </a>
-
-</div>
-
-
-<!-- FOOTER -->
-<footer>
-
-  <p>
-    © 2026 — Dr. Ricardo Paladino ·
-    Specializzando Ortopedia e Traumatologia ·
-    Università degli Studi di Milano
-  </p>
-
-  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">
-    LinkedIn
-  </a>
-
-  <a href="mailto:paladinoricardo@outlook.com">
-    Email
-  </a>
-
-  <p style="font-size:12px; color:#777; margin-top:12px;">
-    Questo articolo ha finalità informative e divulgative
-    e non sostituisce una valutazione medica individuale.
-  </p>
-
-</footer>
-
+    updateNavigation();
+    window.addEventListener('scroll', updateNavigation, { passive: true });
+  </script>
 </body>
 </html>
