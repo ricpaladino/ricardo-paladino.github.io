@@ -13,16 +13,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Dolore al tallone: cause, diagnosi e trattamento | Dr. Paladino</title>
+  <title>Dolore al tallone: cause e rimedi | Dr. Paladino</title>
   <meta
     name="description"
-    content="Dolore al tallone sotto, dietro o lateralmente: le possibili cause, gli esami utili, i trattamenti e quando rivolgersi all'ortopedico."
+    content="Dolore al tallone al mattino, sotto, dietro o nella parte esterna: possibili cause, trattamenti, esami utili e quando richiedere una visita."
   >
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://drpaladino.com/blog/dolore-tallone.html">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Dolore al tallone: cause, diagnosi e trattamento">
+  <meta property="og:title" content="Dolore al tallone: cause, sintomi e trattamento">
   <meta property="og:description" content="Le principali cause del dolore al tallone e come distinguerle: sintomi, diagnosi e possibili trattamenti.">
   <meta property="og:url" content="https://drpaladino.com/blog/dolore-tallone.html">
   <meta property="og:site_name" content="Dr. Ricardo Paladino">
@@ -32,16 +32,18 @@
 
   <meta property="article:author" content="Dr. Ricardo Paladino">
   <meta property="article:published_time" content="2026-06-01">
-  <meta property="article:modified_time" content="2026-09-01">
+  <meta property="article:modified_time" content="2026-11-04">
 
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dolore al tallone: cause, sintomi e trattamento">
+  <meta name="twitter:description" content="Una guida alle possibili cause del dolore al tallone, alla diagnosi e ai trattamenti.">
   <meta name="twitter:image" content="https://drpaladino.com/images/dolore-tallone.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
-    /* ── FAVICON ── */
+    <!-- FAVICON -->
     
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,605 +51,288 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   
   <style>
-    /* ── BASE ── */
+
+    :root {
+      --green: #1b3c37;
+      --gold: #ecd19a;
+      --ink: #404745;
+      --paper: #f2f2f2;
+    }
     *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-padding-top: 0; }
+    body { margin: 0; font-family: 'Source Sans Pro', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.75; }
+    a { color: var(--green); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid #a77824; outline-offset: 5px; }
+    [id] { scroll-margin-top: 100px; }
+    .skip-link { position: fixed; top: 8px; left: 12px; transform: translateY(-180%); z-index: 2000; padding: 10px 18px; background: white; color: var(--green); }
+    .skip-link:focus { transform: translateY(0); }
 
-    body {
-      margin: 0;
-      font-family: 'Source Sans Pro', sans-serif;
-      background-color: #f2f2f2;
-      color: #4a4a4a;
-      line-height: 1.75;
-    }
+    /* Navigazione */
+    #main-nav { position: fixed; inset: 0 0 auto; z-index: 1000; padding: 14px 20px; background: rgba(18, 28, 26, .86); transition: background .2s; }
+    #main-nav.scrolled { background: rgba(18, 28, 26, .98); }
+    .nav-links { max-width: 1050px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 28px; }
+    .nav-links a { display: inline-flex; align-items: center; min-height: 32px; color: white; font-weight: 600; font-size: 14px; letter-spacing: .5px; text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--gold); }
 
-    /* ── NAV ── */
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      text-align: center;
-      padding: 20px 0;
-      z-index: 1000;
-      background: transparent;
-      transition: background 0.3s;
-    }
+    /* Copertina */
+    .article-hero { min-height: 390px; min-height: clamp(390px, 48vh, 500px); display: flex; align-items: flex-end; justify-content: center; padding: 118px 24px 48px; color: white; text-align: center; background: linear-gradient(rgba(0, 0, 0, .48), rgba(13, 30, 27, .80)), url('https://drpaladino.com/images/dolore-tallone.png') center 35% / cover; }
+    .article-hero-inner { max-width: 900px; }
+    .article-hero .tag { display: inline-block; border: 1px solid var(--gold); color: var(--gold); padding: 4px 13px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; }
+    .article-hero h1 { margin: 0 0 18px; font-family: 'Frank Ruhl Libre', serif; font-size: clamp(32px, 4.3vw, 52px); font-weight: 500; line-height: 1.17; }
+    .article-hero .meta { max-width: 750px; margin: 0 auto; color: #eeeeeb; font-size: 14px; line-height: 1.65; }
 
-    nav.scrolled { background: rgba(18, 18, 18, 0.93); }
+    /* Articolo */
+    .article-wrap { max-width: 900px; margin: auto; padding: 38px 28px 64px; }
+    .back-link { display: inline-block; margin-bottom: 30px; font-size: 13px; font-weight: 600; letter-spacing: .7px; text-transform: uppercase; }
+    .article-wrap p { font-size: 18px; margin: 0 0 20px; text-align: left; }
+    .article-wrap h2 { margin: 52px 0 20px; padding-bottom: 12px; border-bottom: 1px solid #d9dedb; color: var(--green); font-family: 'Frank Ruhl Libre', serif; font-size: clamp(27px, 3vw, 32px); line-height: 1.25; font-weight: 500; }
+    .article-wrap h3 { margin: 28px 0 12px; color: var(--green); font-family: 'Frank Ruhl Libre', serif; font-size: 23px; line-height: 1.3; font-weight: 500; }
+    .intro-box { background: var(--green); color: white; padding: 26px 30px; margin: 0 0 26px; border-left: 4px solid var(--gold); }
+    .intro-box p { color: white; margin: 0; font-size: 18px; }
+    .article-index { margin: 0 0 42px; padding: 15px 20px; border: 1px solid #d6dcd8; background: white; }
+    .article-index summary { color: var(--green); font-weight: 600; cursor: pointer; }
+    .article-index ul { margin: 12px 0 0; padding-left: 20px; columns: 2; column-gap: 30px; }
+    .article-index li { break-inside: avoid; margin: 4px 0; }
 
-    nav a {
-      margin: 0 20px;
-      text-decoration: none;
-      color: white;
-      font-weight: 600;
-      letter-spacing: 1px;
-      font-size: 14px;
-    }
-
-    /* ── ARTICLE HERO ── */
-    .article-hero {
-      height: 62vh;
-      min-height: 400px;
-      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                  url('../images/dolore-tallone.png');
-      background-size: cover;
-      background-position: center 30%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      padding-bottom: 60px;
-      text-align: center;
-      color: white;
-    }
-
-    .article-hero-inner {
-      max-width: 820px;
-      padding: 0 24px;
-    }
-
-    .article-hero .tag {
-      display: inline-block;
-      border: 1px solid #ecd19a;
-      color: #ecd19a;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      margin-bottom: 20px;
-    }
-
-    .article-hero h1 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: clamp(30px, 5vw, 52px);
-      margin: 0 0 18px;
-      line-height: 1.15;
-      font-weight: 500;
-    }
-
-    .article-hero .meta {
-      font-size: 14px;
-      color: rgba(255,255,255,0.72);
-      letter-spacing: 0.5px;
-    }
-
-    /* ── LAYOUT ── */
-    .article-wrap {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 70px 24px 100px;
-    }
-
-    /* ── INTRO BOX ── */
-    .intro-box {
-      background: #1b3c37;
-      color: white;
-      padding: 32px 36px;
-      margin-bottom: 56px;
-      border-left: 4px solid #ecd19a;
-    }
-
-    .intro-box p {
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    /* ── SECTION TITLES ── */
-    .article-wrap h2 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 32px;
-      color: #1b3c37;
-      margin: 60px 0 18px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-    }
-
-    .article-wrap h3 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 22px;
-      color: #121212;
-      margin: 32px 0 10px;
-      text-align: left;
-    }
-
-    .article-wrap p {
-      font-size: 17px;
-      margin-bottom: 18px;
-      text-align: left;
-    }
-
-    /* ── PAIN LOCATION GUIDE ── */
-    .location-section { margin: 0 0 60px; }
+    /* Guida iniziale: fuori dal riquadro introduttivo */
+    .location-section { margin: 0 0 42px; }
     .location-section > h2 { margin-top: 0; }
-
-    .location-lead {
-      max-width: 760px;
-      margin-bottom: 28px !important;
-    }
-
-    .location-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .location-card {
-      background: white;
-      padding: 25px 26px 23px;
-      border-top: 3px solid #ecd19a;
-      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.05);
-    }
-
+    .location-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .location-card { min-width: 0; padding: 22px 24px; background: white; border-top: 3px solid var(--gold); }
     .location-card-wide { grid-column: 1 / -1; }
+    .location-label { display: block; color: #76591f; font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 7px; }
+    .location-card h3 { margin: 0 0 10px; font-size: 23px; }
+    .location-card p { color: var(--ink); margin: 0; font-size: 17px; line-height: 1.65; }
+    .location-note { margin-top: 20px !important; padding-left: 16px; border-left: 3px solid var(--gold); font-size: 16px !important; }
+    .symptom-section { margin: 42px 0; }
+    .symptom-section ul { padding-left: 22px; font-size: 18px; }
+    .symptom-section li { margin-bottom: 14px; }
 
-    .location-label {
-      display: block;
-      margin-bottom: 8px;
-      color: #8b6b2e;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-    }
+    /* Cause e riquadri informativi */
+    .cause-header { display: flex; align-items: flex-start; gap: 16px; margin: 48px 0 20px; }
+    .cause-number { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; flex-shrink: 0; background: var(--green); color: var(--gold); font-family: 'Frank Ruhl Libre', serif; font-size: 23px; }
+    .cause-header h2 { margin: 3px 0 0; padding: 0; border: 0; font-size: 29px; }
+    .panel { padding: 22px 26px; margin: 26px 0; }
+    .panel-green { background: #e7efec; border-left: 3px solid var(--green); }
+    .panel-gold { background: #fdf7ea; border-left: 3px solid var(--gold); }
+    .panel-dark { background: var(--green); color: white; border-left: 3px solid var(--gold); }
+    .panel p { margin: 0 0 12px; font-size: 17px; }
+    .panel p:last-child { margin-bottom: 0; }
+    .panel-title { color: var(--green); margin-bottom: 10px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .panel-dark p { color: white; }
+    .panel-dark .panel-title, .panel-dark strong, .panel-dark a { color: var(--gold); }
+    .sport-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 12px; }
+    .sport-chip { background: white; border: 1px solid #a3b6ae; color: var(--green); padding: 4px 12px; font-size: 14px; }
+    .article-wrap .small-note { color: #606762; font-size: 15px; }
+    .divider { border: 0; border-top: 1px solid #d9dedb; margin: 40px 0; }
 
-    .location-card h3 {
-      margin: 0 0 10px;
-      color: #1b3c37;
-      font-size: 21px;
-    }
+    /* Tabelle: contrasto esplicito e scorrimento limitato al riquadro */
+    .table-scroll { max-width: 100%; overflow-x: auto; margin: 24px 0; border: 1px solid #d8dedb; background: white; }
+    .compare-table { width: 100%; min-width: 610px; border-collapse: collapse; color: var(--ink); font-size: 16px; line-height: 1.6; text-align: left; }
+    .compare-table caption { padding: 12px 18px; text-align: left; font-weight: 600; color: var(--green); background: #e7efec; }
+    .compare-table thead th { color: white; background: var(--green); padding: 14px 16px; vertical-align: top; font-weight: 600; }
+    .compare-table thead th:first-child { color: var(--gold); width: 25%; }
+    .compare-table thead th:not(:first-child) { width: 37.5%; }
+    .compare-table tbody td, .compare-table tbody th { padding: 14px 16px; vertical-align: top; border-bottom: 1px solid #dfe4e0; color: var(--ink); font-weight: 400; }
+    .compare-table tbody th { color: var(--green); font-weight: 600; }
+    .compare-table tbody tr:nth-child(odd) { background: #f7f8f6; }
+    .table-hint { display: none; }
 
-    .location-card p {
-      margin: 0;
-      color: #5d5d5d;
-      font-size: 15.5px;
-      line-height: 1.65;
-    }
+    /* Diagnosi e segnali d'allarme */
+    .diag-steps { counter-reset: diag; list-style: none; padding: 0; margin: 24px 0 0; }
+    .diag-steps li { counter-increment: diag; display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: start; gap: 16px; margin-bottom: 20px; font-size: 17px; }
+    .diag-steps li::before { content: counter(diag); display: flex; align-items: center; justify-content: center; height: 32px; background: var(--gold); color: #172b25; font-family: 'Frank Ruhl Libre', serif; }
+    .red-flags { background: #fff4f0; border-left: 4px solid #ad4a37; padding: 24px 26px; margin: 38px 0; }
+    .red-flags .rf-title { margin: 0 0 14px; padding: 0; border: 0; color: #8c3828; font-size: 25px; }
+    .red-flags p, .red-flags ul { font-size: 17px; }
+    .red-flags ul { padding-left: 20px; margin: 12px 0 18px; }
+    .red-flags li { margin: 6px 0; }
+    .red-flags p:last-child { margin-bottom: 0; }
 
-    .location-note {
-      margin: 22px 0 0 !important;
-      padding-left: 16px;
-      border-left: 3px solid #ecd19a;
-      color: #6b6b6b;
-      font-size: 14.5px !important;
-    }
+    /* Domande frequenti e fonti */
+    .faq-section { margin: 48px 0 20px; }
+    .faq-item { background: white; margin-bottom: 14px; padding: 22px 26px; border-left: 3px solid var(--gold); }
+    .faq-item h3 { margin: 0 0 12px; font-size: 23px; }
+    .faq-item p { margin: 0; font-size: 17px; }
+    .citations { font-size: .8em; white-space: nowrap; }
+    .citations a { display: inline-block; font-weight: 600; padding: 0 2px; }
+    .references { background: white; padding: 30px; margin-top: 54px; border-top: 3px solid var(--green); }
+    .references h2 { font-size: 27px; margin: 0 0 20px; padding: 0; border: 0; }
+    .references ol { margin: 0; padding-left: 24px; }
+    .references li { font-size: 15px; line-height: 1.65; color: #535b56; margin-bottom: 16px; padding-left: 4px; overflow-wrap: anywhere; }
+    .references li:target { background: #fdf7ea; outline: 2px solid var(--gold); outline-offset: 5px; }
+    .references li:last-child { margin-bottom: 0; }
 
-    /* ── CAUSE CARDS ── */
-    .cause-number {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      background: #1b3c37;
-      color: #ecd19a;
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 22px;
-      flex-shrink: 0;
-      margin-right: 18px;
-    }
+    /* Contatti */
+    .cta-block { background: var(--green); color: white; text-align: center; padding: 54px 24px; }
+    .cta-block h2 { font-family: 'Frank Ruhl Libre', serif; font-size: 34px; font-weight: 500; line-height: 1.2; margin: 0 0 18px; }
+    .cta-block p { max-width: 650px; margin: 0 auto 24px; font-size: 18px; }
+    .btn { display: inline-block; border: 1px solid var(--gold); padding: 12px 26px; color: white; text-decoration: none; font-weight: 600; }
+    .btn:hover { background: rgba(236,209,154,.12); }
+    footer { background: #121c19; color: #e1e6e2; text-align: center; padding: 28px 24px; font-size: 14px; }
+    footer p { max-width: 760px; margin: 0 auto 16px; }
+    footer a { display: inline-block; color: var(--gold); padding: 6px 10px; }
+    footer .disclaimer { font-size: 13px; color: #c1c9c3; margin-top: 16px; }
 
-    .cause-header {
-      display: flex;
-      align-items: center;
-      margin: 56px 0 16px;
-    }
-
-    .cause-header h2 {
-      border: none;
-      margin: 0;
-      padding: 0;
-      font-size: 26px;
-      color: #1b3c37;
-    }
-
-    /* ── INFO PANELS ── */
-    .panel {
-      padding: 24px 28px;
-      margin: 24px 0;
-      font-size: 16px;
-    }
-
-    .panel-green {
-      background: #eaf2f0;
-      border-left: 3px solid #1b3c37;
-    }
-
-    .panel-gold {
-      background: #fdf7ea;
-      border-left: 3px solid #ecd19a;
-    }
-
-    .panel-dark {
-      background: #1b3c37;
-      color: white;
-      border-left: 3px solid #ecd19a;
-    }
-
-    .panel-dark strong { color: #ecd19a; }
-    .panel p { margin: 0 0 8px; text-align: left; font-size: 16px; }
-    .panel p:last-child { margin: 0; }
-
-    .panel-title {
-      font-weight: 600;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      color: #1b3c37;
-    }
-
-    .panel-dark .panel-title { color: #ecd19a; }
-
-    /* ── COMPARISON TABLES ── */
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 28px 0;
-      font-size: 15.5px;
-      text-align: left;
-    }
-
-    .compare-table thead tr { background: #1b3c37; color: white; }
-
-    .compare-table thead th {
-      padding: 14px 18px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    .compare-table thead th:first-child { color: #ecd19a; width: 30%; }
-    .compare-table thead th:nth-child(2) { width: 35%; }
-    .compare-table thead th:nth-child(3) { width: 35%; }
-    .compare-table tbody tr { border-bottom: 1px solid #e0e0e0; }
-    .compare-table tbody tr:nth-child(even) { background: white; }
-    .compare-table tbody tr:nth-child(odd) { background: #f9f9f7; }
-
-    .compare-table tbody td {
-      padding: 13px 18px;
-      vertical-align: top;
-      color: #4a4a4a;
-    }
-
-    .compare-table tbody td:first-child {
-      font-weight: 600;
-      color: #1b3c37;
-    }
-
-    /* ── SPORT CHIPS ── */
-    .sport-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 16px 0 24px;
-    }
-
-    .sport-chip {
-      background: white;
-      border: 1px solid #1b3c37;
-      color: #1b3c37;
-      padding: 6px 16px;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    /* ── DIVIDER ── */
-    .divider {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 48px 0;
-    }
-
-    /* ── DIAGNOSIS STEPS ── */
-    .diag-steps {
-      counter-reset: diag;
-      list-style: none;
-      padding: 0;
-      margin: 16px 0 0;
-    }
-
-    .diag-steps li {
-      counter-increment: diag;
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 18px;
-      font-size: 16px;
-    }
-
-    .diag-steps li::before {
-      content: counter(diag);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 32px;
-      height: 32px;
-      background: #ecd19a;
-      color: #121212;
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 16px;
-      font-weight: 500;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    /* ── RED FLAGS ── */
-    .red-flags {
-      background: #fff5f5;
-      border-left: 4px solid #c0392b;
-      padding: 24px 28px;
-      margin: 32px 0;
-    }
-
-    .red-flags .rf-title {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #c0392b;
-      margin-bottom: 12px;
-    }
-
-    .red-flags ul {
-      margin: 0;
-      padding-left: 20px;
-      font-size: 16px;
-    }
-
-    .red-flags ul li { margin-bottom: 6px; }
-
-    /* ── FAQ ── */
-    .faq-section { margin: 60px 0 20px; }
-
-    .faq-item {
-      background: white;
-      margin-bottom: 16px;
-      padding: 24px 28px;
-      border-left: 3px solid #ecd19a;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-    }
-
-    .faq-item h3 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 20px;
-      color: #1b3c37;
-      margin: 0 0 10px;
-    }
-
-    .faq-item p { margin: 0; font-size: 16px; }
-
-    /* ── REFERENCES ── */
-    .references {
-      background: white;
-      padding: 36px 36px 32px;
-      margin-top: 64px;
-      border-top: 3px solid #1b3c37;
-    }
-
-    .references h2 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 22px;
-      color: #1b3c37;
-      margin: 0 0 20px;
-      text-align: left;
-      border: none;
-      padding: 0;
-    }
-
-    .references ol { margin: 0; padding-left: 22px; }
-
-    .references ol li {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 8px;
-      line-height: 1.55;
-    }
-
-    .references ol li em { color: #4a4a4a; font-style: italic; }
-
-    /* ── CTA ── */
-    .cta-block {
-      background: #1b3c37;
-      color: white;
-      text-align: center;
-      padding: 72px 24px;
-      margin-top: 80px;
-    }
-
-    .cta-block h2 {
-      font-family: 'Frank Ruhl Libre', serif;
-      font-size: 34px;
-      color: white;
-      margin: 0 0 14px;
-      text-align: center;
-      border: none;
-      padding: 0;
-    }
-
-    .cta-block p {
-      font-size: 17px;
-      margin: 0 0 28px;
-      color: rgba(255,255,255,0.8);
-      text-align: center;
-    }
-
-    .btn {
-      border: 1px solid #ecd19a;
-      padding: 12px 28px;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
-
-    .btn:hover { background: rgba(255,255,255,0.1); }
-
-    /* ── FOOTER ── */
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #121212;
-      color: white;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: #ecd19a;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    /* ── BACK TO BLOG ── */
-    .back-link {
-      display: inline-block;
-      margin: 80px 24px 0;
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #1b3c37;
-      text-decoration: none;
-      border-bottom: 1px solid #1b3c37;
-      padding-bottom: 2px;
-    }
-
-    .back-link:hover { color: #ecd19a; border-color: #ecd19a; }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 600px) {
-      nav a { margin: 0 7px; font-size: 12px; }
-      .article-hero h1 { font-size: 28px; }
-      .intro-box { padding: 24px 20px; }
-      .article-wrap { padding: 50px 18px 80px; }
-      .location-grid { grid-template-columns: 1fr; }
+    @media (max-width: 640px) {
+      [id] { scroll-margin-top: 118px; }
+      #main-nav { padding: 9px 12px; }
+      .nav-links { display: grid; grid-template-columns: repeat(3, max-content); gap: 0 18px; }
+      .nav-links a { justify-content: center; min-height: 34px; font-size: 13px; letter-spacing: 0; }
+      .article-hero { min-height: 390px; padding: 122px 20px 36px; }
+      .article-hero h1 { font-size: 33px; }
+      .article-hero .meta { font-size: 13px; }
+      .article-wrap { padding: 28px 20px 44px; }
+      .intro-box, .panel { padding: 22px 20px; }
+      .intro-box p, .article-wrap p { font-size: 17px; }
+      .article-index ul { columns: 1; }
+      .location-grid { grid-template-columns: 1fr; gap: 12px; }
       .location-card-wide { grid-column: auto; }
-      .location-card { padding: 22px 20px; }
-      .references { padding: 28px 20px; }
-      .compare-table { font-size: 13.5px; }
-      .compare-table thead th,
-      .compare-table tbody td { padding: 10px 12px; }
+      .location-card { padding: 20px; }
+      .cause-header { gap: 12px; }
+      .cause-header h2 { font-size: 26px; }
+      .cause-number { width: 36px; height: 36px; font-size: 21px; }
+      .table-hint { display: block; font-size: 14px !important; margin-bottom: -12px !important; color: #606762; }
+      .faq-item, .red-flags { padding: 22px 20px; }
+      .references { padding: 24px 20px; }
+      .references li { font-size: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) { #main-nav { transition: none; } }
+    @media print {
+      #main-nav, .skip-link, .back-link, .article-index, .cta-block, .table-hint { display: none; }
+      body { background: white; color: black; }
+      .article-hero { min-height: 0; background: white; color: black; padding: 20px 0; }
+      .article-hero .tag, .article-hero .meta { color: #303b35; }
+      .article-wrap { max-width: none; padding: 0; }
+      .table-scroll { overflow: visible; }
+      .compare-table { min-width: 0; font-size: 11px; }
+      .panel, .faq-item, .location-card { break-inside: avoid; }
     }
   </style>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://drpaladino.com/#person",
-        "name": "Ricardo Paladino Marques de Paula",
-        "honorificPrefix": "Dr.",
-        "url": "https://drpaladino.com/",
-        "jobTitle": "Medico specializzando in Ortopedia e Traumatologia",
-        "sameAs": [
-          "https://www.linkedin.com/in/ricardo-paladino-mp"
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://drpaladino.com/#person",
+      "name": "Ricardo Paladino Marques de Paula",
+      "honorificPrefix": "Dr.",
+      "url": "https://drpaladino.com/",
+      "jobTitle": "Medico specializzando in Ortopedia e Traumatologia",
+      "sameAs": [
+        "https://www.linkedin.com/in/ricardo-paladino-mp"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://drpaladino.com/blog/dolore-tallone.html#article",
+      "url": "https://drpaladino.com/blog/dolore-tallone.html",
+      "headline": "Dolore al tallone: cause, sintomi e trattamento",
+      "description": "Le principali cause del dolore al tallone, gli elementi utili per distinguerle e i possibili percorsi diagnostici e terapeutici.",
+      "image": "https://drpaladino.com/images/dolore-tallone.png",
+      "inLanguage": "it-IT",
+      "datePublished": "2026-06-01",
+      "dateModified": "2026-11-04",
+      "author": {
+        "@id": "https://drpaladino.com/#person"
       },
-      {
-        "@type": ["BlogPosting", "MedicalWebPage"],
-        "@id": "https://drpaladino.com/blog/dolore-tallone.html#article",
-        "url": "https://drpaladino.com/blog/dolore-tallone.html",
-        "headline": "Dolore al tallone: cause, diagnosi e trattamento",
-        "description": "Le principali cause del dolore al tallone, gli elementi utili per distinguerle e i possibili percorsi diagnostici e terapeutici.",
-        "image": "https://drpaladino.com/images/dolore-tallone.png",
-        "inLanguage": "it-IT",
-        "datePublished": "2026-06-01",
-        "dateModified": "2026-09-01",
-        "author": {
-          "@id": "https://drpaladino.com/#person"
+      "mainEntityOfPage": {
+        "@id": "https://drpaladino.com/blog/dolore-tallone.html"
+      },
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Dolore al tallone"
+      },
+      "citation": [
+        "https://doi.org/10.2519/jospt.2023.0303",
+        "https://doi.org/10.2165/00007256-200636070-00004",
+        "https://pubmed.ncbi.nlm.nih.gov/9617396/",
+        "https://doi.org/10.1177/0363546515584760",
+        "https://doi.org/10.1001/jama.2021.6986",
+        "https://doi.org/10.1007/s00167-010-1374-z",
+        "https://www.orthoinfo.org/diseases--conditions/stress-fractures-of-the-foot-and-ankle/",
+        "https://doi.org/10.1302/2058-5241.6.210031",
+        "https://doi.org/10.7547/1010133",
+        "https://doi.org/10.1177/0363546508324176",
+        "https://www.foothealthfacts.org/conditions/peroneal-tendon-injuries",
+        "https://doi.org/10.3390/diagnostics13213385",
+        "https://www.orthoinfo.org/diseases--conditions/plantar-fasciitis-and-bone-spurs/",
+        "https://doi.org/10.1136/bjsports-2024-109138",
+        "https://www.orthoinfo.org/diseases--conditions/severs-disease/",
+        "https://www.foothealthfacts.org/conditions/haglund%E2%80%99s-deformity",
+        "https://www.nhs.uk/symptoms/foot-pain/heel-pain/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://drpaladino.com/"
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://drpaladino.com/blog/dolore-tallone.html"
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://drpaladino.com/blog.html"
         },
-        "about": {
-          "@type": "MedicalCondition",
-          "name": "Dolore al tallone"
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dolore al tallone",
+          "item": "https://drpaladino.com/blog/dolore-tallone.html"
         }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://drpaladino.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://drpaladino.com/blog.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Dolore al tallone",
-            "item": "https://drpaladino.com/blog/dolore-tallone.html"
-          }
-        ]
+      ]
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": "https://drpaladino.com/blog/dolore-tallone.html",
+      "url": "https://drpaladino.com/blog/dolore-tallone.html",
+      "name": "Dolore al tallone: cause, sintomi e trattamento",
+      "inLanguage": "it-IT",
+      "mainEntity": {
+        "@id": "https://drpaladino.com/blog/dolore-tallone.html#article"
       }
-    ]
-  }
+    }
+  ]
+}
   </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   
 <!-- NAV -->
-<nav id="main-nav">
+<nav id="main-nav" aria-label="Navigazione principale">
+  <div class="nav-links">
   <a href="../">Home</a>
   <a href="../#chi">Chi sono</a>
   <a href="../piede-caviglia.html">Piede e Caviglia</a>
   <a href="../#formazione">Formazione</a>
   <a href="../blog.html">Blog</a>
   <a href="../#contatti">Contatti</a>
+  </div>
 </nav>
 
 
-  <script>
-    window.addEventListener('scroll', function () {
-      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 60);
-    });
-  </script>
+
 
   <header class="article-hero">
     <div class="article-hero-inner">
       <span class="tag">Piede &amp; Caviglia</span>
       <h1>Dolore al tallone: cause, sintomi e trattamento</h1>
-      <p class="meta">Dr. Ricardo Paladino Marques de Paula &nbsp;·&nbsp; Specializzando Ortopedia e Traumatologia, Università degli Studi di Milano &nbsp;·&nbsp; Aggiornato settembre 2026</p>
+      <p class="meta">Dr. Ricardo Paladino Marques de Paula &nbsp;·&nbsp; Specializzando Ortopedia e Traumatologia, Università degli Studi di Milano &nbsp;·&nbsp; Aggiornato il <time datetime="2026-11-04">4 novembre 2026</time></p>
     </div>
   </header>
 
-  <a href="../blog.html" class="back-link">&larr; Torna al Blog</a>
-
-  <article class="article-wrap">
+  <main id="contenuto">
+  <article class="article-wrap" id="article">
+    <a href="../blog.html" class="back-link">&larr; Torna al Blog</a>
     <div class="intro-box">
       <p>
         Il dolore al tallone è uno dei disturbi più frequenti del piede, ma non sempre
@@ -658,8 +343,21 @@
       </p>
     </div>
 
-    <section class="location-section" id="sede-dolore">
-      <h2>Dove fa male il tallone?</h2>
+    <details class="article-index">
+      <summary>In questo articolo</summary>
+      <ul>
+        <li><a href="#sede-dolore">Dove fa male il tallone</a></li>
+        <li><a href="#dolore-tallone-mattino">Dolore ai primi passi del mattino</a></li>
+        <li><a href="#dolore-tallone-esterno">Dolore nella parte esterna</a></li>
+        <li><a href="#fascite-plantare">Le principali cause</a></li>
+        <li><a href="#quando-farsi-valutare">Quando farsi valutare</a></li>
+        <li><a href="#diagnosi">Visita ed esami</a></li>
+        <li><a href="#domande-frequenti">Domande frequenti</a></li>
+      </ul>
+    </details>
+
+    <section class="location-section" id="sede-dolore" aria-labelledby="titolo-sede">
+      <h2 id="titolo-sede">Dove fa male il tallone?</h2>
 
       <p class="location-lead">
         Tallone e calcagno vengono spesso utilizzati come sinonimi, ma il calcagno
@@ -699,8 +397,8 @@
           <span class="location-label">Dolore laterale</span>
           <h3>Nella parte esterna</h3>
           <p>
-            È una localizzazione meno specifica e può provenire da strutture ossee,
-            articolari, tendinee o nervose della regione laterale.
+            Il punto preciso e i sintomi associati aiutano a distinguere un problema
+            dei tendini, dell'osso o dei nervi. <a href="#dolore-tallone-esterno">Leggi le possibili cause del dolore esterno</a>.
           </p>
         </div>
 
@@ -717,21 +415,73 @@
 
       <p class="location-note">
         La sede del dolore rappresenta soltanto il punto di partenza:
-        anamnesi ed esame clinico restano indispensabili per identificarne l'origine.
+        anamnesi ed esame clinico restano indispensabili per identificarne l'origine. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a> <a href="#ref-8" role="doc-noteref" aria-label="Riferimento bibliografico 8">[8]</a></span>
+      </p>
+    </section>
+
+    <section class="symptom-section" id="dolore-tallone-mattino" aria-labelledby="titolo-mattino">
+      <h2 id="titolo-mattino">Dolore al tallone al mattino: perché fa male ai primi passi?</h2>
+      <p>
+        <strong>Il dolore sotto il tallone quando ci si alza dal letto è un sintomo tipico
+        della fascite plantare</strong>, soprattutto se interessa il lato interno della pianta.
+        Può comparire anche dopo essere rimasti seduti a lungo: spesso si attenua con i primi
+        minuti di cammino e ritorna dopo molte ore in piedi. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
+      </p>
+      <p>
+        Questo andamento orienta la diagnosi, ma non la conferma da solo. Se il dolore è
+        dietro il tallone, se prevalgono bruciore o formicolio oppure se peggiora progressivamente
+        con il carico, la visita deve considerare anche altre cause. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a> <a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a> <a href="#ref-8" role="doc-noteref" aria-label="Riferimento bibliografico 8">[8]</a></span>
+        Per conoscere esercizi e opzioni di trattamento puoi leggere l'approfondimento sulla
+        <a href="fascite-plantare.html">fascite plantare: sintomi, diagnosi e trattamento</a>.
+      </p>
+    </section>
+
+    <section class="symptom-section" id="dolore-tallone-esterno" aria-labelledby="titolo-esterno">
+      <h2 id="titolo-esterno">Dolore nella parte esterna del tallone: da cosa può dipendere?</h2>
+      <p>
+        <strong>Il dolore al tallone esterno non identifica una sola malattia.</strong>
+        È utile capire se il punto doloroso si trova sul fianco del calcagno, dietro il
+        malleolo esterno o più avanti lungo il bordo del piede: sono zone vicine,
+        ma le strutture coinvolte possono essere diverse.
+      </p>
+      <ul>
+        <li>
+          <strong>Dolore dietro il malleolo esterno o lungo il lato del piede:</strong>
+          può coinvolgere i tendini peronieri, soprattutto dopo una distorsione o un aumento
+          dell'attività. Gonfiore, sensazione di scatto o instabilità sono elementi da riferire
+          durante la visita. <span class="citations"><a href="#ref-11" role="doc-noteref" aria-label="Riferimento bibliografico 11">[11]</a></span>
+        </li>
+        <li>
+          <strong>Bruciore, formicolio o sensibilità alterata:</strong>
+          possono suggerire un'irritazione nervosa, anche del nervo surale,
+          che contribuisce alla sensibilità della regione laterale del tallone e del piede. <span class="citations"><a href="#ref-12" role="doc-noteref" aria-label="Riferimento bibliografico 12">[12]</a></span>
+        </li>
+        <li>
+          <strong>Dolore profondo che aumenta con l'appoggio:</strong>
+          richiede di considerare anche una causa ossea, come una frattura da stress,
+          specialmente dopo un rapido aumento dei carichi. Una radiografia inizialmente normale
+          non la esclude. <span class="citations"><a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a></span>
+        </li>
+      </ul>
+      <p>
+        La fascite plantare provoca più tipicamente dolore sotto il tallone, verso il lato
+        interno. Per questo, davanti a un dolore prevalentemente esterno e persistente,
+        è utile rivalutare la diagnosi prima di ripetere trattamenti rivolti soltanto alla fascia. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
+        Dopo un trauma, l'impossibilità di appoggiare il piede richiede una valutazione urgente. <span class="citations"><a href="#ref-17" role="doc-noteref" aria-label="Riferimento bibliografico 17">[17]</a></span>
       </p>
     </section>
 
     <!-- ── CAUSA 1 ── -->
     <div class="cause-header">
       <span class="cause-number">1</span>
-      <h2>Fascite plantare</h2>
+      <h2 id="fascite-plantare">Fascite plantare</h2>
     </div>
 
     <p>
       La fascite plantare è una delle cause più comuni di dolore nella parte inferiore
       del tallone. Coinvolge soprattutto l'origine della fascia plantare sul calcagno
       e, nelle forme persistenti, presenta caratteristiche prevalentemente degenerative
-      più che puramente infiammatorie. [1,2]
+      più che puramente infiammatorie. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-2" role="doc-noteref" aria-label="Riferimento bibliografico 2">[2]</a></span>
     </p>
 
     <h3>Come si presenta?</h3>
@@ -753,48 +503,52 @@
     </div>
 
     <h3>Sportivo e paziente sedentario</h3>
+    <p class="table-hint">Su schermi piccoli puoi scorrere la tabella lateralmente.</p>
+    <div class="table-scroll" role="region" aria-label="Fascite plantare: adattare il trattamento alle attività del paziente" tabindex="0">
     <table class="compare-table">
+      <caption>Fascite plantare: adattare il trattamento alle attività del paziente</caption>
       <thead>
         <tr>
-          <th>Aspetto</th>
-          <th>Paziente sportivo</th>
-          <th>Paziente sedentario</th>
+          <th scope="col">Aspetto</th>
+          <th scope="col">Paziente sportivo</th>
+          <th scope="col">Paziente sedentario</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Fattori frequenti</td>
+          <th scope="row">Fattori frequenti</th>
           <td>Aumento rapido dei carichi, corsa, salti, recupero insufficiente</td>
           <td>Sovrappeso, lavoro prolungato in piedi, ridotta mobilità della caviglia</td>
         </tr>
         <tr>
-          <td>Riabilitazione</td>
+          <th scope="row">Riabilitazione</th>
           <td>Gestione del carico, stretching, rinforzo progressivo e ritorno graduale allo sport</td>
           <td>Stretching della fascia e del gastrocnemio, esercizi di forza e modifica delle attività</td>
         </tr>
         <tr>
-          <td>Supporti</td>
+          <th scope="row">Supporti</th>
           <td>Taping o ortesi nei casi selezionati</td>
           <td>Calzature adeguate e ortesi quando utili al controllo dei sintomi</td>
         </tr>
         <tr>
-          <td>Opzioni aggiuntive</td>
+          <th scope="row">Opzioni aggiuntive</th>
           <td>Onde d'urto nelle forme persistenti</td>
-          <td>Onde d'urto; infiltrazioni corticosteroidee solo in casi selezionati</td>
+          <td>Onde d'urto nelle forme persistenti</td>
         </tr>
       </tbody>
     </table>
+    </div>
+    <p class="small-note">Le misure si combinano secondo il caso clinico; taping e ortesi non sostituiscono il programma di esercizio. Le onde d’urto possono essere considerate nelle forme persistenti. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-10" role="doc-noteref" aria-label="Riferimento bibliografico 10">[10]</a></span></p>
 
     <p>
       Nel corridore è utile valutare variazioni recenti del volume di allenamento,
-      superfici, calzature, mobilità e forza dell'arto inferiore. Eventuali modifiche
-      della tecnica di corsa devono essere individualizzate e non basate soltanto
-      sul tipo di appoggio.
+      superfici, calzature, mobilità e forza dell'arto inferiore. Il programma viene
+      adattato alle attività quotidiane e agli obiettivi di recupero. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a></span>
     </p>
 
     <p>
       La chirurgia è raramente necessaria e viene presa in considerazione soltanto
-      nei casi persistenti nonostante un adeguato trattamento conservativo.
+      nei casi persistenti nonostante un adeguato trattamento conservativo. <span class="citations"><a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
     </p>
 
     <p>
@@ -807,14 +561,14 @@
     <!-- ── CAUSA 2 ── -->
     <div class="cause-header">
       <span class="cause-number">2</span>
-      <h2>Tendinopatia del tendine d'Achille</h2>
+      <h2 id="tendine-achille">Tendinopatia del tendine d'Achille</h2>
     </div>
 
     <p>
       La tendinopatia achillea può interessare la porzione media del tendine,
       generalmente alcuni centimetri sopra l'inserzione sul calcagno, oppure
       la sua porzione inserzionale. Le due forme presentano caratteristiche
-      cliniche e strategie riabilitative differenti. [3,4]
+      cliniche e strategie riabilitative differenti. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a></span>
     </p>
 
     <h3>Come si presenta?</h3>
@@ -830,12 +584,13 @@
       <p>
         <strong>Porzione media:</strong> il trattamento si basa principalmente
         su esercizi progressivi di carico del tricipite surale, utilizzando protocolli
-        eccentrici o programmi di heavy slow resistance.
+        eccentrici o esercizi lenti contro resistenza, con carichi adattati alla tolleranza. <span class="citations"><a href="#ref-3" role="doc-noteref" aria-label="Riferimento bibliografico 3">[3]</a> <a href="#ref-4" role="doc-noteref" aria-label="Riferimento bibliografico 4">[4]</a></span>
       </p>
       <p>
         <strong>Forma inserzionale:</strong> nelle fasi iniziali è spesso utile
         limitare gli esercizi che portano il tallone in dorsiflessione profonda,
-        riducendo la compressione del tendine contro il calcagno.
+        riducendo la compressione del tendine contro il calcagno. Il programma viene adattato
+        durante la riabilitazione. <span class="citations"><a href="#ref-14" role="doc-noteref" aria-label="Riferimento bibliografico 14">[14]</a></span>
       </p>
     </div>
 
@@ -847,22 +602,21 @@
       <span class="sport-chip">Tennis</span>
     </div>
 
-    <p style="font-size:14px; color:#888; margin-top:-8px;">
+    <p class="small-note">
       Sport nei quali il tendine d'Achille è sottoposto frequentemente a carichi elevati.
     </p>
 
     <p>
       Il cardine del trattamento rimane un programma progressivo di esercizio
-      e gestione del carico. Le onde d'urto possono essere considerate in alcuni
-      pazienti, mentre le infiltrazioni di PRP non hanno dimostrato un beneficio
-      clinico consistente rispetto al placebo negli studi randomizzati sulla
-      tendinopatia della porzione media. [5]
+      e gestione del carico. <span class="citations"><a href="#ref-3" role="doc-noteref" aria-label="Riferimento bibliografico 3">[3]</a> <a href="#ref-4" role="doc-noteref" aria-label="Riferimento bibliografico 4">[4]</a> <a href="#ref-14" role="doc-noteref" aria-label="Riferimento bibliografico 14">[14]</a></span> Le infiltrazioni di PRP non hanno dimostrato
+      un beneficio clinico rispetto a un'iniezione simulata in un ampio studio randomizzato
+      sulla tendinopatia cronica della porzione media. <span class="citations"><a href="#ref-5" role="doc-noteref" aria-label="Riferimento bibliografico 5">[5]</a></span>
     </p>
 
     <p>
       Il trattamento chirurgico viene considerato nei pazienti con sintomi persistenti
       e limitazione funzionale nonostante un adeguato percorso conservativo,
-      valutando sede della tendinopatia, qualità del tendine e caratteristiche individuali.
+      valutando sede della tendinopatia, qualità del tendine e caratteristiche individuali. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a></span>
     </p>
 
     <hr class="divider">
@@ -870,7 +624,7 @@
     <!-- ── CAUSA 3 ── -->
     <div class="cause-header">
       <span class="cause-number">3</span>
-      <h2>Borsite retrocalcaneale e deformità di Haglund</h2>
+      <h2 id="borsite-haglund">Borsite retrocalcaneale e deformità di Haglund</h2>
     </div>
 
     <p>
@@ -882,7 +636,7 @@
     <p>
       In alcuni pazienti è presente anche una prominenza posterosuperiore del calcagno,
       comunemente definita deformità di Haglund. La sola presenza della prominenza
-      radiografica, tuttavia, non significa necessariamente che sia la causa dei sintomi. [6]
+      radiografica, tuttavia, non significa necessariamente che sia la causa dei sintomi. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a></span>
     </p>
 
     <h3>Come si presenta?</h3>
@@ -900,7 +654,7 @@
         modifica delle calzature, gestione del carico e fisioterapia.
         Nei casi persistenti possono essere considerate procedure open o endoscopiche.
         La scelta dipende dalla morfologia del calcagno, dal coinvolgimento
-        del tendine d'Achille e dall'esperienza del chirurgo.
+        del tendine d'Achille e dall'esperienza del chirurgo. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a> <a href="#ref-16" role="doc-noteref" aria-label="Riferimento bibliografico 16">[16]</a></span>
       </p>
     </div>
 
@@ -909,7 +663,7 @@
     <!-- ── CAUSA 4 ── -->
     <div class="cause-header">
       <span class="cause-number">4</span>
-      <h2>Frattura da stress del calcagno</h2>
+      <h2 id="frattura-stress">Frattura da stress del calcagno</h2>
     </div>
 
     <p>
@@ -930,42 +684,47 @@
     <p>
       Le radiografie possono essere normali nelle fasi iniziali. Quando il sospetto
       clinico è elevato, la risonanza magnetica è particolarmente utile
-      per identificare precocemente edema osseo e linee di frattura. [7]
+      per identificare precocemente edema osseo e linee di frattura. <span class="citations"><a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a></span>
     </p>
 
+    <p class="table-hint">Su schermi piccoli puoi scorrere la tabella lateralmente.</p>
+    <div class="table-scroll" role="region" aria-label="Frattura da stress: valutazione dei carichi e della salute ossea" tabindex="0">
     <table class="compare-table">
+      <caption>Frattura da stress: valutazione dei carichi e della salute ossea</caption>
       <thead>
         <tr>
-          <th>Aspetto</th>
-          <th>Atleta</th>
-          <th>Paziente sedentario / anziano</th>
+          <th scope="col">Aspetto</th>
+          <th scope="col">Atleta</th>
+          <th scope="col">Paziente sedentario / anziano</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Fattori frequenti</td>
+          <th scope="row">Fattori frequenti</th>
           <td>Aumento rapido dei carichi, sport ad alto impatto, recupero insufficiente</td>
           <td>Osteoporosi, fragilità ossea, alcune condizioni metaboliche</td>
         </tr>
         <tr>
-          <td>Trattamento</td>
+          <th scope="row">Trattamento</th>
           <td>Riduzione del carico e ripresa progressiva dopo controllo clinico</td>
           <td>Riduzione del carico e valutazione dei fattori di fragilità ossea</td>
         </tr>
         <tr>
-          <td>Approfondimenti</td>
+          <th scope="row">Approfondimenti</th>
           <td>Valutazione dell'allenamento e dei fattori nutrizionali quando indicato</td>
           <td>Possibile valutazione metabolica e densitometrica</td>
         </tr>
       </tbody>
     </table>
+    </div>
+    <p class="small-note">La protezione dal carico e i tempi di ripresa dipendono dalla sede della lesione, dai sintomi e dalla salute dell’osso. <span class="citations"><a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a></span></p>
 
     <hr class="divider">
 
     <!-- ── CAUSA 5 ── -->
     <div class="cause-header">
       <span class="cause-number">5</span>
-      <h2>Sindrome del tunnel tarsale</h2>
+      <h2 id="tunnel-tarsale">Sindrome del tunnel tarsale</h2>
     </div>
 
     <p>
@@ -987,7 +746,7 @@
       Gli studi elettrodiagnostici possono essere utili per documentare una neuropatia
       del nervo tibiale o dei suoi rami, ma un risultato normale non esclude
       necessariamente la sindrome. Ecografia e risonanza magnetica possono aiutare
-      a identificare eventuali cause compressive strutturali. [8]
+      a identificare eventuali cause compressive strutturali. <span class="citations"><a href="#ref-8" role="doc-noteref" aria-label="Riferimento bibliografico 8">[8]</a></span>
     </p>
 
     <div class="panel panel-gold">
@@ -1005,7 +764,7 @@
     <!-- ── CAUSA 6 ── -->
     <div class="cause-header">
       <span class="cause-number">6</span>
-      <h2>Apofisite calcaneare (malattia di Sever)</h2>
+      <h2 id="malattia-sever">Apofisite calcaneare (malattia di Sever)</h2>
     </div>
 
     <p>
@@ -1013,7 +772,7 @@
       di dolore al tallone nel bambino e nell'adolescente in crescita.
       È una condizione da sovraccarico dell'apofisi calcaneare,
       favorita dall'attività sportiva e dalla trazione ripetuta esercitata
-      dal complesso gastrocnemio-Achille. [9]
+      dal complesso gastrocnemio-Achille. <span class="citations"><a href="#ref-9" role="doc-noteref" aria-label="Riferimento bibliografico 9">[9]</a></span>
     </p>
 
     <h3>Come si presenta?</h3>
@@ -1021,7 +780,8 @@
       Il dolore è localizzato nella parte posteriore o posteroinferiore del calcagno
       e aumenta durante corsa, salti e attività sportive. Può essere presente
       bilateralmente. La diagnosi è prevalentemente clinica e la radiografia
-      non è necessaria di routine nelle presentazioni tipiche.
+      non è necessaria di routine nelle presentazioni tipiche; può servire a escludere
+      altre cause se il quadro è dubbio o atipico. <span class="citations"><a href="#ref-15" role="doc-noteref" aria-label="Riferimento bibliografico 15">[15]</a></span>
     </p>
 
     <div class="panel panel-green">
@@ -1030,7 +790,7 @@
         Il trattamento comprende riduzione temporanea del carico sportivo,
         stretching del complesso gastrocnemio-soleo, eventuale utilizzo di rialzi
         del tallone e calzature adeguatamente ammortizzate.
-        La condizione tende a risolversi con la maturazione scheletrica.
+        La condizione tende a risolversi con la maturazione scheletrica. <span class="citations"><a href="#ref-15" role="doc-noteref" aria-label="Riferimento bibliografico 15">[15]</a></span>
       </p>
     </div>
 
@@ -1039,7 +799,7 @@
     <!-- ── CAUSA 7 ── -->
     <div class="cause-header">
       <span class="cause-number">7</span>
-      <h2>Sperone calcaneare ed entesofiti: sono davvero la causa del dolore?</h2>
+      <h2 id="sperone-calcaneare">Sperone calcaneare ed entesofiti: sono davvero la causa del dolore?</h2>
     </div>
 
     <p>
@@ -1052,7 +812,7 @@
       La sua presenza non significa automaticamente che sia la causa del dolore.
       Entesofiti e speroni possono essere osservati anche in persone senza sintomi;
       per questo il reperto radiografico deve essere sempre correlato
-      alla sede del dolore e all'esame clinico.
+      alla sede del dolore e all'esame clinico. <span class="citations"><a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a> <a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
     </p>
 
     <h3>Come si tratta?</h3>
@@ -1068,130 +828,112 @@
         L'escissione isolata dello sperone è raramente l'obiettivo principale.
         Nei casi persistenti, la procedura chirurgica viene pianificata
         in funzione della patologia responsabile dei sintomi e delle caratteristiche
-        anatomiche del paziente.
+        anatomiche del paziente. <span class="citations"><a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
       </p>
     </div>
 
     <hr class="divider">
 
-    <div class="red-flags">
-      <div class="rf-title">Segnali d'allarme — Quando serve una valutazione medica</div>
+    <section class="red-flags" id="quando-farsi-valutare" aria-labelledby="titolo-valutazione">
+      <h2 class="rf-title" id="titolo-valutazione">Quando serve una valutazione medica?</h2>
+      <p><strong>Richiedi una valutazione urgente</strong> se il dolore segue un trauma
+        importante, non riesci ad appoggiare il piede, compare una deformità oppure avverti
+        uno schiocco con improvvisa difficoltà a camminare o a sollevarti sulla punta. <span class="citations"><a href="#ref-17" role="doc-noteref" aria-label="Riferimento bibliografico 17">[17]</a></span></p>
       <ul>
-        <li>Dolore importante dopo un trauma con difficoltà o impossibilità a caricare il piede</li>
-        <li>Gonfiore marcato, ecchimosi o sospetta rottura del tendine d'Achille</li>
-        <li>Dolore notturno persistente o non chiaramente correlato al carico</li>
-        <li>Febbre, arrossamento importante o sospetta infezione</li>
-        <li>Perdita di sensibilità, debolezza o sintomi neurologici progressivi</li>
-        <li>Dolore persistente in un paziente con diabete, neuropatia o problemi vascolari</li>
-        <li>Sintomi che non migliorano nonostante un trattamento conservativo adeguato</li>
+        <li>Febbre associata a marcato arrossamento, gonfiore o una ferita richiede una valutazione tempestiva.</li>
+        <li>Perdita di sensibilità o debolezza in aumento devono essere riferite al medico.</li>
       </ul>
-    </div>
+      <p><strong>Prenota una visita</strong> se il dolore persiste, peggiora, disturba il sonno
+        o limita cammino e attività quotidiane. In presenza di diabete, neuropatia o problemi
+        circolatori è particolarmente importante non trascurare un nuovo dolore al piede. <span class="citations"><a href="#ref-17" role="doc-noteref" aria-label="Riferimento bibliografico 17">[17]</a></span></p>
+    </section>
 
-    <h2>Come si diagnostica il dolore al tallone?</h2>
+    <h2 id="diagnosi">Come si diagnostica il dolore al tallone?</h2>
     <p>
       La diagnosi parte dall'anamnesi e dall'esame clinico.
       La sede esatta del dolore, il momento della giornata in cui compare,
       il rapporto con il carico, le attività sportive e la presenza di sintomi
-      neurologici permettono spesso di restringere notevolmente le possibili cause.
+      neurologici permettono spesso di restringere le possibili cause. Gli esami
+      vengono scelti in base alla visita: non tutti i dolori al tallone richiedono una risonanza. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a> <a href="#ref-8" role="doc-noteref" aria-label="Riferimento bibliografico 8">[8]</a></span>
     </p>
 
     <ol class="diag-steps">
-      <li>
+      <li><div>
         <strong>Anamnesi:</strong>
         modalità di insorgenza, attività sportive, variazioni recenti del carico,
         calzature, lavoro, eventuali traumi e comorbidità.
-      </li>
-      <li>
+      </div></li>
+      <li><div>
         <strong>Esame clinico:</strong>
         localizzazione del punto doloroso, valutazione di fascia plantare,
         tendine d'Achille, mobilità della caviglia, allineamento del piede
         e screening neurologico.
-      </li>
-      <li>
+      </div></li>
+      <li><div>
         <strong>Imaging quando indicato:</strong>
         nelle presentazioni tipiche di fascite plantare la diagnosi è spesso clinica.
         Radiografie, ecografia o risonanza magnetica vengono richieste
         in base al sospetto diagnostico, alla durata dei sintomi
         e alla presenza di caratteristiche atipiche.
-      </li>
-      <li>
+      </div></li>
+      <li><div>
         <strong>Ecografia:</strong>
         particolarmente utile per studiare fascia plantare,
         tendine d'Achille e borse superficiali o profonde.
-      </li>
-      <li>
+      </div></li>
+      <li><div>
         <strong>Risonanza magnetica:</strong>
         può essere indicata in caso di sospetta frattura da stress,
         patologia ossea, tendinea o quando la diagnosi rimane dubbia.
-      </li>
-      <li>
+      </div></li>
+      <li><div>
         <strong>Studi elettrodiagnostici:</strong>
         possono essere utilizzati nei casi con sospetta neuropatia
         o sindrome del tunnel tarsale.
-      </li>
+      </div></li>
     </ol>
 
     <hr class="divider">
 
-    <section class="faq-section">
-      <h2>Domande frequenti sul dolore al tallone</h2>
-
+    <section class="faq-section" aria-labelledby="domande-frequenti">
+      <h2 id="domande-frequenti">Domande frequenti sul dolore al tallone</h2>
       <div class="faq-item">
         <h3>Perché mi fa male il tallone quando mi alzo al mattino?</h3>
-        <p>
-          Il dolore ai primi passi dopo il riposo è particolarmente frequente
-          nella fascite plantare. Non è però un segno esclusivo:
-          la sede del dolore e l'esame clinico sono necessari per confermare
-          la diagnosi ed escludere altre cause.
-        </p>
+        <p>Una causa frequente è la fascite plantare, soprattutto se il dolore è sotto
+          il tallone, verso l'interno, e si attenua dopo i primi passi. Il sintomo va comunque
+          valutato insieme alla sede e all'esame clinico. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span>
+          Approfondisci <a href="fascite-plantare.html">sintomi e trattamento della fascite plantare</a>.</p>
       </div>
-
       <div class="faq-item">
         <h3>Da cosa può dipendere il dolore nella parte esterna del tallone?</h3>
-        <p>
-          Il dolore laterale del tallone non identifica una singola patologia.
-          Può provenire dal calcagno, dalle articolazioni vicine, dai tendini
-          o da strutture nervose. La diagnosi dipende dal punto preciso del dolore,
-          dal rapporto con il carico, da eventuali traumi e dall'esame clinico.
-        </p>
+        <p>Può coinvolgere tendini, nervi o osso. Dolore dietro il malleolo esterno,
+          formicolio e dolore profondo durante l'appoggio orientano verso ipotesi diverse,
+          da distinguere durante la visita. <span class="citations"><a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a> <a href="#ref-11" role="doc-noteref" aria-label="Riferimento bibliografico 11">[11]</a> <a href="#ref-12" role="doc-noteref" aria-label="Riferimento bibliografico 12">[12]</a></span>
+          Leggi la <a href="#dolore-tallone-esterno">sezione sul dolore al tallone esterno</a>.</p>
       </div>
-
       <div class="faq-item">
-        <h3>Come capire se il dolore al tallone è fascite plantare o tendine d'Achille?</h3>
-        <p>
-          La fascite plantare provoca generalmente dolore nella parte inferiore
-          e mediale del calcagno. La tendinopatia achillea dà invece dolore posteriormente,
-          lungo il tendine o direttamente alla sua inserzione sul calcagno.
-        </p>
+        <h3>Come distinguere fascite plantare e dolore al tendine d'Achille?</h3>
+        <p>La fascite plantare provoca più spesso dolore sotto il tallone, verso il lato
+          interno. La tendinopatia achillea interessa invece la parte posteriore, lungo il
+          tendine o alla sua inserzione sul calcagno. La sede è un indizio, non una diagnosi. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-6" role="doc-noteref" aria-label="Riferimento bibliografico 6">[6]</a></span></p>
       </div>
-
       <div class="faq-item">
         <h3>Quando serve una risonanza magnetica per il dolore al tallone?</h3>
-        <p>
-          La risonanza non è necessaria in tutti i pazienti. Può essere utile
-          quando si sospettano fratture da stress, patologie del tendine d'Achille,
-          lesioni ossee o quando i sintomi persistono senza una diagnosi chiara.
-        </p>
+        <p>Non è un esame necessario per tutti. Può essere utile se si sospetta una
+          frattura da stress, una lesione dei tessuti o quando visita ed esami iniziali
+          non chiariscono l'origine dei sintomi. <span class="citations"><a href="#ref-1" role="doc-noteref" aria-label="Riferimento bibliografico 1">[1]</a> <a href="#ref-7" role="doc-noteref" aria-label="Riferimento bibliografico 7">[7]</a></span></p>
       </div>
-
       <div class="faq-item">
         <h3>Lo sperone calcaneare deve essere operato?</h3>
-        <p>
-          Nella maggior parte dei casi no. La presenza dello sperone alla radiografia
-          non significa necessariamente che sia la causa del dolore.
-          Il trattamento viene indirizzato principalmente alla patologia associata,
-          come fascite plantare o tendinopatia inserzionale.
-        </p>
+        <p>Generalmente no. Uno sperone può essere presente anche senza dolore;
+          il trattamento viene rivolto soprattutto alla condizione responsabile dei sintomi.
+          La chirurgia viene valutata soltanto in casi selezionati. <span class="citations"><a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a></span></p>
       </div>
-
       <div class="faq-item">
         <h3>Quanto tempo può durare il dolore al tallone?</h3>
-        <p>
-          La durata dipende dalla causa e dai fattori individuali.
-          Alcune condizioni migliorano in poche settimane, mentre fascite plantare
-          e tendinopatie possono richiedere diversi mesi di trattamento progressivo.
-          Un dolore persistente o in peggioramento merita una valutazione clinica.
-        </p>
+        <p>Dipende dalla causa e dalla risposta al trattamento. Fascite plantare e
+          tendinopatie possono richiedere diversi mesi di riabilitazione. Un dolore
+          che persiste o peggiora merita una rivalutazione della diagnosi e del percorso di cura. <span class="citations"><a href="#ref-4" role="doc-noteref" aria-label="Riferimento bibliografico 4">[4]</a> <a href="#ref-13" role="doc-noteref" aria-label="Riferimento bibliografico 13">[13]</a> <a href="#ref-14" role="doc-noteref" aria-label="Riferimento bibliografico 14">[14]</a></span></p>
       </div>
     </section>
 
@@ -1207,63 +949,30 @@
       <a href="../blog.html">articoli del blog</a>.
     </p>
 
-    <div class="references">
-      <h2>Riferimenti bibliografici</h2>
+    <section class="references" aria-labelledby="bibliografia">
+      <h2 id="bibliografia">Riferimenti bibliografici</h2>
       <ol>
-        <li>
-          Koc TA Jr, Bise CG, Neville C, Carreira D, Martin RL, McDonough CM.
-          Heel Pain – Plantar Fasciitis: Revision 2023.
-          <em>J Orthop Sports Phys Ther.</em> 2023;53(12):CPG1-CPG39.
-          doi:10.2519/jospt.2023.0303.
-        </li>
-        <li>
-          Wearing SC, Smeathers JE, Urry SR, Hennig EM, Hills AP.
-          The pathomechanics of plantar fasciitis.
-          <em>Sports Med.</em> 2006;36(7):585-611.
-        </li>
-        <li>
-          Alfredson H, Pietilä T, Jonsson P, Lorentzon R.
-          Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis.
-          <em>Am J Sports Med.</em> 1998;26(3):360-366.
-        </li>
-        <li>
-          Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T, Kjær M, Magnusson SP.
-          Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy:
-          a randomized controlled trial. <em>Am J Sports Med.</em> 2015;43(7):1704-1711.
-        </li>
-        <li>
-          Kearney RS, Ji C, Warwick J, et al.
-          Effect of Platelet-Rich Plasma Injection vs Sham Injection on Tendon Dysfunction
-          in Patients With Chronic Midportion Achilles Tendinopathy: A Randomized Clinical Trial.
-          <em>JAMA.</em> 2021;326(2):137-144. doi:10.1001/jama.2021.6986.
-        </li>
-        <li>
-          van Dijk CN, van Sterkenburg MN, Wiegerinck JI, Karlsson J, Maffulli N.
-          Terminology for Achilles tendon related disorders.
-          <em>Knee Surg Sports Traumatol Arthrosc.</em> 2011;19(5):835-841.
-        </li>
-        <li>
-          Roca I, Roca A. Calcaneal stress fractures.
-          <em>Foot Ankle Clin.</em> 2009;14(1):81-90.
-        </li>
-        <li>
-          Lau JT, Daniels TR. Tarsal tunnel syndrome: a review of the literature.
-          <em>Foot Ankle Int.</em> 1999;20(3):201-209.
-        </li>
-        <li>
-          Scharfbillig RW, Jones S, Scutter S.
-          Sever's disease — a prospective study of risk factors.
-          <em>J Am Podiatr Med Assoc.</em> 2011;101(2):133-145.
-        </li>
-        <li>
-          Gerdesmeyer L, Frey C, Vester J, et al.
-          Radial extracorporeal shock wave therapy is safe and effective in the treatment
-          of chronic recalcitrant plantar fasciitis: results of a randomized placebo-controlled
-          multicenter study. <em>Am J Sports Med.</em> 2008;36(11):2100-2109.
-        </li>
+        <li id="ref-1">Koc TA Jr, Bise CG, Neville C, et al. <a href="https://doi.org/10.2519/jospt.2023.0303">Heel Pain – Plantar Fasciitis: Revision 2023.</a> <em>J Orthop Sports Phys Ther.</em> 2023;53(12):CPG1–CPG39.</li>
+        <li id="ref-2">Wearing SC, Smeathers JE, Urry SR, Hennig EM, Hills AP. <a href="https://doi.org/10.2165/00007256-200636070-00004">The pathomechanics of plantar fasciitis.</a> <em>Sports Med.</em> 2006;36(7):585–611.</li>
+        <li id="ref-3">Alfredson H, Pietilä T, Jonsson P, Lorentzon R. <a href="https://pubmed.ncbi.nlm.nih.gov/9617396/">Heavy-load eccentric calf muscle training for the treatment of chronic Achilles tendinosis.</a> <em>Am J Sports Med.</em> 1998;26(3):360–366.</li>
+        <li id="ref-4">Beyer R, Kongsgaard M, Hougs Kjær B, et al. <a href="https://doi.org/10.1177/0363546515584760">Heavy slow resistance versus eccentric training as treatment for Achilles tendinopathy: a randomized controlled trial.</a> <em>Am J Sports Med.</em> 2015;43(7):1704–1711.</li>
+        <li id="ref-5">Kearney RS, Ji C, Warwick J, et al. <a href="https://doi.org/10.1001/jama.2021.6986">Effect of Platelet-Rich Plasma Injection vs Sham Injection on Tendon Dysfunction in Patients With Chronic Midportion Achilles Tendinopathy: A Randomized Clinical Trial.</a> <em>JAMA.</em> 2021;326(2):137–144.</li>
+        <li id="ref-6">van Dijk CN, van Sterkenburg MN, Wiegerinck JI, Karlsson J, Maffulli N. <a href="https://doi.org/10.1007/s00167-010-1374-z">Terminology for Achilles tendon related disorders.</a> <em>Knee Surg Sports Traumatol Arthrosc.</em> 2011;19(5):835–841.</li>
+        <li id="ref-7">American Academy of Orthopaedic Surgeons. <a href="https://www.orthoinfo.org/diseases--conditions/stress-fractures-of-the-foot-and-ankle/">Stress Fractures of the Foot and Ankle.</a> <em>OrthoInfo.</em> Consultato il 4 novembre 2026.</li>
+        <li id="ref-8">Rodríguez-Merchán EC, Moracia-Ochagavía I. <a href="https://doi.org/10.1302/2058-5241.6.210031">Tarsal tunnel syndrome: current rationale, indications and results.</a> <em>EFORT Open Rev.</em> 2021;6(12):1140–1147.</li>
+        <li id="ref-9">Scharfbillig RW, Jones S, Scutter S. <a href="https://doi.org/10.7547/1010133">Sever&#x27;s disease: a prospective study of risk factors.</a> <em>J Am Podiatr Med Assoc.</em> 2011;101(2):133–145.</li>
+        <li id="ref-10">Gerdesmeyer L, Frey C, Vester J, et al. <a href="https://doi.org/10.1177/0363546508324176">Radial extracorporeal shock wave therapy is safe and effective in the treatment of chronic recalcitrant plantar fasciitis: results of a confirmatory randomized placebo-controlled multicenter study.</a> <em>Am J Sports Med.</em> 2008;36(11):2100–2109.</li>
+        <li id="ref-11">American College of Foot and Ankle Surgeons. <a href="https://www.foothealthfacts.org/conditions/peroneal-tendon-injuries">Peroneal Tendon Injuries.</a> <em>Foot Health Facts.</em> Consultato il 4 novembre 2026.</li>
+        <li id="ref-12">Drăghici NC, Văcăraș V, Bolchiș R, et al. <a href="https://doi.org/10.3390/diagnostics13213385">Diagnostic Approach to Lower Limb Entrapment Neuropathies: A Narrative Literature Review.</a> <em>Diagnostics (Basel).</em> 2023;13(21):3385.</li>
+        <li id="ref-13">American Academy of Orthopaedic Surgeons. <a href="https://www.orthoinfo.org/diseases--conditions/plantar-fasciitis-and-bone-spurs/">Plantar Fasciitis and Bone Spurs.</a> <em>OrthoInfo.</em> Consultato il 4 novembre 2026.</li>
+        <li id="ref-14">Pringels L, Capelleman R, Van den Abeele A, et al. <a href="https://doi.org/10.1136/bjsports-2024-109138">Effectiveness of reducing tendon compression in the rehabilitation of insertional Achilles tendinopathy: a randomised clinical trial.</a> <em>Br J Sports Med.</em> 2025;59(9):640–650.</li>
+        <li id="ref-15">American Academy of Orthopaedic Surgeons. <a href="https://www.orthoinfo.org/diseases--conditions/severs-disease/">Sever&#x27;s Disease (Heel Pain).</a> <em>OrthoInfo.</em> Consultato il 4 novembre 2026.</li>
+        <li id="ref-16">American College of Foot and Ankle Surgeons. <a href="https://www.foothealthfacts.org/conditions/haglund%E2%80%99s-deformity">Haglund’s Deformity.</a> <em>Foot Health Facts.</em> Consultato il 4 novembre 2026.</li>
+        <li id="ref-17">NHS. <a href="https://www.nhs.uk/symptoms/foot-pain/heel-pain/">Heel pain.</a> Consultato il 4 novembre 2026.</li>
       </ol>
-    </div>
+    </section>
   </article>
+  </main>
 
   <div class="cta-block">
     <h2>Hai dolore al tallone?</h2>
@@ -1282,1537 +991,18 @@
     </p>
     <a href="https://www.linkedin.com/in/ricardo-paladino-mp">LinkedIn</a>
     <a href="mailto:paladinoricardo@outlook.com">Email</a>
-    <p style="font-size:12px; color:#777; margin-top:12px;">
+    <p class="disclaimer">
       Questo articolo ha finalità informative e divulgative e non sostituisce
       una valutazione medica individuale.
     </p>
   </footer>
-</body>
-</html>
-<meta name="twitter:card" content="summary">
-<meta
-  property="og:image"
-  content="https://drpaladino.com/images/dolore-tallone.png"
->
-
-<meta
-  property="og:image:alt"
-  content="Dolore al tallone: valutazione ortopedica del piede"
->
-
-<meta name="twitter:card" content="summary_large_image">
-
-<meta
-  name="twitter:image"
-  content="https://drpaladino.com/images/dolore-tallone.png"
->
-  
-<link rel="icon" type="image/png" href="/favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-/* ── BASE ── */
-*, *::before, *::after { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f2f2f2;
-  color: #4a4a4a;
-  line-height: 1.75;
-}
-
-/* ── NAV ── */
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  text-align: center;
-  padding: 20px 0;
-  z-index: 1000;
-  background: transparent;
-  transition: background 0.3s;
-}
-
-nav.scrolled {
-  background: rgba(18, 18, 18, 0.93);
-}
-
-nav a {
-  margin: 0 20px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-size: 14px;
-}
-
-/* ── ARTICLE HERO ── */
-.article-hero {
-  height: 62vh;
-  min-height: 400px;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url('../images/dolore-tallone.png');
-  background-size: cover;
-  background-position: center 30%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 60px;
-  text-align: center;
-  color: white;
-}
-
-.article-hero-inner {
-  max-width: 820px;
-  padding: 0 24px;
-}
-
-.article-hero .tag {
-  display: inline-block;
-  border: 1px solid #ecd19a;
-  color: #ecd19a;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  margin-bottom: 20px;
-}
-
-.article-hero h1 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: clamp(30px, 5vw, 52px);
-  margin: 0 0 18px;
-  line-height: 1.15;
-  font-weight: 500;
-}
-
-.article-hero .meta {
-  font-size: 14px;
-  color: rgba(255,255,255,0.72);
-  letter-spacing: 0.5px;
-}
-
-/* ── LAYOUT ── */
-.article-wrap {
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 70px 24px 100px;
-}
-
-/* ── INTRO BOX ── */
-.intro-box {
-  background: #1b3c37;
-  color: white;
-  padding: 32px 36px;
-  margin-bottom: 56px;
-  border-left: 4px solid #ecd19a;
-}
-
-.intro-box p {
-  margin: 0;
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-/* ── SECTION TITLES ── */
-.article-wrap h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 32px;
-  color: #1b3c37;
-  margin: 60px 0 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
-.article-wrap h3 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 22px;
-  color: #121212;
-  margin: 32px 0 10px;
-  text-align: left;
-}
-
-.article-wrap p {
-  font-size: 17px;
-  margin-bottom: 18px;
-  text-align: left;
-}
-
-/* ── CAUSE CARDS ── */
-.cause-number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: #1b3c37;
-  color: #ecd19a;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 22px;
-  flex-shrink: 0;
-  margin-right: 18px;
-}
-
-.cause-header {
-  display: flex;
-  align-items: center;
-  margin: 56px 0 16px;
-}
-
-.cause-header h2 {
-  border: none;
-  margin: 0;
-  padding: 0;
-  font-size: 26px;
-  color: #1b3c37;
-}
-
-/* ── INFO PANELS ── */
-.panel {
-  padding: 24px 28px;
-  margin: 24px 0;
-  font-size: 16px;
-}
-
-.panel-green {
-  background: #eaf2f0;
-  border-left: 3px solid #1b3c37;
-}
-
-.panel-gold {
-  background: #fdf7ea;
-  border-left: 3px solid #ecd19a;
-}
-
-.panel-dark {
-  background: #1b3c37;
-  color: white;
-  border-left: 3px solid #ecd19a;
-}
-
-.panel-dark strong {
-  color: #ecd19a;
-}
-
-.panel p { margin: 0 0 8px; text-align: left; font-size: 16px; }
-.panel p:last-child { margin: 0; }
-
-.panel-title {
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  color: #1b3c37;
-}
-
-.panel-dark .panel-title { color: #ecd19a; }
-
-/* ── SPORT vs SEDENTARIO TABLE ── */
-.compare-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 28px 0;
-  font-size: 15.5px;
-  text-align: left;
-}
-
-.compare-table thead tr {
-  background: #1b3c37;
-  color: white;
-}
-
-.compare-table thead th {
-  padding: 14px 18px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.compare-table thead th:first-child {
-  color: #ecd19a;
-  width: 30%;
-}
-
-.compare-table thead th:nth-child(2) { width: 35%; }
-.compare-table thead th:nth-child(3) { width: 35%; }
-
-.compare-table tbody tr {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.compare-table tbody tr:nth-child(even) {
-  background: white;
-}
-
-.compare-table tbody tr:nth-child(odd) {
-  background: #f9f9f7;
-}
-
-.compare-table tbody td {
-  padding: 13px 18px;
-  vertical-align: top;
-}
-
-.compare-table tbody td:first-child {
-  font-weight: 600;
-  color: #1b3c37;
-}
-
-/* ── SPORT CHIPS ── */
-.sport-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 16px 0 24px;
-}
-
-.sport-chip {
-  background: white;
-  border: 1px solid #1b3c37;
-  color: #1b3c37;
-  padding: 6px 16px;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* ── DIVIDER ── */
-.divider {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 48px 0;
-}
-
-/* ── DIAGNOSIS STEPS ── */
-.diag-steps {
-  counter-reset: diag;
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0;
-}
-
-.diag-steps li {
-  counter-increment: diag;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 18px;
-  font-size: 16px;
-}
-
-.diag-steps li::before {
-  content: counter(diag);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 32px;
-  height: 32px;
-  background: #ecd19a;
-  color: #121212;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 16px;
-  font-weight: 500;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-/* ── RED FLAGS ── */
-.red-flags {
-  background: #fff5f5;
-  border-left: 4px solid #c0392b;
-  padding: 24px 28px;
-  margin: 32px 0;
-}
-
-.red-flags .rf-title {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #c0392b;
-  margin-bottom: 12px;
-}
-
-.red-flags ul {
-  margin: 0;
-  padding-left: 20px;
-  font-size: 16px;
-}
-
-.red-flags ul li {
-  margin-bottom: 6px;
-}
-  /* ── FAQ ── */
-.faq-section {
-  margin: 60px 0 20px;
-}
-
-.faq-item {
-  background: white;
-  margin-bottom: 16px;
-  padding: 24px 28px;
-  border-left: 3px solid #ecd19a;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
-
-.faq-item h3 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 20px;
-  color: #1b3c37;
-  margin: 0 0 10px 0;
-}
-
-.faq-item p {
-  margin: 0;
-  font-size: 16px;
-}
-/* ── AAFP EVIDENCE TABLE ── */
-.evidence-table-wrap {
-  overflow-x: auto;
-  margin: 28px 0 12px;
-  border: 1px solid #dedede;
-  background: white;
-}
-
-.evidence-table {
-  width: 100%;
-  min-width: 680px;
-  border-collapse: collapse;
-  font-size: 15.5px;
-  text-align: left;
-}
-
-.evidence-table th {
-  background: #1b3c37;
-  color: white;
-  padding: 14px 16px;
-  font-weight: 600;
-  vertical-align: top;
-}
-
-.evidence-table th:nth-child(2) {
-  width: 110px;
-  text-align: center;
-  color: #ecd19a;
-}
-
-.evidence-table td {
-  padding: 15px 16px;
-  border-bottom: 1px solid #e5e5e5;
-  vertical-align: top;
-}
-
-.evidence-table td:nth-child(2) {
-  text-align: center;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 20px;
-  font-weight: 500;
-  color: #1b3c37;
-}
-
-.evidence-table tr:last-child td {
-  border-bottom: none;
-}
-
-.evidence-table tr:nth-child(even) {
-  background: #f8f8f6;
-}
-
-.evidence-source {
-  margin-top: 12px;
-  font-size: 13.5px !important;
-  line-height: 1.55;
-  color: #707070;
-}
-
-.evidence-source a {
-  color: #1b3c37;
-  font-weight: 600;
-}
-
-.evidence-legend {
-  background: #fdf7ea;
-  border-left: 3px solid #ecd19a;
-  padding: 16px 18px;
-  margin: 20px 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-/* ── REFERENCES ── */
-.references {
-  background: white;
-  padding: 36px 36px 32px;
-  margin-top: 64px;
-  border-top: 3px solid #1b3c37;
-}
-
-.references h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 22px;
-  color: #1b3c37;
-  margin: 0 0 20px;
-  text-align: left;
-  border: none;
-  padding: 0;
-}
-
-.references ol {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.references ol li {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 8px;
-  line-height: 1.55;
-}
-
-.references ol li em {
-  color: #4a4a4a;
-  font-style: italic;
-}
-
-/* ── CTA ── */
-.cta-block {
-  background: #1b3c37;
-  color: white;
-  text-align: center;
-  padding: 72px 24px;
-  margin-top: 80px;
-}
-
-.cta-block h2 {
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 34px;
-  color: white;
-  margin: 0 0 14px;
-  text-align: center;
-  border: none;
-  padding: 0;
-}
-
-.cta-block p {
-  font-size: 17px;
-  margin: 0 0 28px;
-  color: rgba(255,255,255,0.8);
-  text-align: center;
-}
-
-/* ── BUTTON ── */
-.btn {
-  border: 1px solid #ecd19a;
-  padding: 12px 28px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.btn:hover { background: rgba(255,255,255,0.1); }
-
-/* ── FOOTER ── */
-footer {
-  text-align: center;
-  padding: 30px;
-  background: #121212;
-  color: white;
-  font-size: 14px;
-}
-
-footer a {
-  color: #ecd19a;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-/* ── BACK TO BLOG ── */
-.back-link {
-  display: inline-block;
-  margin: 80px 24px 0;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #1b3c37;
-  text-decoration: none;
-  border-bottom: 1px solid #1b3c37;
-  padding-bottom: 2px;
-}
-
-.back-link:hover { color: #ecd19a; border-color: #ecd19a; }
-
-/* ── RESPONSIVE ── */
-@media (max-width: 600px) {
-  .article-hero h1 { font-size: 28px; }
-  .intro-box { padding: 24px 20px; }
-  .article-wrap { padding: 50px 18px 80px; }
-  .references { padding: 28px 20px; }
-  .compare-table { font-size: 13.5px; }
-  .compare-table thead th, .compare-table tbody td { padding: 10px 12px; }
-}
-
-</style>
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://drpaladino.com/#person",
-      "name": "Ricardo Paladino Marques de Paula",
-      "honorificPrefix": "Dr.",
-      "url": "https://drpaladino.com/",
-      "jobTitle": "Medico specializzando in Ortopedia e Traumatologia",
-      "sameAs": [
-        "https://www.linkedin.com/in/ricardo-paladino-mp"
-      ]
-    },
-    {
-      "@type": ["BlogPosting", "MedicalWebPage"],
-      "@id": "https://drpaladino.com/blog/dolore-tallone.html#article",
-      "url": "https://drpaladino.com/blog/dolore-tallone.html",
-      "headline": "Dolore al tallone: cause, diagnosi e trattamento",
-      "description": "Le principali cause del dolore al tallone, gli elementi utili per distinguerle e i possibili percorsi diagnostici e terapeutici.",
-      "image": "https://drpaladino.com/images/dolore-tallone.png",
-      "inLanguage": "it-IT",
-      "datePublished": "2026-06-01",
-      "dateModified": "2026-09-01",
-      "author": {
-        "@id": "https://drpaladino.com/#person"
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://drpaladino.com/blog/dolore-tallone.html"
-      },
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "Dolore al tallone"
-      }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://drpaladino.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Blog",
-          "item": "https://drpaladino.com/blog.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Dolore al tallone",
-          "item": "https://drpaladino.com/blog/dolore-tallone.html"
-        }
-      ]
-    }
-  ]
-}
-</script>
-</head>
-
-<body>
-
-<!-- NAV -->
-<nav id="main-nav">
-  <a href="../index.html">Home</a>
-  <a href="../index.html#chi">Chi sono</a>
-  <a href="../piede-caviglia.html">Piede e Caviglia</a>
-  <a href="../index.html#formazione">Formazione</a>
-  <a href="../blog.html">Blog</a>
-  <a href="../index.html#contatti">Contatti</a>
-</nav>
-
-<script>
-  window.addEventListener('scroll', function () {
-    document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 60);
-  });
-</script>
-
-<!-- ARTICLE HERO -->
-<header class="article-hero">
-  <div class="article-hero-inner">
-    <span class="tag">Piede &amp; Caviglia</span>
-    <h1>Dolore al tallone: cause, sintomi e trattamento</h1>
-    <p class="meta">Dr. Ricardo Paladino Marques de Paula &nbsp;·&nbsp; Specializzando Ortopedia e Traumatologia, Università degli Studi di Milano &nbsp;·&nbsp; Settembre 2026</p>
-  </div>
-</header>
-
-<a href="../blog.html" class="back-link">&larr; Torna al Blog</a>
-
-
-<!-- ARTICLE BODY -->
-<article class="article-wrap">
-
-  <div class="intro-box">
-<section id="sede-dolore">
-
-  <h2>Dove fa male il tallone? La sede del dolore orienta la diagnosi</h2>
-
-  <p>
-    Tallone e calcagno vengono spesso utilizzati come sinonimi, ma il calcagno
-    è l'osso principale della regione del tallone. Capire se il dolore è
-    localizzato sotto, dietro, all'interno o all'esterno del tallone aiuta
-    a restringere le possibili cause, anche se la sede da sola non permette
-    di formulare una diagnosi.
-  </p>
-
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>Sede del dolore</th>
-        <th>Cause da considerare</th>
-        <th>Caratteristiche frequenti</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Sotto il tallone</td>
-        <td>Fascite plantare, sindrome del cuscinetto adiposo, frattura da stress</td>
-        <td>Dolore ai primi passi oppure durante il carico prolungato</td>
-      </tr>
-
-      <tr>
-        <td>Dietro il tallone</td>
-        <td>Tendinopatia inserzionale, borsite retrocalcaneale, deformità di Haglund</td>
-        <td>Dolore con corsa, salita, dorsiflessione o pressione della scarpa</td>
-      </tr>
-
-      <tr>
-        <td>Parte interna</td>
-        <td>Fascite plantare, tunnel tarsale o altre cause nervose</td>
-        <td>Dolore plantare-mediale, bruciore, formicolio o irradiazione</td>
-      </tr>
-
-      <tr>
-        <td>Parte esterna</td>
-        <td>Cause ossee, articolari, tendinee o nervose della regione laterale</td>
-        <td>La localizzazione esterna è meno specifica e richiede una valutazione mirata</td>
-      </tr>
-
-      <tr>
-        <td>Dolore diffuso</td>
-        <td>Frattura da stress, sovraccarico o condizioni infiammatorie</td>
-        <td>Dolore progressivo con il carico o sintomi non limitati a un solo punto</td>
-      </tr>
-    </tbody>
-  </table>
-
-</section>
-    
-    <p>
-      Il dolore al tallone è uno dei disturbi più frequenti del piede, ma non sempre
-      ha la stessa origine. Fascia plantare, tendine d'Achille, borse, osso e strutture
-      nervose possono produrre sintomi simili. La sede del dolore, il momento della
-      giornata in cui compare e il rapporto con il carico aiutano a orientare la diagnosi.
-      Vediamo le sette cause più comuni e come distinguerle.
-    </p>
-  </div>
-
-
-  <!-- ── CAUSA 1 ── -->
-  <div class="cause-header">
-    <span class="cause-number">1</span>
-    <h2>Fascite plantare</h2>
-  </div>
-
-  <p>
-    La fascite plantare è una delle cause più comuni di dolore nella parte inferiore
-    del tallone. Coinvolge soprattutto l'origine della fascia plantare sul calcagno
-    e, nelle forme persistenti, presenta caratteristiche prevalentemente degenerative
-    più che puramente infiammatorie. [1,2]
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    Il sintomo più caratteristico è il dolore plantare-mediale del tallone,
-    particolarmente intenso durante i primi passi al mattino o dopo essere rimasti
-    seduti a lungo. Spesso il dolore diminuisce dopo alcuni minuti di cammino,
-    per poi riapparire con il carico prolungato.
-  </p>
-
-  <div class="panel panel-gold">
-    <div class="panel-title">Il "dolore del primo passo"</div>
-    <p>
-      Il dolore più intenso ai primi passi del mattino o dopo un periodo di riposo
-      è uno dei pattern clinici più caratteristici della fascite plantare.
-      Non è tuttavia esclusivo di questa condizione e deve essere interpretato
-      insieme alla sede del dolore e all'esame clinico.
-    </p>
-  </div>
-
-  <h3>Sportivo e paziente sedentario</h3>
-
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>Aspetto</th>
-        <th>Paziente sportivo</th>
-        <th>Paziente sedentario</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Fattori frequenti</td>
-        <td>Aumento rapido dei carichi, corsa, salti, recupero insufficiente</td>
-        <td>Sovrappeso, lavoro prolungato in piedi, ridotta mobilità della caviglia</td>
-      </tr>
-      <tr>
-        <td>Riabilitazione</td>
-        <td>Gestione del carico, stretching, rinforzo progressivo e ritorno graduale allo sport</td>
-        <td>Stretching della fascia e del gastrocnemio, esercizi di forza e modifica delle attività</td>
-      </tr>
-      <tr>
-        <td>Supporti</td>
-        <td>Taping o ortesi nei casi selezionati</td>
-        <td>Calzature adeguate e ortesi quando utili al controllo dei sintomi</td>
-      </tr>
-      <tr>
-        <td>Opzioni aggiuntive</td>
-        <td>Onde d'urto nelle forme persistenti</td>
-        <td>Onde d'urto; infiltrazioni corticosteroidee solo in casi selezionati</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p>
-    Nel corridore è utile valutare variazioni recenti del volume di allenamento,
-    superfici, calzature, mobilità e forza dell'arto inferiore. Eventuali modifiche
-    della tecnica di corsa devono essere individualizzate e non basate soltanto
-    sul tipo di appoggio.
-  </p>
-
-  <p>
-    La chirurgia è raramente necessaria e viene presa in considerazione soltanto
-    nei casi persistenti nonostante un adeguato trattamento conservativo.
-  </p>
-
-  <p>
-    Per un approfondimento dedicato puoi leggere anche
-    <a href="fascite-plantare.html">Fascite plantare: sintomi, diagnosi e trattamento</a>.
-  </p>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 2 ── -->
-  <div class="cause-header">
-    <span class="cause-number">2</span>
-    <h2>Tendinopatia del tendine d'Achille</h2>
-  </div>
-
-  <p>
-    La tendinopatia achillea può interessare la porzione media del tendine,
-    generalmente alcuni centimetri sopra l'inserzione sul calcagno, oppure
-    la sua porzione inserzionale. Le due forme presentano caratteristiche
-    cliniche e strategie riabilitative differenti. [3,4]
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    La tendinopatia della porzione media provoca dolore e talvolta ispessimento
-    del tendine durante corsa, salti o cammino prolungato. Nella forma inserzionale,
-    invece, il dolore è localizzato direttamente alla giunzione tra tendine
-    e calcagno e può essere aggravato dalla pressione della scarpa.
-  </p>
-
-  <div class="panel panel-green">
-    <div class="panel-title">Porzione media vs inserzionale</div>
-
-    <p>
-      <strong>Porzione media:</strong> il trattamento si basa principalmente
-      su esercizi progressivi di carico del tricipite surale, utilizzando protocolli
-      eccentrici o programmi di heavy slow resistance.
-    </p>
-
-    <p>
-      <strong>Forma inserzionale:</strong> nelle fasi iniziali è spesso utile
-      limitare gli esercizi che portano il tallone in dorsiflessione profonda,
-      riducendo la compressione del tendine contro il calcagno.
-    </p>
-  </div>
-
-  <div class="sport-row">
-    <span class="sport-chip">Running</span>
-    <span class="sport-chip">Calcio</span>
-    <span class="sport-chip">Basket</span>
-    <span class="sport-chip">Triathlon</span>
-    <span class="sport-chip">Tennis</span>
-  </div>
-
-  <p style="font-size:14px; color:#888; margin-top:-8px;">
-    Sport nei quali il tendine d'Achille è sottoposto frequentemente a carichi elevati.
-  </p>
-
-  <p>
-    Il cardine del trattamento rimane un programma progressivo di esercizio
-    e gestione del carico. Le onde d'urto possono essere considerate in alcuni
-    pazienti, mentre le infiltrazioni di PRP non hanno dimostrato un beneficio
-    clinico consistente rispetto al placebo negli studi randomizzati sulla
-    tendinopatia della porzione media. [5]
-  </p>
-
-  <p>
-    Il trattamento chirurgico viene considerato nei pazienti con sintomi persistenti
-    e limitazione funzionale nonostante un adeguato percorso conservativo,
-    valutando sede della tendinopatia, qualità del tendine e caratteristiche individuali.
-  </p>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 3 ── -->
-  <div class="cause-header">
-    <span class="cause-number">3</span>
-    <h2>Borsite retrocalcaneale e deformità di Haglund</h2>
-  </div>
-
-  <p>
-    La borsa retrocalcaneale si trova tra il calcagno e la superficie anteriore
-    del tendine d'Achille. Quando si irrita può provocare dolore profondo
-    nella parte posteriore del tallone, spesso associato a tendinopatia inserzionale.
-  </p>
-
-  <p>
-    In alcuni pazienti è presente anche una prominenza posterosuperiore del calcagno,
-    comunemente definita deformità di Haglund. La sola presenza della prominenza
-    radiografica, tuttavia, non significa necessariamente che sia la causa dei sintomi. [6]
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    Il dolore è localizzato posteriormente e può essere aggravato dalla pressione
-    del contrafforte della scarpa o dalla dorsiflessione della caviglia.
-    L'esame clinico permette di distinguere, per quanto possibile,
-    il dolore tendineo da quello prevalentemente bursale.
-  </p>
-
-  <div class="panel panel-dark">
-    <div class="panel-title">Deformità di Haglund</div>
-    <p>
-      Il trattamento iniziale è generalmente conservativo e comprende
-      modifica delle calzature, gestione del carico e fisioterapia.
-      Nei casi persistenti possono essere considerate procedure open o endoscopiche.
-      La scelta dipende dalla morfologia del calcagno, dal coinvolgimento
-      del tendine d'Achille e dall'esperienza del chirurgo.
-    </p>
-  </div>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 4 ── -->
-  <div class="cause-header">
-    <span class="cause-number">4</span>
-    <h2>Frattura da stress del calcagno</h2>
-  </div>
-
-  <p>
-    Una frattura da stress del calcagno può comparire quando il tessuto osseo
-    viene sottoposto a carichi ripetuti superiori alla sua capacità di adattamento.
-    Può interessare sia lo sportivo dopo un rapido incremento dell'allenamento,
-    sia pazienti con ridotta qualità ossea.
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    Il dolore tende ad aumentare progressivamente con il carico ed è spesso
-    più diffuso rispetto alla fascite plantare. La compressione del calcagno
-    da mediale a laterale può evocare dolore, ma nessun singolo test clinico
-    è sufficiente da solo per confermare la diagnosi.
-  </p>
-
-  <p>
-    Le radiografie possono essere normali nelle fasi iniziali. Quando il sospetto
-    clinico è elevato, la risonanza magnetica è particolarmente utile
-    per identificare precocemente edema osseo e linee di frattura. [7]
-  </p>
-
-  <table class="compare-table">
-    <thead>
-      <tr>
-        <th>Aspetto</th>
-        <th>Atleta</th>
-        <th>Paziente sedentario / anziano</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Fattori frequenti</td>
-        <td>Aumento rapido dei carichi, sport ad alto impatto, recupero insufficiente</td>
-        <td>Osteoporosi, fragilità ossea, alcune condizioni metaboliche</td>
-      </tr>
-      <tr>
-        <td>Trattamento</td>
-        <td>Riduzione del carico e ripresa progressiva dopo controllo clinico</td>
-        <td>Riduzione del carico e valutazione dei fattori di fragilità ossea</td>
-      </tr>
-      <tr>
-        <td>Approfondimenti</td>
-        <td>Valutazione dell'allenamento e dei fattori nutrizionali quando indicato</td>
-        <td>Possibile valutazione metabolica e densitometrica</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 5 ── -->
-  <div class="cause-header">
-    <span class="cause-number">5</span>
-    <h2>Sindrome del tunnel tarsale</h2>
-  </div>
-
-  <p>
-    La sindrome del tunnel tarsale deriva dalla compressione del nervo tibiale
-    o dei suoi rami nel canale situato posteriormente al malleolo mediale.
-    A differenza delle principali cause meccaniche di talalgia, il dolore
-    ha spesso caratteristiche neuropatiche.
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    Il paziente può riferire bruciore, formicolio, scosse o alterazioni
-    della sensibilità che si irradiano verso la pianta del piede e le dita.
-    I sintomi possono comparire anche a riposo o durante la notte.
-  </p>
-
-  <p>
-    Il segno di Tinel può supportare il sospetto diagnostico, ma non è specifico.
-    Gli studi elettrodiagnostici possono essere utili per documentare una neuropatia
-    del nervo tibiale o dei suoi rami, ma un risultato normale non esclude
-    necessariamente la sindrome. Ecografia e risonanza magnetica possono aiutare
-    a identificare eventuali cause compressive strutturali. [8]
-  </p>
-
-  <div class="panel panel-gold">
-    <div class="panel-title">Tunnel tarsale o fascite plantare?</div>
-    <p>
-      Nel tunnel tarsale sono più suggestivi bruciore, parestesie e irradiazione
-      del dolore. Nella fascite plantare prevale invece un dolore meccanico
-      localizzato alla regione plantare-mediale del calcagno, tipicamente più intenso
-      ai primi passi dopo il riposo.
-    </p>
-  </div>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 6 ── -->
-  <div class="cause-header">
-    <span class="cause-number">6</span>
-    <h2>Apofisite calcaneare (malattia di Sever)</h2>
-  </div>
-
-  <p>
-    L'apofisite calcaneare, o malattia di Sever, è una causa frequente
-    di dolore al tallone nel bambino e nell'adolescente in crescita.
-    È una condizione da sovraccarico dell'apofisi calcaneare,
-    favorita dall'attività sportiva e dalla trazione ripetuta esercitata
-    dal complesso gastrocnemio-Achille. [9]
-  </p>
-
-  <h3>Come si presenta?</h3>
-
-  <p>
-    Il dolore è localizzato nella parte posteriore o posteroinferiore del calcagno
-    e aumenta durante corsa, salti e attività sportive. Può essere presente
-    bilateralmente. La diagnosi è prevalentemente clinica e la radiografia
-    non è necessaria di routine nelle presentazioni tipiche.
-  </p>
-
-  <div class="panel panel-green">
-    <div class="panel-title">Gestione nel giovane sportivo</div>
-    <p>
-      Il trattamento comprende riduzione temporanea del carico sportivo,
-      stretching del complesso gastrocnemio-soleo, eventuale utilizzo di rialzi
-      del tallone e calzature adeguatamente ammortizzate.
-      La condizione tende a risolversi con la maturazione scheletrica.
-    </p>
-  </div>
-
-  <hr class="divider">
-
-
-  <!-- ── CAUSA 7 ── -->
-  <div class="cause-header">
-    <span class="cause-number">7</span>
-    <h2>Sperone calcaneare ed entesofiti: sono davvero la causa del dolore?</h2>
-  </div>
-
-  <p>
-    Lo sperone calcaneare è una proliferazione ossea che può essere osservata
-    alla radiografia in corrispondenza dell'origine della fascia plantare
-    o dell'inserzione del tendine d'Achille.
-  </p>
-
-  <p>
-    La sua presenza non significa automaticamente che sia la causa del dolore.
-    Entesofiti e speroni possono essere osservati anche in persone senza sintomi;
-    per questo il reperto radiografico deve essere sempre correlato
-    alla sede del dolore e all'esame clinico.
-  </p>
-
-  <h3>Come si tratta?</h3>
-
-  <p>
-    Il trattamento è diretto soprattutto alla patologia sottostante,
-    come fascite plantare o tendinopatia inserzionale dell'Achille,
-    più che alla semplice presenza dello sperone.
-  </p>
-
-  <div class="panel panel-dark">
-    <div class="panel-title">Quando considerare la chirurgia</div>
-    <p>
-      L'escissione isolata dello sperone è raramente l'obiettivo principale.
-      Nei casi persistenti, la procedura chirurgica viene pianificata
-      in funzione della patologia responsabile dei sintomi e delle caratteristiche
-      anatomiche del paziente.
-    </p>
-  </div>
-
-
-  <hr class="divider">
-
-
-  <!-- ── RED FLAGS ── -->
-  <div class="red-flags">
-    <div class="rf-title">Segnali d'allarme — Quando serve una valutazione medica</div>
-
-    <ul>
-      <li>Dolore importante dopo un trauma con difficoltà o impossibilità a caricare il piede</li>
-      <li>Gonfiore marcato, ecchimosi o sospetta rottura del tendine d'Achille</li>
-      <li>Dolore notturno persistente o non chiaramente correlato al carico</li>
-      <li>Febbre, arrossamento importante o sospetta infezione</li>
-      <li>Perdita di sensibilità, debolezza o sintomi neurologici progressivi</li>
-      <li>Dolore persistente in un paziente con diabete, neuropatia o problemi vascolari</li>
-      <li>Sintomi che non migliorano nonostante un trattamento conservativo adeguato</li>
-    </ul>
-  </div>
-
-
-  <!-- ── ITER DIAGNOSTICO ── -->
-  <h2>Come si diagnostica il dolore al tallone?</h2>
-
-  <p>
-    La diagnosi parte dall'anamnesi e dall'esame clinico.
-    La sede esatta del dolore, il momento della giornata in cui compare,
-    il rapporto con il carico, le attività sportive e la presenza di sintomi
-    neurologici permettono spesso di restringere notevolmente le possibili cause.
-  </p>
-
-  <ol class="diag-steps">
-
-    <li>
-      <strong>Anamnesi:</strong>
-      modalità di insorgenza, attività sportive, variazioni recenti del carico,
-      calzature, lavoro, eventuali traumi e comorbidità.
-    </li>
-
-    <li>
-      <strong>Esame clinico:</strong>
-      localizzazione del punto doloroso, valutazione di fascia plantare,
-      tendine d'Achille, mobilità della caviglia, allineamento del piede
-      e screening neurologico.
-    </li>
-
-    <li>
-      <strong>Imaging quando indicato:</strong>
-      nelle presentazioni tipiche di fascite plantare la diagnosi è spesso clinica.
-      Radiografie, ecografia o risonanza magnetica vengono richieste
-      in base al sospetto diagnostico, alla durata dei sintomi
-      e alla presenza di caratteristiche atipiche.
-    </li>
-
-    <li>
-      <strong>Ecografia:</strong>
-      particolarmente utile per studiare fascia plantare,
-      tendine d'Achille e borse superficiali o profonde.
-    </li>
-
-    <li>
-      <strong>Risonanza magnetica:</strong>
-      può essere indicata in caso di sospetta frattura da stress,
-      patologia ossea, tendinea o quando la diagnosi rimane dubbia.
-    </li>
-
-    <li>
-      <strong>Studi elettrodiagnostici:</strong>
-      possono essere utilizzati nei casi con sospetta neuropatia
-      o sindrome del tunnel tarsale.
-    </li>
-  </ol>
-
-
-  <!-- ── AAFP EVIDENCE TABLE ── -->
-  <section aria-labelledby="raccomandazioni-aafp">
-
-    <h2 id="raccomandazioni-aafp">
-      Cosa indicano le raccomandazioni cliniche dell’AAFP?
-    </h2>
-
-    <p>
-      L’American Academy of Family Physicians utilizza il sistema SORT
-      per classificare la solidità delle raccomandazioni cliniche.
-      La tabella seguente riassume e contestualizza alcune indicazioni
-      pertinenti alla diagnosi e al trattamento del dolore al tallone.
-    </p>
-
-    <div class="evidence-table-wrap">
-
-      <table class="evidence-table">
-
-        <thead>
-          <tr>
-            <th>Indicazione clinica</th>
-            <th>Livello SORT</th>
-            <th>Interpretazione pratica</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-          <tr>
-            <td>
-              Nella sospetta frattura da stress del calcagno,
-              la risonanza magnetica è l’esame di riferimento
-              per confermare la diagnosi e valutarne l’estensione.
-            </td>
-            <td>B</td>
-            <td>
-              Le radiografie possono risultare normali nelle fasi iniziali.
-              La necessità di ulteriori esami dipende dal sospetto clinico.
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              Nelle presentazioni tipiche della malattia di Sever
-              non è generalmente necessario eseguire esami di imaging.
-            </td>
-            <td>B</td>
-            <td>
-              Radiografia, ecografia o risonanza possono essere considerate
-              quando il dolore persiste o presenta caratteristiche atipiche.
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              Un’infiltrazione corticosteroidea ecoguidata può ridurre
-              temporaneamente il dolore della borsite retrocalcaneale,
-              ma comporta un possibile rischio per il tendine d’Achille.
-            </td>
-            <td>C</td>
-            <td>
-              Non rappresenta un trattamento automatico: indicazione,
-              sede dell’iniezione e rapporto rischio-beneficio devono essere
-              valutati attentamente.
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              La fasciotomia percutanea ecoguidata può essere considerata
-              in alcune forme di fascite plantare persistente e resistente
-              a un adeguato trattamento conservativo.
-            </td>
-            <td>C</td>
-            <td>
-              Le evidenze sono ancora limitate e non giustificano
-              l’impiego routinario della procedura.
-            </td>
-          </tr>
-
-        </tbody>
-
-      </table>
-
-    </div>
-
-    <div class="evidence-legend">
-      <strong>Livello B:</strong> evidenze orientate al paziente
-      limitate o non completamente coerenti.
-      <br>
-      <strong>Livello C:</strong> raccomandazione basata prevalentemente
-      su consenso, evidenze orientate alla malattia, opinione di esperti
-      o serie di casi.
-    </div>
-
-    <p class="evidence-source">
-      Sintesi originale in italiano, adattata e parafrasata da:
-      Morancie NA, Irvin L, Rayala BZ.
-      <em>Heel Pain: Diagnosis and Management.</em>
-      American Family Physician. 2025;112(6):648-656.
-      <a
-        href="https://www.aafp.org/afp/2025/1200/heel-pain"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Consulta la pubblicazione AAFP
-      </a>.
-      Le raccomandazioni devono essere interpretate nel contesto clinico
-      individuale e non sostituiscono la valutazione specialistica.
-    </p>
-
-  </section>
-
-
-  <hr class="divider">
-
-
-  <!-- ── FAQ ── -->
-  <section class="faq-section">
-
-    <h2>Domande frequenti sul dolore al tallone</h2>
-
-    <div class="faq-item">
-      <h3>Perché mi fa male il tallone quando mi alzo al mattino?</h3>
-      <p>
-        Il dolore ai primi passi dopo il riposo è particolarmente frequente
-        nella fascite plantare. Non è però un segno esclusivo:
-        la sede del dolore e l'esame clinico sono necessari per confermare
-        la diagnosi ed escludere altre cause.
-      </p>
-    </div>
-
-    <div class="faq-item">
-  <h3>Da cosa può dipendere il dolore nella parte esterna del tallone?</h3>
-
-  <p>
-    Il dolore laterale del tallone non identifica una singola patologia.
-    Può provenire dal calcagno, dalle articolazioni vicine, dai tendini
-    o da strutture nervose. La diagnosi dipende dal punto preciso del dolore,
-    dal rapporto con il carico, da eventuali traumi e dall'esame clinico.
-  </p>
-</div>
-
-    <div class="faq-item">
-      <h3>Come capire se il dolore al tallone è fascite plantare o tendine d'Achille?</h3>
-      <p>
-        La fascite plantare provoca generalmente dolore nella parte inferiore
-        e mediale del calcagno. La tendinopatia achillea dà invece dolore posteriormente,
-        lungo il tendine o direttamente alla sua inserzione sul calcagno.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Quando serve una risonanza magnetica per il dolore al tallone?</h3>
-      <p>
-        La risonanza non è necessaria in tutti i pazienti. Può essere utile
-        quando si sospettano fratture da stress, patologie del tendine d'Achille,
-        lesioni ossee o quando i sintomi persistono senza una diagnosi chiara.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Lo sperone calcaneare deve essere operato?</h3>
-      <p>
-        Nella maggior parte dei casi no. La presenza dello sperone alla radiografia
-        non significa necessariamente che sia la causa del dolore.
-        Il trattamento viene indirizzato principalmente alla patologia associata,
-        come fascite plantare o tendinopatia inserzionale.
-      </p>
-    </div>
-
-    <div class="faq-item">
-      <h3>Quanto tempo può durare il dolore al tallone?</h3>
-      <p>
-        La durata dipende dalla causa e dai fattori individuali.
-        Alcune condizioni migliorano in poche settimane, mentre fascite plantare
-        e tendinopatie possono richiedere diversi mesi di trattamento progressivo.
-        Un dolore persistente o in peggioramento merita una valutazione clinica.
-      </p>
-    </div>
-
-  </section>
-
-
-  <!-- ── INTERNAL LINKS ── -->
-  <hr class="divider">
-
-  <h2>Altri approfondimenti su piede e caviglia</h2>
-
-  <p>
-    Puoi consultare la sezione dedicata alle
-    <a href="../piede-caviglia.html">patologie del piede e della caviglia</a>,
-    leggere l'approfondimento sulla
-    <a href="fascite-plantare.html">fascite plantare</a>
-    oppure tornare agli
-    <a href="../blog.html">articoli del blog</a>.
-  </p>
-
-
-  <!-- ── REFERENCES ── -->
-  <div class="references">
-
-    <h2>Riferimenti bibliografici</h2>
-
-    <ol>
-
-      <li>
-        Koc TA Jr, Bise CG, Neville C, Carreira D, Martin RL, McDonough CM.
-        Heel Pain – Plantar Fasciitis: Revision 2023.
-        <em>J Orthop Sports Phys Ther.</em>
-        2023;53(12):CPG1-CPG39.
-        doi:10.2519/jospt.2023.0303.
-      </li>
-
-      <li>
-        Wearing SC, Smeathers JE, Urry SR, Hennig EM, Hills AP.
-        The pathomechanics of plantar fasciitis.
-        <em>Sports Med.</em>
-        2006;36(7):585-611.
-      </li>
-
-      <li>
-        Alfredson H, Pietilä T, Jonsson P, Lorentzon R.
-        Heavy-load eccentric calf muscle training for the treatment
-        of chronic Achilles tendinosis.
-        <em>Am J Sports Med.</em>
-        1998;26(3):360-366.
-      </li>
-
-      <li>
-        Beyer R, Kongsgaard M, Hougs Kjær B, Øhlenschlæger T,
-        Kjær M, Magnusson SP.
-        Heavy slow resistance versus eccentric training as treatment
-        for Achilles tendinopathy: a randomized controlled trial.
-        <em>Am J Sports Med.</em>
-        2015;43(7):1704-1711.
-      </li>
-
-      <li>
-        Kearney RS, Ji C, Warwick J, et al.
-        Effect of Platelet-Rich Plasma Injection vs Sham Injection
-        on Tendon Dysfunction in Patients With Chronic Midportion Achilles Tendinopathy:
-        A Randomized Clinical Trial.
-        <em>JAMA.</em>
-        2021;326(2):137-144.
-        doi:10.1001/jama.2021.6986.
-      </li>
-
-      <li>
-        van Dijk CN, van Sterkenburg MN, Wiegerinck JI, Karlsson J, Maffulli N.
-        Terminology for Achilles tendon related disorders.
-        <em>Knee Surg Sports Traumatol Arthrosc.</em>
-        2011;19(5):835-841.
-      </li>
-
-      <li>
-        Roca I, Roca A.
-        Calcaneal stress fractures.
-        <em>Foot Ankle Clin.</em>
-        2009;14(1):81-90.
-      </li>
-
-      <li>
-        Lau JT, Daniels TR.
-        Tarsal tunnel syndrome: a review of the literature.
-        <em>Foot Ankle Int.</em>
-        1999;20(3):201-209.
-      </li>
-
-      <li>
-        Scharfbillig RW, Jones S, Scutter S.
-        Sever's disease — a prospective study of risk factors.
-        <em>J Am Podiatr Med Assoc.</em>
-        2011;101(2):133-145.
-      </li>
-
-      <li>
-        Gerdesmeyer L, Frey C, Vester J, et al.
-        Radial extracorporeal shock wave therapy is safe and effective
-        in the treatment of chronic recalcitrant plantar fasciitis:
-        results of a randomized placebo-controlled multicenter study.
-        <em>Am J Sports Med.</em>
-        2008;36(11):2100-2109.
-      </li>
-
-      <li>
-  Morancie NA, Irvin L, Rayala BZ.
-  Heel Pain: Diagnosis and Management.
-  <em>Am Fam Physician.</em>
-  2025;112(6):648-656.
-  <a
-    href="https://www.aafp.org/afp/2025/1200/heel-pain"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    AAFP
-  </a>.
-</li>
-
-    </ol>
-
-  </div>
-
-</article>
-
-
-<!-- CTA -->
-<div class="cta-block">
-
-  <h2>Hai dolore al tallone?</h2>
-
-  <p>
-    Una valutazione clinica permette di identificare la possibile origine
-    dei sintomi e impostare un percorso terapeutico personalizzato.
-  </p>
-
-  <a href="mailto:paladinoricardo@outlook.com" class="btn">
-    Prenota una visita
-  </a>
-
-</div>
-
-
-<!-- FOOTER -->
-<footer id="contatti">
-
-  <p>
-    © 2026 — Dr. Ricardo Paladino ·
-    Specializzando Ortopedia e Traumatologia ·
-    Università degli Studi di Milano
-  </p>
-
-  <a href="https://www.linkedin.com/in/ricardo-paladino-mp">
-    LinkedIn
-  </a>
-
-  <a href="mailto:paladinoricardo@outlook.com">
-    Email
-  </a>
-
-  <p style="font-size:12px; color:#777; margin-top:12px;">
-    Questo articolo ha finalità informative e divulgative e non sostituisce
-    una valutazione medica individuale.
-  </p>
-
-</footer>
-
+  <script>
+    (function () {
+      const nav = document.getElementById('main-nav');
+      const updateNav = () => nav.classList.toggle('scrolled', window.scrollY > 60);
+      updateNav();
+      window.addEventListener('scroll', updateNav, { passive: true });
+    }());
+  </script>
 </body>
 </html>
